@@ -1,0 +1,50 @@
+{
+  "lang": "pl",
+  "heading": {
+    "presentation": "Prezentacja",
+    "products": "Produkty",
+    "contact": "Kontakt"
+  },
+  "slider": {
+    "first": {
+      "titleSlider": "MultiTyphoon",
+      "descriptionFirst": "System do wdmuchiwania światłowodów, który składa się z elektrycznego Podajnika MultiTank oraz wymiennych głowic. Wysoce uniwersalny zestaw przystosowany do pracy zarówno z mikrorurkami jak i rurami HDPE. Brak konieczności napędzania podajnika powietrzem zmniejsza konieczny wydatek dzięki czemu można zastosować mniejszy i tańszy kompresor. Wbudowany rejestrator danych pozwala na generowanie raportów wdmuchiwania.",
+      "descriptionSecond": "Wdmuchiwarka umożliwia również wprowadzanie pakietów mikrorurek w rury HDPE."
+    },
+    "second": {
+      "titleSlider": "Raport Wdmuchiwania",
+      "descriptionFirst": "Podajnik MultiTank R wyposażony jest w rejestrator danych, który zbiera wszystkie wymagane przez inspektorów parametry: opory, prędkość i ciśnienie w funkcji długości wdmuchniętego kabla. Automatycznie zapisywany jest też czas, lokalizacja i temperatura otoczenia.",
+      "descriptionSecond": "Dane przeniesione z wdmuchiwarki do komputera przetwarzane są przez aplikację webową co pozwala na wygenerowanie raportu wdmuchiwania. Dodatkowo wszystkie pliki zbierane są na koncie Użytkownika i mogą być dostępne z każdego urządzenia online"
+    }
+  },
+  "presentation": {
+     "descriptionFirst": "Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i wszechstronność użytkowania wyróżniają produkt na rynku.",
+     "descriptionSecond": "Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania. Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową umożliwia generowanie raportu wdmuchiwania.",
+     "electricFeederFirst": "elektryczny",
+     "electricFeederSecond": "podajnik",
+     "versatilityApplicationsFirst": "uniwersalność",
+     "versatilityApplicationsSecond": "uniwersalność",
+     "fiberReportFirst": "raport",
+     "fiberReportSecond": "wdmuchiwania",
+     "youtu": "https://www.youtube.com/embed/PehWBVo2vn8"
+  },
+  "products": {
+    "feeder": "Podajnik MultiTank",
+    "microTyphoon": "Głowica MultiTyphoon",
+    "typhoon32": "Głowice Typhoon 32/40",
+    "typhoon50": "Głowice Typhoon 50/63",
+    "connector": "Załącze Y2"
+  },
+  "contact": {
+    "workers": {
+      "position": "Menadżer Produktu, Techniki Światłowodowe"
+    },
+    "form" : {
+      "title":  "Formularz kontaktowy",
+      "placeholderEmail": "Adres e-mail*",
+      "placeholderPhone": "Telefon",
+      "placeholderText": "Treść wiadomości*",
+      "button": "WYŚLIJ"
+    }
+  }
+}

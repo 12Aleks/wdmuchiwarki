@@ -1,0 +1,50 @@
+{
+  "lang": "en",
+  "heading": {
+    "presentation": "Presentation",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "slider": {
+    "first": {
+      "titleSlider": "MultiTyphoon",
+      "descriptionFirst": "Our fiber optic blowing system consists of the electric MultiTank feeder and convertible blowing heads. This highly universal set is adapted to work with both microtubes and HDPE pipes. There is no need to drive the feeder with an air compressor, which reduces the air flow demand. The blowing machine can be used with a smaller and cheaper compressor. A built-in data logger allows generating blowing reports.",
+      "descriptionSecond": "The MultiTyphoon blowing system also enables the installation of microducts packages into HDPE pipes."
+    },
+    "second": {
+      "titleSlider": "Fiber optic blowing report",
+      "descriptionFirst": "The MultiTank R feeder is equipped with a data logger recording all the parameters required by inspectors: resistance, speed and pressure as a function of blown-in cable length. Other fixed parameters such as date and time, temperature and GPS coordinates are recorded automatically.",
+      "descriptionSecond": "After transferring data from the MultiTank to a computer a report can be generated in an on-line application. Additionally all the files with cable installation parameters are saved in the User account and can be accessed online on any device."
+    }
+  },
+  "presentation": {
+    "descriptionFirst": "The Terma MultiTyphoon blowing machine is designed to install fiber optics cables with diameters between 3 and 20 mm into 6–16 mm microducts and HDPE 32–63 pipes. A fully electric feeder, convertible blowing heads and versatility of applications are distinguishing this product on the market.",
+    "descriptionSecond": "Fiber optic blowing is performed with independent control of feeding speed and force. All the parameters are saved in the data log which is then converted into a blowing report in an online application.",
+    "electricFeederFirst": "electric",
+    "electricFeederSecond": "feeder",
+    "versatilityApplicationsFirst": "versatility",
+    "versatilityApplicationsSecond": "of applications",
+    "fiberReportFirst": "fiber optic",
+    "fiberReportSecond": "blowing report",
+    "youtu": "https://www.youtube.com/embed/mjumFhEvr8g"
+  },
+  "products": {
+    "feeder": "MultiTank Feeder",
+    "microTyphoon": "MicroTyphoon Blowing Head",
+    "typhoon32": "Typhoon 32/40 Blowing Kit",
+    "typhoon50": "Typhoon 50/63 Blowing Kit",
+    "connector": "Y2 Connector"
+  },
+  "contact": {
+    "workers": {
+      "position": "Product Manager, Fiber Optics Technologies"
+    },
+    "form": {
+      "title": "Contact form",
+      "placeholderEmail": "E-mail*",
+      "placeholderPhone": "Phone",
+      "placeholderText": "Message content*",
+      "button": "Send"
+    }
+  }
+}

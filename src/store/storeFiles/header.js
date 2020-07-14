@@ -1,23 +1,18 @@
 export default {
     state:{
-        languages: [
-            {title: 'PL', url: '/'},
-            {title: 'EN', url: '/en'},
-            {title: 'DE', url: '/de'},
-        ],
+        locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(','),
         mainMenu: [
             {
-                title: 'Prezentacja',
-                url: '#prezentacja',
-                classActive: 'active'
+                title: 'heading.presentation',
+                url: 'presentation',
             },
             {
-                title: 'Produkty',
-                url: '#producty'
+                title: 'heading.products',
+                url: 'products-band',
             },
             {
-                title: 'Kontakt',
-                url: '#contact'
+                title: 'heading.contact',
+                url: 'contact',
             }
         ],
         footerMenu: [
@@ -30,8 +25,8 @@ export default {
         ]
     },
     getters:{
-        languages(state){
-            return state.languages
+        locales(state){
+            return state.locales
         },
         mainMenu(state){
             return state.mainMenu
@@ -39,7 +34,5 @@ export default {
         footerMenu(state){
             return state.footerMenu
         }
-    },
-    mutations:{},
-    actions:{}
+    }
 }

@@ -1,0 +1,50 @@
+{
+  "lang": "de",
+  "heading": {
+    "presentation": "Präsentation",
+    "products": "Produkte",
+    "contact": "Kontakt"
+  },
+  "slider": {
+    "first": {
+      "titleSlider": "MultiTyphoon",
+      "descriptionFirst": "111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam.",
+      "descriptionSecond": "111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam."
+    },
+    "second": {
+      "titleSlider": "Einblasprotokoll",
+      "descriptionFirst": "222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam.",
+      "descriptionSecond": "222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam."
+    }
+  },
+  "presentation": {
+    "descriptionFirst": "Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i wszechstronność użytkowania wyróżniają produkt na rynku.",
+    "descriptionSecond": "Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania. Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową umożliwia generowanie raportu wdmuchiwania.",
+    "electricFeederFirst": "elektryczny",
+    "electricFeederSecond": "podajnik",
+    "versatilityApplicationsFirst": "uniwersalność",
+    "versatilityApplicationsSecond": "uniwersalność",
+    "fiberReportFirst": "raport",
+    "fiberReportSecond": "wdmuchiwania",
+    "youtu": "https://www.youtube.com/embed/mjumFhEvr8g"
+  },
+  "products": {
+    "feeder": "MultiTank Zuführung",
+    "microTyphoon": "MicroTyphoon Einblaskopf",
+    "typhoon32": "Typhoon 32/40 Einblasset",
+    "typhoon50": "Typhoon 50/63 Einblasset",
+    "connector": "Y2 Stecker"
+  },
+  "contact": {
+    "workers": {
+      "position": "Produktmanager, Glasfaser-Technologie"
+    },
+    "form": {
+      "title": "Kontaktformular",
+      "placeholderEmail": "Adresse e-mail*",
+      "placeholderPhone": "Telefon",
+      "placeholderText": "Inhalt der Nachricht*",
+      "button": "Senden"
+    }
+  }
+}

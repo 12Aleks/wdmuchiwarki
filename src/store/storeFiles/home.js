@@ -2,46 +2,33 @@ export default {
     state: {
         multiSlider: [
             {
-                title: 'MultiTyphoon',
-                slFirst: 'System do wdmuchiwania światłowodów, który składa się z elektrycznego Podajnika MultiTank\n' +
-                    '                                oraz wymiennych głowic. Wysoce uniwersalny zestaw przystosowany do pracy zarówno z\n' +
-                    '                                mikrorurkami jak i rurami HDPE. Brak konieczności napędzania podajnika powietrzem\n' +
-                    '                                zmniejsza\n' +
-                    '                                konieczny wydatek dzięki czemu można zastosować mniejszy i tańszy kompresor. Wbudowany\n' +
-                    '                                rejestrator danych pozwala na generowanie raportów wdmuchiwania.',
-                slSecond: 'Wdmuchiwarka umożliwia również wprowadzanie pakietów mikrorurek w rury HDPE.',
+                title: 'slider.first.titleSlider',
+                slFirst: 'slider.first.descriptionFirst',
+                slSecond: 'slider.first.descriptionSecond',
             },
             {
-                title: 'Raport Wdmuchiwania',
-                slFirst: 'Podajnik MultiTank R wyposażony jest w rejestrator danych, który zbiera wszystkie\n' +
-                    '                                wymagane\n' +
-                    '                                przez inspektorów parametry: opory, prędkość i ciśnienie w funkcji długości\n' +
-                    '                                wdmuchniętego\n' +
-                    '                                kabla. Automatycznie zapisywany jest też czas, lokalizacja i temperatura otoczenia.',
-                slSecond: 'Dane przeniesione z wdmuchiwarki do komputera przetwarzane są przez aplikację webową co\n' +
-                    '                                pozwala na wygenerowanie raportu wdmuchiwania. Dodatkowo wszystkie pliki zbierane są na\n' +
-                    '                                koncie Użytkownika i mogą być dostępne z każdego urządzenia online.',
+                title: 'slider.second.titleSlider',
+                slFirst: 'slider.second.descriptionFirst',
+                slSecond: 'slider.second.descriptionSecond',
             }
         ],
         productsTitle: 'Produkty',
         products: [
             {
-                title: 'Podajnik MultiTank',
+                name: 'MultiTank',
+                title: 'products.feeder',
                 photo: '3M7A2089n.png',
-                alt: 'Podajnik MultiTank',
-                link: '',
                 backgroundOne: 'product_a.svg',
                 altOne: 'circle one',
                 backgroundTwo: 'product_b.svg',
                 altTwo: 'circle two',
                 styles: '',
-                active: false
+                active: false,
             },
             {
-                title: 'Głowica MicroTyphoon',
+                name: 'MicroTyphoon',
+                title: 'products.microTyphoon',
                 photo: 'IMG_0033.png',
-                alt: 'Głowica MicroTyphoon',
-                link: '',
                 backgroundOne: 'product_a.svg',
                 altOne: 'circle one',
                 backgroundTwo: 'product_b.svg',
@@ -50,10 +37,9 @@ export default {
                 active: false
             },
             {
-                title: 'Głowice Typhoon 32/40',
+                name: 'Typhoon32',
+                title: 'products.typhoon32',
                 photo: 'typhoon_32_40.png',
-                alt: 'Głowice Typhoon 32/40',
-                link: '',
                 backgroundOne: 'product_a.svg',
                 altOne: 'circle one',
                 backgroundTwo: 'product_b.svg',
@@ -62,10 +48,9 @@ export default {
                 active: false
             },
             {
-                title: 'Głowice Typhoon 50/63',
+                name: 'Typhoon50',
+                title: 'products.typhoon50',
                 photo: 'typhon_50_63.png',
-                alt: 'Głowice Typhoon 50/63',
-                link: '',
                 backgroundOne: 'product_a.svg',
                 altOne: 'circle one',
                 backgroundTwo: 'product_b.svg',
@@ -74,10 +59,9 @@ export default {
                 active: false
             },
             {
-                title: 'Złącze Y2',
+                name: 'Y2',
+                title: 'products.connector',
                 photo: '3M7A2122n.png',
-                alt: 'Złącze Y2',
-                link: '',
                 backgroundOne: 'product_a.svg',
                 altOne: 'circle one',
                 backgroundTwo: 'product_b.svg',
@@ -89,17 +73,12 @@ export default {
         workers: [
             {
                 name: 'Filip Madzio',
-                position: 'Menadżer Produktu, Techniki Światłowodowe',
+                position: 'contact.workers.position',
                 image: 'madfi.png',
                 phone: '+ 48 669 097 469',
                 email: 'filip.madzio@termagroup.pl'
             }
         ],
-        form: {
-            email: '',
-            phone: '',
-            text: ''
-        },
 
     },
     getters: {
@@ -111,9 +90,6 @@ export default {
         },
         products(state) {
             return state.products
-        },
-        form(state) {
-            return state.form
         },
         workers(state){
             return state.workers

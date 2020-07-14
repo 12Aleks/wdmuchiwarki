@@ -54,21 +54,17 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="gray-band" id="prezentacja">
+        <div class="gray-band presentation">
             <b-container class="container">
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12" sm="12" md="12" lg="6">
                         <div class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0 ">
                             <h3 class="title">{{ $t( 'heading.presentation') }}</h3>
                             <p class="descriptions">
-                                Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w
-                                mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i
-                                wszechstronność użytkowania wyróżniają produkt na rynku.
+                                {{ $t( 'presentation.descriptionFirst') }}
                             </p>
                             <p class="descriptions">
-                                Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania.
-                                Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową
-                                umożliwia generowanie raportu wdmuchiwania.
+                                {{ $t( 'presentation.descriptionSecond') }}
                             </p>
                         </div>
                     </b-col>
@@ -79,23 +75,23 @@
                                     <b-img class='thunderbolt' :src="require(`@/assets/images/thunderbolt.svg`)"
                                            alt="thunderbolt"></b-img>
                                 </div>
-                                <span class="text-center pt-3">elektryczny</span>
-                                <span class="text-center">podajnik</span>
+                                <span class="text-center pt-3">{{ $t( 'presentation.electricFeederFirst') }}</span>
+                                <span class="text-center">{{ $t( 'presentation.electricFeederSecond') }}</span>
                             </div>
                             <div class="img-wrapper d-flex flex-column align-items-center justify-content-column">
                                 <div class="img_icon_box">
                                     <b-img class='rotateAnim' :src="require(`@/assets/images/Group.svg`)"
                                            alt="rotate"></b-img>
                                 </div>
-                                <span class="text-center pt-3">uniwersalność</span>
-                                <span class="text-center"> zastosowań</span>
+                                <span class="text-center pt-3">{{ $t( 'presentation.versatilityApplicationsFirst') }}</span>
+                                <span class="text-center">{{ $t( 'presentation.versatilityApplicationsSecond') }}</span>
                             </div>
                             <div class="img-wrapper d-flex flex-column align-items-center justify-content-column">
                                 <div class="img_icon_box">
                                     <b-img class='pdf' :src="require(`@/assets/images/pdf.svg`)" alt="pdf"></b-img>
                                 </div>
-                                <span class="text-center pt-3">rejestracja</span>
-                                <span class="text-center">danych</span>
+                                <span class="text-center pt-3">{{ $t( 'presentation.fiberReportFirst') }}</span>
+                                <span class="text-center">{{ $t( 'presentation.fiberReportSecond') }}</span>
                             </div>
                         </div>
                     </b-col>
@@ -108,7 +104,7 @@
                     <b-col cols="12">
                         <div class="embed-responsive embed-responsive-16by9 resp-container">
                             <iframe class="embed-responsive-item resp-iframe pr-3 pl-3 pl-sm-0 pr-sm-0 pl-md-0 pl-lg-0 pr-md-0 pr-lg-0"
-                                    src="https://www.youtube.com/embed/PehWBVo2vn8" frameborder="0"
+                                    :src="`${$t('presentation.youtu')}`" frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                         </div>
@@ -123,33 +119,8 @@
                         <h3 class="title pb-4 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
                             {{$t('heading.products') }}</h3>
                     </b-col>
-                    <b-col cols="12" md="6" lg="4"
-                           v-for="(product, index) in products"
-                           :key="index"
-                           class="product-box"
-                           :class="product.styles"
-                           @mouseover="mouseover(index)"
-                           @mouseleave="mouseleave(index)">
-                        <router-link :to="{ name: 'MultiTank', params: { lang: $i18n.locale }}">
-                            <div class="product-box d-flex flex-column align-items-center justify-content-end pr-0 pl-0 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-0 pl-lg-0">
-                                <b-img :class='{imgHoverOne: product.active}'
-                                       class="one"
-                                       :src="require(`@/assets/images/products/${product.backgroundOne}`)"
-                                       :alt="product.altOne"></b-img>
-                                <b-img :class='{imgHoverTwo: product.active}'
-                                       class="two"
-                                       :src="require(`@/assets/images/products/${product.backgroundTwo}`)"
-                                       :alt="product.altTwo"></b-img>
-                                <b-img :class='{imgHover: product.active}'
-                                       class='img_product'
-                                       :src="require(`@/assets/images/products/${product.photo}`)"
-                                       fluid
-                                       :alt="product.alt"></b-img>
-                                <p class="text-center pt-3 mb-0 descriptions">{{product.title}}</p>
-                            </div>
-                        </router-link>
-                    </b-col>
                 </b-row>
+                <other-products></other-products>
             </b-container>
 
         </div>
@@ -179,12 +150,14 @@
                     <b-col cols="12" sm="12" md="12" lg="6">
                         <h6 class="pb-3 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
                             {{$t('contact.form.title')}}</h6>
-                        <b-form class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0" @submit="onSubmit">
+                        <b-form class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0"
+                                @submit.prevent="sendEmail">
                             <b-form-group>
                                 <b-form-input
                                         id="input-1"
-                                        v-model="form.email"
+                                        v-model="email"
                                         type="email"
+                                        name="user_email"
                                         required
                                         :placeholder="$t('contact.form.placeholderEmail')"
                                 ></b-form-input>
@@ -192,22 +165,33 @@
                             <b-form-group>
                                 <b-form-input
                                         id="input-2"
-                                        v-model.number="form.phone"
+                                        v-model.number="phone"
+                                        name="user_phone"
                                         required
-                                        :placeholder="$t('contact.form.placeholderPhone')"
-                                ></b-form-input>
+                                        :placeholder="$t('contact.form.placeholderPhone')">
+                                </b-form-input>
                             </b-form-group>
                             <b-form-group>
                                 <b-form-textarea
                                         id="textarea"
-                                        v-model="form.text"
+                                        v-model="text"
+                                        name="user_massage"
                                         rows="6"
                                         max-rows="6"
                                         :placeholder="$t('contact.form.placeholderText')"
                                         required></b-form-textarea>
                             </b-form-group>
-                            <b-button type="submit" class="btn text-uppercase">{{$t('contact.form.button')}}</b-button>
+                            <b-button type="submit" class="btn text-uppercase" @click="$bvModal.show('bv-modal-example')">{{$t('contact.form.button')}}</b-button>
                         </b-form>
+                        <b-modal id="bv-modal-example" hide-footer>
+                            <template v-slot:modal-title>
+                                Using <code>$bvModal</code> Methods
+                            </template>
+                            <div class="d-block text-center">
+                                <h3>Hello From This Modal!</h3>
+                            </div>
+                            <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>
+                        </b-modal>
                     </b-col>
                 </b-row>
             </b-container>
@@ -217,6 +201,7 @@
 
 <script>
     import PlayerVideo from "./subcomponents/PlayerVideo";
+    import emailjs from 'emailjs-com';
     import {mapGetters} from 'vuex'
 
     export default {
@@ -226,35 +211,40 @@
                 slide: 0,
                 sliding: null,
                 active: false,
+                email: '',
+                phone: '',
+                text: ''
+
             }
         },
         methods: {
-            onSubmit(evt) {
-                evt.preventDefault()
-                alert(JSON.stringify(this.form))
-            },
-            mouseover(index) {
-                this.$store.dispatch('down', index)
-            },
-            mouseleave(index) {
-                this.$store.dispatch('up', index)
+            sendEmail: (e) => {
+                emailjs.sendForm('sendgrid', 'template_hBdlDlOK', e.target, 'user_BWzukvV4b0GSFkWTNi81Y')
+                    .then((result) => {
+                        console.log('SUCCESS!', result.status, result.text);
+                        // setTimeout(() => {
+                        //     this.$router.push('/')
+                        // }, 2000)
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });g
             },
             hoverSlider() {
 
             }
         },
         computed: {
+            validation() {
+                return this.phone.length > 7 && this.phone.length < 15
+            },
             ...mapGetters([
                 'multiSlider',
                 'productsTitle',
-                'products',
                 'form',
                 'workers'
             ])
         },
-        components: {
-            PlayerVideo
-        }
+        components: {PlayerVideo}
     }
 </script>
 

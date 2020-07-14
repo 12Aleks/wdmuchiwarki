@@ -1,21 +1,21 @@
 <template>
     <div id="app">
         <section id="navigation" :class="{'scroll-nav': navigation}" v-scroll="handleScroll">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mt-0 mt-sm-0 mt-md-2 mt-lg-2 mb-0 mb-sm-0 mb-md-2 mb-lg-2">
-                        <nav id='navbar-main' class="navbar navbar-expand-lg" :class="{'f-nave': fnav}">
+            <b-container>
+                <b-row>
+                    <b-col cols="12" class="mt-0 mt-sm-0 mt-md-2 mt-lg-2 mb-0 mb-sm-0 mb-md-2 mb-lg-2">
+                        <b-navbar toggleable="lg">
 
-                            <!-- Brand -->
-                            <router-link to="/pl" title="Strona główna" rel="home" class="navbar-brand w-50">
+                            <router-link to="/" title="Strona główna" rel="home" class="navbar-brand">
                                 <div class="d-flex align-items-center">
                                     <div class="logo-wrapper img-fluid d-inline-block align-top">
-                                        <b-img :src="require(`@/assets/images/siteHeader/logo.png`)" alt="logo"
-                                               class="logo-symbol"></b-img>
-                                        <b-img :src="require(`@/assets/images/siteHeader/logotyp.png`)" alt="logotyp"
-                                               class="name-symbol"></b-img>
-                                        <b-img :src="require(`@/assets/images/siteHeader/uzupelnienie.png`)"
-                                               alt="logotyp" class="subname-symbol"></b-img>
+                                        <img :src="require(`@/assets/images/siteHeader/logo.png`)" alt="logo"
+                                             class="logo-symbol">
+                                        <img :src="require(`@/assets/images/siteHeader/logotyp.png`)"
+                                             alt="logotyp"
+                                             class="name-symbol">
+                                        <img :src="require(`@/assets/images/siteHeader/uzupelnienie.png`)"
+                                             alt="logotyp" class="subname-symbol">
                                     </div>
                                     <div class="d-flex flex-column justify-content-center site-name-slogan">
                                         <span id="site_name"><b-img
@@ -25,66 +25,67 @@
                                 </div>
                             </router-link>
 
-                            <div class="rightMenu w-50">
-                                <!-- Toggler/collapsibe Button -->
-                                <b-navbar-toggle target="nav-collapse">
-                                    <div id="nav-icon">
-                                        <div></div>
-                                    </div>
-                                </b-navbar-toggle>
-                                <div class="language d-flex justify-content-end">
-                                    <ul class="pr-2">
-                                        <li class="d-inline ml-3" v-for="(lang, index) in languages" :key="index"
-                                        ><router-link :to="`${lang.url}`">{{lang.title}}</router-link>
+                            <div class="rightMenu">
+                                <div class="language d-flex justify-content-end pr-2">
+                                    <ul>
+                                        <li class="d-inline ml-3" v-for="locale in locales" :key="locale"
+                                            @click="switchLocale(locale)">
+                                            {{locale}}
                                         </li>
                                     </ul>
                                 </div>
-                                <!-- Navbar links -->
-                                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                                    <ul class="navbar-nav mt-3 float-right">
-                                        <li class="nav-item float-right" v-for="(elem, index) in mainMenu" :key='index'>
-                                            <router-link class="nav-item nav-link" :class="`${elem.classActive}`"
-                                                         :to="`${elem.url}`">{{elem.title}}<span
-                                                    class="sr-only">(current)</span></router-link>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <b-navbar-toggle class='mr-2' target="nav-collapse" dark></b-navbar-toggle>
+                                <b-collapse id="nav-collapse" is-nav>
+                                    <!-- Right aligned nav items -->
+                                    <b-navbar-nav class="ml-auto" >
+                                            <b-nav-item v-for="(elem, index) in mainMenu" :key='index'>
+                                                <a
+                                                        @click="scrollToElement({behavior: 'smooth'}, `${elem.url}`)"
+                                                        :class="{active:active === elem.url}">{{ $t(elem.title)}}</a>
+                                            </b-nav-item>
+                                    </b-navbar-nav>
+                                </b-collapse>
                             </div>
-                        </nav>
-                    </div>
-
-                </div>
-            </div>
+                        </b-navbar>
+                    </b-col>
+                </b-row>
+            </b-container>
         </section>
-        <router-view></router-view>
+        <router-view/>
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <b-container>
+                <b-row>
+                    <b-col cols="12">
                         <div class="navbar justify-content-center">
-                            <router-link v-for='(elem, index) in footerMenu' :key='index' :to="`${elem.url}`" class="nav-link"
-                               target="_blank">{{elem.title}}</router-link>
+                            <router-link v-for='(elem, index) in footerMenu' :key='index' :to="`${elem.url}`"
+                                         class="nav-link"
+                                         target="_blank">{{elem.title}}
+                            </router-link>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </b-col>
+                </b-row>
+            </b-container>
         </footer>
 
     </div>
 </template>
 
 <script>
-    import { mapGetters } from 'vuex'
+    import {mapGetters} from 'vuex'
 
     export default {
         name: 'App',
         data() {
             return {
-                fnav: false,
+                show: true,
                 navigation: false,
+                active: null
             }
         },
         methods: {
+            toggleNavbar() {
+                this.show = !this.show;
+            },
             handleScroll: function () {
                 if (window.scrollY > 100) {
                     this.fnav = true;
@@ -93,19 +94,38 @@
                     this.fnav = false;
                     this.navigation = false;
                 }
-            }
+            },
+            scrollToElement(options, element) {
+                this.active = element;
+                const el = this.$el.getElementsByClassName(element)[0];
+                if (el) {
+                    el.scrollIntoView(options);
+                }
+            },
+            switchLocale(locale) {
+                // this.active = null;
+                if (this.$i18n.locale !== locale) {
+                    this.$i18n.locale = locale;
+                    const to = this.$router.resolve({params: {locale}})
+                    this.$router.push(to.location)
+                }
+            },
         },
         computed: {
             ...mapGetters({
-                languages: 'languages',
+                locales: 'locales',
                 mainMenu: 'mainMenu',
                 footerMenu: 'footerMenu'
             })
         }
-
-
-
     }
 </script>
+<style scoped>
+    li {
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+</style>
 
 
