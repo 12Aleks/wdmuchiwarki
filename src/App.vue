@@ -6,7 +6,7 @@
                     <b-col cols="12" class="mt-0 mt-sm-0 mt-md-2 mt-lg-2 mb-0 mb-sm-0 mb-md-2 mb-lg-2">
                         <b-navbar toggleable="lg">
 
-                            <router-link to="/" title="Strona główna" rel="home" class="navbar-brand">
+                            <router-link :to="{ name: 'Home', params: { lang: $i18n.locale }}" title="Strona główna" rel="home" class="navbar-brand">
                                 <div class="d-flex align-items-center">
                                     <div class="logo-wrapper img-fluid d-inline-block align-top">
                                         <img :src="require(`@/assets/images/siteHeader/logo.png`)" alt="logo"

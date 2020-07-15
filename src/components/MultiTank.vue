@@ -9,10 +9,10 @@
             <b-container>
                 <b-row>
                     <b-col cols="12" sm="12" md="12" lg="12">
-                        <router-link  class="btn mx-auto d-block"
-                                      :to="{ name:'Home', params: {lang: $i18n.locale}, hash: '#contact'}"
+                        <a  class="btn mx-auto d-block"
+                                      :href="`/newsletters/${$t('downloads')}`" download
                         > Pobierz ulotkę
-                        </router-link>
+                        </a>
                     </b-col>
                 </b-row>
             </b-container>
@@ -97,7 +97,7 @@
             <b-container>
                 <b-row>
                     <b-col cols='12'>
-                        <h3>Parametry</h3>
+                        <h3>{{$t('multiTank.table.title')}}</h3>
                     </b-col>
                     <b-col cols="12">
                         <div>
@@ -107,39 +107,39 @@
                                 <colgroup><col><col></colgroup>
                                 <b-tbody>
                                     <b-tr>
-                                        <b-th colspan="3" class="text-left">Zasilanie</b-th>
+                                        <b-th colspan="3" class="text-left">{{$t('multiTank.table.power.title')}}</b-th>
                                     </b-tr>
                                     <b-tr class="border">
-                                        <b-td>Napięcie</b-td>
+                                        <b-td>{{$t('multiTank.table.power.firstLineFirst')}}</b-td>
                                         <b-td>V</b-td>
                                         <b-td>230</b-td>
                                     </b-tr>
                                     <b-tr class="border">
-                                        <b-td>Maksymalny pobór mocy</b-td>
+                                        <b-td>{{$t('multiTank.table.power.secondLineFirst')}}</b-td>
                                         <b-td>W</b-td>
                                         <b-td>1600</b-td>
                                     </b-tr>
                                     <b-tr class="border">
-                                        <b-td>Inne wymagania</b-td>
+                                        <b-td>{{$t('multiTank.table.power.thirdLineFirst')}}</b-td>
                                         <b-td>-</b-td>
-                                        <b-td>agregat ze stabilizacją napięcia</b-td>
+                                        <b-td>{{$t('multiTank.table.power.thirdLineThird')}}</b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-th colspan="3" class="text-left">Światłowód / mikrorurki
+                                        <b-th colspan="3" class="text-left">{{$t('multiTank.table.fiber.title')}}
                                         </b-th>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Siła podawania</b-td>
+                                        <b-td>{{$t('multiTank.table.fiber.firstLineFirst')}}</b-td>
                                         <b-td>N</b-td>
                                         <b-td>140-850 (400-1300**)</b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Prędkość podawania</b-td>
+                                        <b-td>{{$t('multiTank.table.fiber.secondLineFirst')}}</b-td>
                                         <b-td>m/min</b-td>
                                         <b-td>16-60</b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Średnice</b-td>
+                                        <b-td>{{$t('multiTank.table.fiber.thirdLineFirst')}}</b-td>
                                         <b-td>mm</b-td>
                                         <b-td>
                                             3-22 <br/>
@@ -147,42 +147,41 @@
                                         </b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Pomiar podanej długości</b-td>
+                                        <b-td>{{$t('multiTank.table.fiber.fourthLineFirst')}}</b-td>
                                         <b-td>-</b-td>
-                                        <b-td>TAK: światłowód/mikrorurka<br/>
-                                              NIE: pakiet mikrorurek
+                                        <b-td v-html="$t('multiTank.table.fiber.fourthLineThird')" >
                                         </b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-th colspan="3" class="text-left">Inne</b-th>
+                                        <b-th colspan="3" class="text-left">{{$t('multiTank.table.other.title')}}</b-th>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Wymiary (S x G x W)</b-td>
+                                        <b-td>{{$t('multiTank.table.other.firstLineFirst')}}</b-td>
                                         <b-td>cm</b-td>
                                         <b-td>59 x 35 x 31</b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Masa</b-td>
+                                        <b-td>{{$t('multiTank.table.other.secondLineFirst')}}</b-td>
                                         <b-td>kg</b-td>
                                         <b-td>35??</b-td>
                                     </b-tr>
                                     <b-tr>
-                                        <b-th colspan="3" class="text-left">Skrzynia</b-th>
+                                        <b-th colspan="3" class="text-left">{{$t('multiTank.table.box.title')}}</b-th>
                                     </b-tr>
                                     <b-tr>
-                                        <b-td>Wymiary (S x G x W)</b-td>
+                                        <b-td>{{$t('multiTank.table.box.firstLineFirst')}}</b-td>
                                         <b-td>cm</b-td>
                                         <b-td>83 x 47 x 41</b-td>
                                     </b-tr>
                                     <b-tr class="last" >
-                                        <b-td>Masa w skrzyni</b-td>
+                                        <b-td>{{$t('multiTank.table.box.secondLineFirst')}}</b-td>
                                         <b-td>kg</b-td>
                                         <b-td>45??</b-td>
                                     </b-tr>
                                 </b-tbody>
                             </b-table-simple>
                         </div>
-                        <p>**Opcjonalne ustawienie sterownika</p>
+                        <p>**{{$t('multiTank.table.description')}}</p>
                     </b-col>
 
                 </b-row>
@@ -212,7 +211,7 @@
         data(){
             return{
                 position: false,
-                widthElement: 188
+                widthElement: 188,
             }
         },
         computed: {

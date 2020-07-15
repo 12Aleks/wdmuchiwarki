@@ -53,5 +53,180 @@
       "formSendingInformationSecond": "Please fill the form correctly.",
       "formSendingInformationThird": "Sending..."
     }
+  },
+  "multiTank": {
+    "slider": {
+      "firstSlide": "MultiTank Feeder",
+      "secondSlide": "MultiTank Feeder"
+    },
+    "table": {
+      "title": "Parameters",
+      "description": "Optional driver setting",
+      "power": {
+        "title": "Power supply",
+        "firstLineFirst": "Voltage",
+        "secondLineFirst": "Maximum power consumption",
+        "thirdLineFirst": "Other requirements",
+        "thirdLineThird": "power generator with voltage stabilization"
+      },
+      "fiber": {
+        "title": "Fiber optic / microducts",
+        "firstLineFirst": "Feeding force",
+        "secondLineFirst": "Feeding speed",
+        "thirdLineFirst": "Diameter",
+        "fourthLineFirst": "Length measurement",
+        "fourthLineThird": "YES: cable/microduct <br /> NO: microducts packages"
+      },
+      "other": {
+        "title": "Other",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "box": {
+        "title": "Box",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      }
+    }
+  },
+  "micro": {
+    "slider": {
+      "firstSlide": "MicroTyphoon Blowing Head",
+      "secondSlide": "MicroTyphoon Blowing Head"
+    },
+    "table": {
+      "title": "Parameters",
+      "diameters": {
+        "title": "Diameters",
+        "firstLineFirst": "Fiber optic",
+        "secondLineFirst": "Microduct"
+      },
+      "air": {
+        "title": "Air",
+        "firstLineFirst": "Maximum pressure",
+        "secondLineFirst": "Air Connector CAMLOCK size",
+        "thirdLineFirst": "Pressure measurement",
+        "thirdLineThird": "złącze minimes"
+      },
+      "blowing": {
+        "title": "Blowing head",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "box": {
+        "title": "Suitcase",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass: suitcase with accessories"
+      }
+    }
+  },
+  "typhoon32": {
+    "slider": {
+      "firstSlide": "Typhoon 32/40 Blowing Kit",
+      "secondSlide": "Second Typhoon 32/40 Blowing Kit"
+    },
+    "table": {
+      "title": "Parameters",
+      "header": {
+        "firstLineFirst": "Fiber optic / microduct diameters",
+        "secondLineFirst": "Microducts package / HDPE pipe",
+        "thirdLineFirst": "HDPE pipe size",
+        "fourthLineFirst": "Connection: Blowing Head – Air Connector"
+      },
+      "air": {
+        "title": "Air",
+        "firstLineFirst": "Maximum pressure",
+        "secondLineFirst": "Air Connector CAMLOCK size",
+        "thirdLineFirst": "Pressure measurement",
+        "thirdLineThird": ""
+      },
+      "blowing": {
+        "title": "Blowing head",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "connect": {
+        "title": "Air connection",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "box": {
+        "title": "Suitcase",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      }
+    }
+  },
+  "typhoon50": {
+    "slider": {
+      "firstSlide": "Typhoon 50/63 Blowing Kit",
+      "secondSlide": "Second Typhoon 50/63 Blowing Kit"
+    },
+    "table": {
+      "title": "Parameters",
+      "header": {
+        "firstLineFirst": "Fiber optic / microduct diameters",
+        "secondLineFirst": "Microducts package",
+        "thirdLineFirst": "HDPE pipe size",
+        "fourthLineFirst": "Connection: Blowing Head – Air Connecor"
+      },
+      "air": {
+        "title": "Air",
+        "firstLineFirst": "Maximum pressure",
+        "secondLineFirst": "Air Connector CAMLOCK size",
+        "thirdLineFirst": "Pressure measurement",
+        "thirdLineThird": "złącze minimes na głowicy"
+      },
+      "blowing": {
+        "title": "Blowing head",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "connect": {
+        "title": "Air connector",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "box": {
+        "title": "Suitcase",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      }
+    }
+  },
+  "y2": {
+    "slider": {
+      "firstSlide": "Y2 Connector",
+      "secondSlide": "Second Y2 Connector"
+    },
+    "table": {
+      "title": "Parameters",
+      "header": {
+        "firstLineFirst": "Installed cable / microduct diameter",
+        "secondLineFirst": "Connection: Blowing Head – Y2 Connector"
+      },
+      "cable": {
+        "title": "Existing cable",
+        "firstLineFirst": "Maximum amount",
+        "secondLineFirst": "Maximum diameter"
+      },
+      "air": {
+        "title": "Air",
+        "firstLineFirst": "Maximum pressure",
+        "secondLineFirst": "Air cconnection CAMLOCK size",
+        "thirdLineFirst": "Pressure measurement",
+        "thirdLineThird": ""
+      },
+      "other": {
+        "title": "Other",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      },
+      "box": {
+        "title": "Suitcase",
+        "firstLineFirst": "Dimensions (W x D x H)",
+        "secondLineFirst": "Mass"
+      }
+    }
   }
 }

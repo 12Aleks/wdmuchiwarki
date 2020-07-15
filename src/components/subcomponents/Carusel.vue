@@ -12,7 +12,7 @@
                     <b-carousel-slide
                             v-for="slide in sliders"
                             :key="slide.title"
-                            :caption="slide.title"
+                            :caption="`${$t(slide.title)}`"
                             :img-src="require(`@/assets/images/products/${slide.img}`)"
                     ></b-carousel-slide>
                 </b-carousel>

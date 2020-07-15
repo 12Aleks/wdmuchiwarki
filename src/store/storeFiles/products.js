@@ -3,11 +3,11 @@ export default {
         multiSlider: [
             {
                 img: 'multitank/slider/multiTank.png',
-                title: 'Podajnik MultiTank'
+                title: 'multiTank.slider.firstSlide'
             },
             {
                 img: 'multitank/slider/multiTank.png',
-                title: 'Drugi Podajnik MultiTank'
+                title: 'multiTank.slider.secondSlide'
             }
         ],
         multiCharacteristic: [
@@ -24,11 +24,11 @@ export default {
         microSlider: [
             {
                 img: 'micro/slider/micro.png',
-                title: 'Głowica MicroTyphoon'
+                title: 'micro.slider.firstSlide'
             },
             {
                 img: 'micro/slider/micro.png',
-                title: 'Druga Głowica MicroTyphoon'
+                title: 'micro.slider.secondSlide'
             }
         ],
         microCharacteristic: [
@@ -43,11 +43,11 @@ export default {
         typhoonSlider: [
             {
                 img: 'typhoon_32/slider/typhoon_32.jpg',
-                title: 'Głowice Typhoon 32/40'
+                title: 'typhoon32.slider.firstSlide'
             },
             {
                 img: 'typhoon_32/slider/typhoon_32.jpg',
-                title: 'Druga Głowice Typhoon 32/40'
+                title: 'typhoon32.slider.secondSlide'
             }
         ],
         typhoonCharacteristic: [
@@ -62,11 +62,11 @@ export default {
         typhoon50Slider: [
             {
                 img: 'typhoon_50/slider/typhoon_50.jpg',
-                title: 'Głowice Typhoon 50/63'
+                title: 'typhoon50.slider.firstSlide'
             },
             {
                 img: 'typhoon_50/slider/typhoon_50.jpg',
-                title: 'Druga Głowice Typhoon 50/63'
+                title: 'typhoon50.slider.secondSlide'
             }
         ],
         typhoon50Characteristic: [
@@ -81,11 +81,11 @@ export default {
         y2Slider: [
             {
                 img: 'y2/slider/y2.jpg',
-                title: 'Złąćze Y2'
+                title: 'y2.slider.firstSlide'
             },
             {
                 img: 'y2/slider/y2.jpg',
-                title: 'Druga Złąćze Y2'
+                title: 'y2.slider.secondSlide'
             }
         ],
         y2Characteristic: [

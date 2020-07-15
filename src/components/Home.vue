@@ -7,8 +7,10 @@
         <div class="white-band">
             <div class="tab"
                  :class="{showTab: showTab, hideTab: hideTab}"
-                 :style="{ background: `url(${imageUrl}) no-repeat center` }"
-            ></div>
+            >
+                <img :src="require(`@/assets/images/Group_22.png`)"
+                     alt="logotyp">
+            </div>
             <div class="white-box p-5"
                  :class="{ show : showSlider, hide: hideSlider}">
                 <div class="cross">
@@ -267,10 +269,10 @@
             hoverSlider() {
                 this.showSlider = true
                 this.hideSlider = false
-            
 
-                this.showTab = true
-                this.hideTab = false
+
+                // this.showTab = true
+                // this.hideTab = false
             }
         },
         computed: {

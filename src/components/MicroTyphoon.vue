@@ -46,7 +46,7 @@
             <b-container>
                 <b-row>
                     <b-col cols='12'>
-                        <h3>Parametry</h3>
+                        <h3>{{$t('micro.table.title')}}</h3>
                     </b-col>
                     <b-col cols="12">
 
@@ -56,61 +56,61 @@
                             <colgroup><col><col></colgroup>
                             <b-tbody>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Średnice</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('micro.table.diameters.title')}}</b-th>
                                 </b-tr>
                                 <b-tr >
-                                    <b-td>Światłowód</b-td>
+                                    <b-td>{{$t('micro.table.diameters.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>3-10</b-td>
                                 </b-tr>
                                 <b-tr >
-                                    <b-td>Mikrorurka</b-td>
+                                    <b-td>{{$t('micro.table.diameters.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>6-16</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Powietrze
+                                    <b-th colspan="3" class="text-left">{{$t('micro.table.air.title')}}
                                     </b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Maksymalne ciśnienie</b-td>
+                                    <b-td>{{$t('micro.table.air.firstLineFirst')}}</b-td>
                                     <b-td>bar</b-td>
                                     <b-td>25</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Rozmiar przyłącza powietrza CAMLOCK</b-td>
+                                    <b-td>{{$t('micro.table.air.secondLineFirst')}}</b-td>
                                     <b-td>cal</b-td>
                                     <b-td>1 x ½”</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Pomiar ciśnienia</b-td>
+                                    <b-td>{{$t('micro.table.air.thirdLineFirst')}}</b-td>
                                     <b-td>-</b-td>
-                                    <b-td>złącze minimes
+                                    <b-td>{{$t('micro.table.air.thirdLineThird')}}
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Głowica</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('micro.table.blowing.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('micro.table.blowing.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>12 x 9 x 11</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('micro.table.blowing.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>1,0</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Walizka</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('micro.table.box.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('micro.table.box.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>46 x 35 x 17</b-td>
                                 </b-tr>
                                 <b-tr class="last" >
-                                    <b-td>Masa walizki z zestawem</b-td>
+                                    <b-td>{{$t('micro.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>5,5</b-td>
                                 </b-tr>

@@ -18,16 +18,17 @@
     }
   },
   "presentation": {
-     "descriptionFirst": "Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i wszechstronność użytkowania wyróżniają produkt na rynku.",
-     "descriptionSecond": "Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania. Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową umożliwia generowanie raportu wdmuchiwania.",
-     "electricFeederFirst": "elektryczny",
-     "electricFeederSecond": "podajnik",
-     "versatilityApplicationsFirst": "uniwersalność",
-     "versatilityApplicationsSecond": "uniwersalność",
-     "fiberReportFirst": "raport",
-     "fiberReportSecond": "wdmuchiwania",
-     "youtu": "https://www.youtube.com/embed/PehWBVo2vn8"
+    "descriptionFirst": "Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i wszechstronność użytkowania wyróżniają produkt na rynku.",
+    "descriptionSecond": "Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania. Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową umożliwia generowanie raportu wdmuchiwania.",
+    "electricFeederFirst": "elektryczny",
+    "electricFeederSecond": "podajnik",
+    "versatilityApplicationsFirst": "uniwersalność",
+    "versatilityApplicationsSecond": "uniwersalność",
+    "fiberReportFirst": "raport",
+    "fiberReportSecond": "wdmuchiwania",
+    "youtu": "https://www.youtube.com/embed/PehWBVo2vn8"
   },
+  "downloads": "MultiTyphoon_ulotka_2020_PL.pdf",
   "products": {
     "feeder": "Podajnik MultiTank",
     "microTyphoon": "Głowica MultiTyphoon",
@@ -39,8 +40,8 @@
     "workers": {
       "position": "Menadżer Produktu, Techniki Światłowodowe"
     },
-    "form" : {
-      "title":  "Formularz kontaktowy",
+    "form": {
+      "title": "Formularz kontaktowy",
       "placeholderEmail": "Adres e-mail*",
       "placeholderPhone": "Telefon",
       "placeholderText": "Treść wiadomości*",
@@ -52,6 +53,181 @@
       "formSendingInformationFirst": "Dziękujemy za zgłoszenie!",
       "formSendingInformationSecond": "Proszę wypełnić formularz poprawnie.",
       "formSendingInformationThird": "Wysyłanie..."
+    }
+  },
+  "multiTank": {
+    "slider": {
+      "firstSlide": "Podajnik MultiTank",
+      "secondSlide": "Podajnik MultiTank"
+    },
+    "table": {
+      "title": "Parametry",
+      "description": "Opcjonalne ustawienie sterownika",
+      "power": {
+        "title": "Zasilanie",
+        "firstLineFirst": "Napięcie",
+        "secondLineFirst": "Maksymalny pobór mocy",
+        "thirdLineFirst": "Inne wymagania",
+        "thirdLineThird": "agregat ze stabilizacją napięcia"
+      },
+      "fiber": {
+        "title": "Światłowód / mikrorurki",
+        "firstLineFirst": "Siła podawania",
+        "secondLineFirst": "Prędkość podawania",
+        "thirdLineFirst": "Średnice",
+        "fourthLineFirst": "Pomiar podanej długości",
+        "fourthLineThird": "TAK: światłowód/mikrorurka <br /> NIE: pakiet mikrorurek"
+      },
+      "other": {
+        "title": "Inne",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "box": {
+        "title": "Skrzynia",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa w skrzyni"
+      }
+    }
+  },
+  "micro": {
+    "slider": {
+      "firstSlide": "Głowica MicroTyphoon",
+      "secondSlide": "Głowica MicroTyphoon"
+    },
+    "table": {
+      "title": "Parametry",
+      "diameters": {
+        "title": "Średnice",
+        "firstLineFirst": "Światłowód",
+        "secondLineFirst": "Mikrorurka"
+      },
+      "air": {
+        "title": "Powietrze",
+        "firstLineFirst": "Maksymalne ciśnienie",
+        "secondLineFirst": "Rozmiar przyłącza powietrza CAMLOCK",
+        "thirdLineFirst": "Pomiar ciśnienia",
+        "thirdLineThird": "złącze minimes"
+      },
+      "blowing": {
+        "title": "Głowica",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "box": {
+        "title": "Walizka",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa walizki z zestawem"
+      }
+    }
+  },
+  "typhoon32": {
+    "slider": {
+      "firstSlide": "Głowice Typhoon 32/40",
+      "secondSlide": "Głowice Typhoon 32/40"
+    },
+    "table": {
+      "title": "Parametry",
+      "header": {
+        "firstLineFirst": "Średnice światłowodu / mikrorurki",
+        "secondLineFirst": "Pakiet mikrorurek / rura HDPE",
+        "thirdLineFirst": "Średnice rury HDPE",
+        "fourthLineFirst": "Łącznik Głowica – Przyłącze Powietrza"
+      },
+      "air": {
+        "title": "Powietrze",
+        "firstLineFirst": "Maksymalne ciśnienie",
+        "secondLineFirst": "Rozmiar przyłącza powietrza CAMLOCK",
+        "thirdLineFirst": "Pomiar ciśnienia",
+        "thirdLineThird": "złącze minimes na głowicy"
+      },
+      "blowing": {
+        "title": "Głowica",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "connect": {
+        "title": "Przyłącze powietrza",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "box": {
+        "title": "Walizka",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      }
+    }
+  },
+  "typhoon50": {
+    "slider": {
+      "firstSlide": "Głowice Typhoon 50/63",
+      "secondSlide": "Druga Głowice Typhoon 50/63"
+    },
+    "table": {
+      "title": "Parametry",
+      "header": {
+        "firstLineFirst": "Średnice światłowodu / mikrorurki",
+        "secondLineFirst": "Pakiet mikrorurek",
+        "thirdLineFirst": "Średnice rury HDPE",
+        "fourthLineFirst": "Łącznik Głowica – Przyłącze Powietrza"
+      },
+      "air": {
+        "title": "Powietrze",
+        "firstLineFirst": "Maksymalne ciśnienie",
+        "secondLineFirst": "Rozmiar przyłącza powietrza CAMLOCK",
+        "thirdLineFirst": "Pomiar ciśnienia",
+        "thirdLineThird": "złącze minimes na głowicy"
+      },
+      "blowing": {
+        "title": "Głowica",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "connect": {
+        "title": "Przyłącze powietrza",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "box": {
+        "title": "Walizka",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      }
+    }
+  },
+  "y2": {
+    "slider": {
+      "firstSlide": "Złącze Y2",
+      "secondSlide": "Drugi Złącze Y2"
+    },
+    "table": {
+      "title": "Parametry",
+      "header": {
+        "firstLineFirst": "Średnice instalowanego światłowodu / mikrorurki",
+        "secondLineFirst": "Łącznik Głowica – Złącze Y"
+      },
+      "cable": {
+        "title": "Istniejący kabel",
+        "firstLineFirst": "Ilość maksymalna",
+        "secondLineFirst": "Średnica  maksymalna"
+      },
+      "air": {
+        "title": "Powietrze",
+        "firstLineFirst": "Maksymalne ciśnienie",
+        "secondLineFirst": "Rozmiar przyłącza powietrza CAMLOCK",
+        "thirdLineFirst": "Pomiar ciśnienia",
+        "thirdLineThird": "złącze minimes na głowicy"
+      },
+      "other": {
+        "title": "Inne",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      },
+      "box": {
+        "title": "Walizka",
+        "firstLineFirst": "Wymiary (S x G x W)",
+        "secondLineFirst": "Masa"
+      }
     }
   }
 }

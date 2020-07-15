@@ -51,7 +51,7 @@
             <b-container>
                 <b-row>
                     <b-col cols='12'>
-                        <h3>Parametry</h3>
+                        <h3>{{$t('typhoon32.table.title')}}</h3>
                     </b-col>
                     <b-col cols="12">
 
@@ -78,12 +78,12 @@
                             </colgroup>
                             <b-tbody>
                                 <b-tr>
-                                    <b-td>Średnice światłowodu / mikrorurki</b-td>
+                                    <b-td>{{$t('typhoon32.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>5-22</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Pakiet mikrorurek / rura HDPE</b-td>
+                                    <b-td>{{$t('typhoon32.table.header.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>
                                         2 x 12 / HDPE 32 <br />
@@ -92,69 +92,69 @@
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Średnice rury HDPE</b-td>
+                                    <b-td>{{$t('typhoon32.table.header.thirdLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>32, 40</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Łącznik Głowica – Przyłącze Powietrza</b-td>
+                                    <b-td>{{$t('typhoon32.table.header.fourthLineFirst')}}</b-td>
                                     <b-td>-</b-td>
                                     <b-td>HDPE 32</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Powietrze</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('typhoon32.table.air.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Maksymalne ciśnienie</b-td>
+                                    <b-td>{{$t('typhoon32.table.air.firstLineFirst')}}</b-td>
                                     <b-td>bar</b-td>
                                     <b-td>20</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Rozmiar przyłączy powietrza CAMLOCK</b-td>
+                                    <b-td>{{$t('typhoon32.table.air.secondLineFirst')}}</b-td>
                                     <b-td>cal</b-td>
                                     <b-td>2 x ¾”</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Pomiar ciśnienia</b-td>
+                                    <b-td>{{$t('typhoon32.table.air.thirdLineFirst')}}</b-td>
                                     <b-td>-</b-td>
-                                    <b-td>złącze minimes na głowicy</b-td>
+                                    <b-td>{{$t('typhoon32.table.air.thirdLineThird')}}</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Głowica</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('typhoon32.table.blowing.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('typhoon32.table.blowing.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>11 x 9 x 7</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('typhoon32.table.blowing.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>0,9</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Przyłącze Powietrza</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('typhoon32.table.connect.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('typhoon32.table.connect.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>14 x 9 x 16</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('typhoon32.table.connect.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>2,6</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Walizka</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('typhoon32.table.box.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('typhoon32.table.box.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>46 x 35 x 17</b-td>
                                 </b-tr>
                                 <b-tr class="last">
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('typhoon32.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>7,8</b-td>
                                 </b-tr>

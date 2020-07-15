@@ -40,7 +40,7 @@
             <b-container>
                 <b-row>
                     <b-col cols='12'>
-                        <h3>Parametry</h3>
+                        <h3>{{$t('y2.table.title')}}</h3>
                     </b-col>
                     <b-col cols="12">
 
@@ -68,70 +68,70 @@
                             </colgroup>
                             <b-tbody>
                                 <b-tr>
-                                    <b-td>Średnice instalowanego światłowodu / mikrorurki</b-td>
+                                    <b-td>{{$t('y2.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>5-22</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Łącznik Głowica – Złącze Y</b-td>
+                                    <b-td>{{$t('y2.table.header.secondLineFirst')}}</b-td>
                                     <b-td>-</b-td>
                                     <b-td>HDPE 32</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Istniejący kabel</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('y2.table.cable.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Ilość maksymalna</b-td>
+                                    <b-td>{{$t('y2.table.cable.firstLineFirst')}}</b-td>
                                     <b-td>szt.</b-td>
                                     <b-td>2</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Średnica maksymalna</b-td>
+                                    <b-td>{{$t('y2.table.cable.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>16</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Powietrze
+                                    <b-th colspan="3" class="text-left">{{$t('y2.table.air.title')}}
                                     </b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Maksymalne ciśnienie</b-td>
+                                    <b-td>{{$t('y2.table.air.firstLineFirst')}}</b-td>
                                     <b-td>bar</b-td>
                                     <b-td>15</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Rozmiar przyłączy powietrza CAMLOCK</b-td>
+                                    <b-td>{{$t('y2.table.air.secondLineFirst')}}</b-td>
                                     <b-td>cal</b-td>
                                     <b-td>1 x ¾”</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Pomiar ciśnienia</b-td>
+                                    <b-td>{{$t('y2.table.air.thirdLineFirst')}}</b-td>
                                     <b-td>-</b-td>
-                                    <b-td>złącze minimes na głowicy</b-td>
+                                    <b-td>{{$t('y2.table.air.thirdLineThird')}}</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Inne</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('y2.table.other.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('y2.table.other.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>23 x 13 x 12</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('y2.table.other.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>5,0</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Walizka</b-th>
+                                    <b-th colspan="3" class="text-left">{{$t('y2.table.box.title')}}</b-th>
                                 </b-tr>
                                 <b-tr>
-                                    <b-td>Wymiary (S x G x W)</b-td>
+                                    <b-td>{{$t('y2.table.box.firstLineFirst')}}</b-td>
                                     <b-td>cm</b-td>
                                     <b-td>46 x 35 x 17</b-td>
                                 </b-tr>
                                 <b-tr class="last">
-                                    <b-td>Masa</b-td>
+                                    <b-td>{{$t('y2.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>9,0??</b-td>
                                 </b-tr>
