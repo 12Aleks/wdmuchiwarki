@@ -122,7 +122,7 @@
                                     <b-tr class="border">
                                         <b-td>Inne wymagania</b-td>
                                         <b-td>-</b-td>
-                                        <b-td>Agregat ze stabilizacją napięcia</b-td>
+                                        <b-td>agregat ze stabilizacją napięcia</b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-th colspan="3" class="text-left">Światłowód / mikrorurki
@@ -141,13 +141,15 @@
                                     <b-tr>
                                         <b-td>Średnice</b-td>
                                         <b-td>mm</b-td>
-                                        <b-td>3-22 SNR max. 8 x 10
+                                        <b-td>
+                                            3-22 <br/>
+                                            SNR max. 8 x 10
                                         </b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-td>Pomiar podanej długości</b-td>
                                         <b-td>-</b-td>
-                                        <b-td>TAK: światłowód/mikrorurka
+                                        <b-td>TAK: światłowód/mikrorurka<br/>
                                               NIE: pakiet mikrorurek
                                         </b-td>
                                     </b-tr>

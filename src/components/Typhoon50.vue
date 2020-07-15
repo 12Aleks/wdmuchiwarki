@@ -90,7 +90,11 @@
                                     <b-td>Pakiet mikrorurek</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>
-                                        2 x 12 / 3 x 12 / 5 x 10 / 7 x 10 / 8 x 10
+                                        2 x 12<br/>
+                                        3 x 12<br/>
+                                        5 x 10<br/>
+                                        7 x 10<br/>
+                                        8 x 10
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
@@ -136,7 +140,7 @@
                                     <b-td>1,1</b-td>
                                 </b-tr>
                                 <b-tr>
-                                    <b-th colspan="3" class="text-left">Przyłącze Powietrza</b-th>
+                                    <b-th colspan="3" class="text-left">Przyłącze powietrza</b-th>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>Wymiary (S x G x W)</b-td>

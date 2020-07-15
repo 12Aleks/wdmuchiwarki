@@ -44,7 +44,14 @@
       "placeholderEmail": "E-mail*",
       "placeholderPhone": "Phone",
       "placeholderText": "Message content*",
-      "button": "Send"
+      "button": "Send",
+      "formEmailInformationFirst": "Email is required",
+      "formEmailInformationSecond": "Enter the correct email address",
+      "formPhoneInformationFirst": "Phone is required",
+      "formPhoneInformationSecond": "Enter the correct phone number",
+      "formSendingInformationFirst": "Thanks for your submission!",
+      "formSendingInformationSecond": "Please fill the form correctly.",
+      "formSendingInformationThird": "Sending..."
     }
   }
 }

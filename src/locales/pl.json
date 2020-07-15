@@ -44,7 +44,14 @@
       "placeholderEmail": "Adres e-mail*",
       "placeholderPhone": "Telefon",
       "placeholderText": "Treść wiadomości*",
-      "button": "WYŚLIJ"
+      "button": "WYŚLIJ",
+      "formEmailInformationFirst": "Email jest obowiązkowy",
+      "formEmailInformationSecond": "Podaj prawidłowy adres email",
+      "formPhoneInformationFirst": "Telefon jest obowiązkowy",
+      "formPhoneInformationSecond": "Podaj prawidłowy numer telefonu",
+      "formSendingInformationFirst": "Dziękujemy za zgłoszenie!",
+      "formSendingInformationSecond": "Proszę wypełnić formularz poprawnie.",
+      "formSendingInformationThird": "Wysyłanie..."
     }
   }
 }

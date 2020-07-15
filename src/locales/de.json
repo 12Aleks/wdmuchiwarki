@@ -8,24 +8,24 @@
   "slider": {
     "first": {
       "titleSlider": "MultiTyphoon",
-      "descriptionFirst": "111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam.",
-      "descriptionSecond": "111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam."
+      "descriptionFirst": "Ein faseroptisches Einblassystem, das aus einer elektrischen MultiTank-Zuführung und austauschbaren Köpfen besteht. Ein äußerst vielseitiges Set, das sowohl für die Verwendung mit Mikrorohren als auch mit HDPE-Rohren geeignet ist. Bei dem Gerät ist es nicht notwendig den Zuführer mit Luft anzutreiben. Dadurch wird der Bedarf an Luftdurchfluss reduziert und es ist somit möglich einen kleineren, preiswerteren Kompressor zu verwenden. Ein eingebauter Datenspeicher ermöglicht es Ihnen, Berichte über die Einlasung zu erstellen.",
+      "descriptionSecond": "Das Gebläse ermöglicht auch das Einführen von Mikroröhrchen-Packeten in HDPE-Rohre."
     },
     "second": {
       "titleSlider": "Einblasprotokoll",
-      "descriptionFirst": "222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam.",
-      "descriptionSecond": "222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda inventore molestias mollitia nam odio optio tempore temporibus tenetur totam."
+      "descriptionFirst": "Der MultiTank R ist mit einem Datenspeicher ausgestattet, der alle von den Inspektoren geforderten Parameter erfasst: Widerstand, Geschwindigkeit und Druck in Abhängigkeit von der Länge des eingeblasenen Kabels. Daten über Zeit, Ort und Umgebungstemperatur werden ebenfalls automatisch gespeichert.",
+      "descriptionSecond": "Die von dem MultiTank zum Computer übertragenen Daten werden von einer Webanwendung verarbeitet, mit der Sie einen Blasbericht erstellen können. Darüber hinaus werden alle Dateien auf dem Benutzerkonto gesammelt und können von jedem Online-Gerät aus aufgerufen werden."
     }
   },
   "presentation": {
-    "descriptionFirst": "Wdmuchiwarka Terma MultiTyphoon pozwala na instalację światłowodów o średnicy 3-20 mm w mikrorurki 6-16 lub rury HDPE 32-63. W pełni elektryczny podajnik, wymienne głowice i wszechstronność użytkowania wyróżniają produkt na rynku.",
-    "descriptionSecond": "Wdmuchiwanie światłowodów odbywa się z niezależną kontrolą prędkości i siły podawania. Wszystkie parametry zapisywane są w rejestratorze danych, który poprzez aplikację webową umożliwia generowanie raportu wdmuchiwania.",
-    "electricFeederFirst": "elektryczny",
-    "electricFeederSecond": "podajnik",
-    "versatilityApplicationsFirst": "uniwersalność",
-    "versatilityApplicationsSecond": "uniwersalność",
-    "fiberReportFirst": "raport",
-    "fiberReportSecond": "wdmuchiwania",
+    "descriptionFirst": "Das Terma MultiTyphoon-Gebläse ermöglicht die Installation von Glasfaserkabeln mit einem Durchmesser von 3-20 mm in Mikrorohren 6-16 oder HDPE 32-63 Röhren. Eine vollelektrische Zuführung, austauschbare Köpfe und eine die vielseitige Anwendbarkeit zeichnen das Produkt auf dem Markt aus.",
+    "descriptionSecond": "Das Einblasen von Glasfaserkabeln erfolgt mit unabhängiger Geschwindigkeits- und Vorschubkraftregelung. Alle Parameter werden im Datenspeicher gespeichert. Dadurch ist es ermöglicht, über eine Webanwendung, einen Einblasbericht zu erstellen.",
+    "electricFeederFirst": "elektrische",
+    "electricFeederSecond": "zuführung",
+    "versatilityApplicationsFirst": "universell",
+    "versatilityApplicationsSecond": "einsetzbar",
+    "fiberReportFirst": "Einblasprotokoll",
+    "fiberReportSecond": "",
     "youtu": "https://www.youtube.com/embed/mjumFhEvr8g"
   },
   "products": {
@@ -37,14 +37,21 @@
   },
   "contact": {
     "workers": {
-      "position": "Produktmanager, Glasfaser-Technologie"
+      "position": "Produktmanager, Faseroptische Techniken"
     },
     "form": {
       "title": "Kontaktformular",
-      "placeholderEmail": "Adresse e-mail*",
+      "placeholderEmail": "E-Mail*",
       "placeholderPhone": "Telefon",
-      "placeholderText": "Inhalt der Nachricht*",
-      "button": "Senden"
+      "placeholderText": "Nachricht*",
+      "button": "Senden",
+      "formEmailInformationFirst": "Email is required",
+      "formEmailInformationSecond": "Enter the correct email address",
+      "formPhoneInformationFirst": "Phone is required",
+      "formPhoneInformationSecond": "Enter the correct phone number",
+      "formSendingInformationFirst": "Thanks for your submission!",
+      "formSendingInformationSecond": "Please fill the form correctly.",
+      "formSendingInformationThird": "Sending..."
     }
   }
 }

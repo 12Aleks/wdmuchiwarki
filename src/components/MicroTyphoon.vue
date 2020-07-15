@@ -85,7 +85,7 @@
                                 <b-tr>
                                     <b-td>Pomiar ciśnienia</b-td>
                                     <b-td>-</b-td>
-                                    <b-td>Złącze minimes
+                                    <b-td>złącze minimes
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
@@ -110,7 +110,7 @@
                                     <b-td>46 x 35 x 17</b-td>
                                 </b-tr>
                                 <b-tr class="last" >
-                                    <b-td>Masa w skrzyni</b-td>
+                                    <b-td>Masa walizki z zestawem</b-td>
                                     <b-td>kg</b-td>
                                     <b-td>5,5</b-td>
                                 </b-tr>

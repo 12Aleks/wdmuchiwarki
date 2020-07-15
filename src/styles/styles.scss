@@ -12,7 +12,7 @@ h3.title {
 }
 
 h4 {
-  font: 400 2.8rem/3.75rem Lato, Sans-Serif;
+  font: 400 2.5rem/3rem Lato, Sans-Serif;
   letter-spacing: 0;
   color: $font-color;
   opacity: 1;
@@ -504,7 +504,9 @@ source {
     position: absolute;
     z-index: 1;
     right: calc(18.5% - 30px);
-    //background: url("./assets/images/Group 22.png") no-repeat;
+    //background: url("./assets/images/Group_22.png") no-repeat;
+    background-repeat: no-repeat;
+    background-color: red !important;
     top: 1px;
     width: 36px;
     height: 36px;
@@ -994,10 +996,16 @@ source {
     background-color: $color-red;
     font: 300 16px/19px Lato;
     letter-spacing: 0;
+    opacity: 1;
     color: #FFFFFF;
     @media(max-width: 350px) {
       width: 242px;
     }
+
+  }
+  button[type='submit'][disabled] {
+    color: red;
+    opacity: 0.5;
   }
 
   .worker {
@@ -1119,6 +1127,8 @@ source {
           font: 100 20px/40px Lato;
           color: $color-gray;
           text-align: center;
+          display: table-cell;
+          vertical-align: middle;
         }
 
         th {
@@ -1213,7 +1223,7 @@ source {
   }
 }
 
-#main.typhoo_32, #main.typhoo_50 {
+#main.typhoon_32, #main.typhoon_50 {
   section.descriptions {
     ul.descriptionMulti {
       list-style: none;
@@ -1248,7 +1258,19 @@ source {
     }
   }
 }
-
+.form-error input{
+  border-color: $color-red;
+}
+.form-group .error{
+  display: none;
+}
+.form-group.form-error .error{
+  display: block;
+  color: $color-red;
+}
+p.error{
+  color: $color-red;
+}
 
 footer {
   .navbar {

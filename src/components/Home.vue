@@ -5,8 +5,12 @@
             <div class="back"></div>
         </div>
         <div class="white-band">
-            <div class="tab"></div>
-            <div class="white-box p-5">
+            <div class="tab"
+                 :class="{showTab: showTab, hideTab: hideTab}"
+                 :style="{ background: `url(${imageUrl}) no-repeat center` }"
+            ></div>
+            <div class="white-box p-5"
+                 :class="{ show : showSlider, hide: hideSlider}">
                 <div class="cross">
                     <template>
                         <div>
@@ -18,7 +22,7 @@
                     <b-carousel
                             id="carousel-1"
                             v-model="slide"
-                            :interval="4000"
+                            :interval="5000"
                             style="color: #3D3C3C;"
                             indicators
                             class="h-100"
@@ -38,7 +42,7 @@
                             <b-carousel
                                     id="carousel-1"
                                     v-model="slide"
-                                    :interval="4000"
+                                    :interval="5000"
                                     style="color: #3D3C3C;"
                                     indicators
                                     class="h-100"
@@ -152,24 +156,29 @@
                             {{$t('contact.form.title')}}</h6>
                         <b-form class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0"
                                 @submit.prevent="sendEmail">
-                            <b-form-group>
+                            <b-form-group :class="{ 'form-error': $v.mail.$error }">
                                 <b-form-input
                                         id="input-1"
-                                        v-model="email"
+                                        v-model="mail"
                                         type="email"
                                         name="user_email"
-                                        required
+                                        @change="$v.mail.$touch()"
                                         :placeholder="$t('contact.form.placeholderEmail')"
                                 ></b-form-input>
+                                <div class="error" v-if="!$v.mail.required">Email jest obowiązkowy</div>
+                                <div class="error" v-if="!$v.mail.email">Podaj prawidłowy adres email</div>
                             </b-form-group>
-                            <b-form-group>
+                            <b-form-group :class="{ 'form-error': $v.phone.$error }">
                                 <b-form-input
                                         id="input-2"
                                         v-model.number="phone"
                                         name="user_phone"
-                                        required
+                                        type="tel"
+                                        @change="$v.phone.$touch()"
                                         :placeholder="$t('contact.form.placeholderPhone')">
                                 </b-form-input>
+                                <div class="error" v-if="!$v.phone.required">Telefon jest obowiązkowy</div>
+                                <div class="error" v-if="!$v.phone.minLength">Podaj prawidłowy telefon</div>
                             </b-form-group>
                             <b-form-group>
                                 <b-form-textarea
@@ -179,19 +188,19 @@
                                         rows="6"
                                         max-rows="6"
                                         :placeholder="$t('contact.form.placeholderText')"
-                                        required></b-form-textarea>
+                                ></b-form-textarea>
                             </b-form-group>
-                            <b-button type="submit" class="btn text-uppercase" @click="$bvModal.show('bv-modal-example')">{{$t('contact.form.button')}}</b-button>
+                            <b-button
+                                    type="submit"
+                                    class="btn text-uppercase"
+                                    :disabled="submitStatus === 'PENDING'">
+                                {{$t('contact.form.button')}}
+                            </b-button>
+                            <p class="error" v-if="submitStatus === 'OK'">Thanks for your submission!</p>
+                            <p class="error" v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
+                            <p class="error" v-if="submitStatus === 'PENDING'">Sending...</p>
                         </b-form>
-                        <b-modal id="bv-modal-example" hide-footer>
-                            <template v-slot:modal-title>
-                                Using <code>$bvModal</code> Methods
-                            </template>
-                            <div class="d-block text-center">
-                                <h3>Hello From This Modal!</h3>
-                            </div>
-                            <b-button class="mt-3" block @click="$bvModal.hide('bv-modal-example')">Close Me</b-button>
-                        </b-modal>
+
                     </b-col>
                 </b-row>
             </b-container>
@@ -202,41 +211,69 @@
 <script>
     import PlayerVideo from "./subcomponents/PlayerVideo";
     import emailjs from 'emailjs-com';
+    import {required, minLength, email} from 'vuelidate/lib/validators'
     import {mapGetters} from 'vuex'
 
     export default {
         name: 'Home',
         data() {
             return {
+                imageUrl: './assets/images/Group_22.png',
                 slide: 0,
                 sliding: null,
+                showSlider: false,
+                hideSlider: false,
+                showTab: false,
+                hideTab: false,
                 active: false,
-                email: '',
+                mail: '',
                 phone: '',
-                text: ''
-
+                text: '',
+                submitStatus: null
+            }
+        },
+        validations: {
+            mail: {
+                required,
+                email
+            },
+            phone: {
+                required,
+                minLength: minLength(9)
             }
         },
         methods: {
-            sendEmail: (e) => {
-                emailjs.sendForm('sendgrid', 'template_hBdlDlOK', e.target, 'user_BWzukvV4b0GSFkWTNi81Y')
-                    .then((result) => {
-                        console.log('SUCCESS!', result.status, result.text);
-                        // setTimeout(() => {
-                        //     this.$router.push('/')
-                        // }, 2000)
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });g
+            sendEmail(e) {
+                this.$v.$touch()
+                if (this.$v.$invalid) {
+                    this.submitStatus = 'ERROR'
+                } else {
+                    emailjs.sendForm('sendgrid', 'template_hBdlDlOK', e.target, 'user_BWzukvV4b0GSFkWTNi81Y')
+                        .then((result) => {
+                            console.log('SUCCESS!', result.status, result.text);
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                        });
+                    this.submitStatus = 'PENDING'
+                    setTimeout(() => {
+                        this.submitStatus = 'OK'
+                        this.mail = ''
+                        this.phone = ''
+                        this.text = ''
+                        this.$v.$reset()
+                    }, 500)
+                }
             },
             hoverSlider() {
+                this.showSlider = true
+                this.hideSlider = false
+            
 
+                this.showTab = true
+                this.hideTab = false
             }
         },
         computed: {
-            validation() {
-                return this.phone.length > 7 && this.phone.length < 15
-            },
             ...mapGetters([
                 'multiSlider',
                 'productsTitle',
@@ -248,6 +285,4 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-</style>
+

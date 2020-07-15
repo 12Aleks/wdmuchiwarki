@@ -13,11 +13,12 @@ import Caracteristic from './components/subcomponents/Characteristic'
 import CaracteristicDesc from './components/subcomponents/CaracteristicDescription'
 import OtherProducts from './components/subcomponents/OtherProducts'
 import Contact from './components/subcomponents/Contact'
+import Vuelidate from 'vuelidate'
 
 import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
-
+Vue.use(Vuelidate)
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
