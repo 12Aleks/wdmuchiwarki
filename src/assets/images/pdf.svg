@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="76.119" height="92.317"
      viewBox="0 0 76.119 106.317">
     <defs>
-        <style>.a {
+        <style>
+            .a {
             fill: none;
             stroke: #3d3c3c;
             stroke-width: 5px;

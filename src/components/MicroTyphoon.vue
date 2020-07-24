@@ -1,27 +1,17 @@
 <template>
     <section id="main" class="micro">
         <carusel :sliders="microSlider"></carusel>
-        <caracteristic :offset="position" :widthElement="widthElement" :data="microCharacteristic" ></caracteristic>
-        <section class="newsletter">
-            <b-container>
-                <b-row>
-                    <b-col cols="12" sm="12" md="12" lg="12">
-                        <router-link class="btn mx-auto d-block"
-                                     :to="{ name:'Home', params: {lang: $i18n.locale}}"
-                        > Pobierz ulotkę
-                        </router-link>
-                    </b-col>
-                </b-row>
-            </b-container>
-        </section>
+        <caracteristic :offset="position"
+                       :data="microCharacteristic" ></caracteristic>
+        <newsletter-button></newsletter-button>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
-                    <b-col class="img_box" cols="12" sm="12" md="6" lg="6">
+                    <b-col class="img_box" cols="12" sm="12" md="12" lg="6">
                         <b-img fluid :src="require(`@/assets/images/products/micro/elements/micro.png`)"
                                alt="multiTank S"></b-img>
                     </b-col>
-                    <b-col cols="12" sm="12" md="6" lg="6">
+                    <b-col cols="12" sm="12" md="12" lg="6">
                         <p class="descriptionMulti">
                             Głowica MicroTyphoon przeznaczona jest do pracy ze światłowodami 3-10 mm wdmuchiwanymi w
                             mikrorurki 6-16 mm.
@@ -50,7 +40,7 @@
                     </b-col>
                     <b-col cols="12">
 
-                        <b-table-simple hover small  table-variant="light">
+                        <b-table-simple hover small  table-variant="light" responsive="sm">
                             <colgroup><col><col></colgroup>
                             <colgroup><col><col><col></colgroup>
                             <colgroup><col><col></colgroup>
@@ -121,17 +111,7 @@
             </b-container>
 
         </section>
-        <section class="products-band" id="producty">
-            <b-container>
-                <b-row class="d-flex flex-wrap">
-                    <b-col cols='12'>
-                        <h3 class="title pb-4 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
-                            {{$t('heading.products') }}</h3>
-                    </b-col>
-                </b-row>
-                <other-products></other-products>
-            </b-container>
-        </section>
+        <other-products :otherProducts="otherProducts"></other-products>
         <contact></contact>
     </section>
 </template>
@@ -144,7 +124,7 @@
         data(){
           return{
               position: true,
-              widthElement: 120
+              otherProducts: 'heading.otherProducts'
           }
         },
         computed: {

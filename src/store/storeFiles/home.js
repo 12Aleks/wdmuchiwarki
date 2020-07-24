@@ -13,6 +13,41 @@ export default {
             }
         ],
         productsTitle: 'Produkty',
+        presentation: [
+            {
+                img: 'thunderbolt.svg',
+                alt: 'thunderbolt',
+                shadow: 'path.png',
+                altShadow: 'path',
+                firstLine: 'presentation.electricFeederFirst',
+                secondLine: 'presentation.electricFeederSecond',
+                firstClass: 'thunderbolt',
+                id: 'first',
+                offset: false
+            },
+            {
+                img: 'Group.svg',
+                alt: 'Group',
+                shadow: 'universality.png',
+                altShadow: 'universality',
+                firstLine: 'presentation.versatilityApplicationsFirst',
+                secondLine: 'presentation.versatilityApplicationsSecond',
+                firstClass: 'rotateAnim',
+                id: 'second',
+                offset: false
+            },
+            {
+                img: 'pdf.png',
+                alt: 'pdf',
+                shadow: 'registration.png',
+                altShadow: 'registration',
+                firstLine: 'presentation.fiberReportFirst',
+                secondLine: 'presentation.fiberReportSecond',
+                firstClass: 'pdf',
+                id: 'third',
+                offset: false
+            }
+        ],
         products: [
             {
                 name: 'MultiTank',
@@ -73,7 +108,8 @@ export default {
         workers: [
             {
                 name: 'Filip Madzio',
-                position: 'contact.workers.position',
+                positionFirst: 'contact.workers.positionFirst',
+                positionSecond: 'contact.workers.positionSecond',
                 image: 'madfi.png',
                 phone: '+ 48 669 097 469',
                 email: 'filip.madzio@termagroup.pl'
@@ -91,24 +127,39 @@ export default {
         products(state) {
             return state.products
         },
-        workers(state){
+        workers(state) {
             return state.workers
+        },
+        presentation(state) {
+            return state.presentation
         }
     },
     mutations: {
-        down(state, payload){
+        down(state, payload) {
             state.products[payload].active = true
         },
-        up(state, payload){
+        up(state, payload) {
             state.products[payload].active = false
         },
+        newPosition(state, payload){
+            state.presentation[payload].offset = true
+        },
+        oldPosition(state, payload){
+            state.presentation[payload].offset = false
+        }
     },
     actions: {
-        down({commit}, payload){
+        down({commit}, payload) {
             commit('down', payload)
         },
-        up({commit}, payload){
+        up({commit}, payload) {
             commit('up', payload)
+        },
+        newPosition({commit}, payload){
+            commit('newPosition', payload)
+        },
+        oldPosition({commit}, payload){
+            commit('oldPosition', payload)
         }
     }
 

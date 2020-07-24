@@ -3,7 +3,8 @@
   "heading": {
     "presentation": "Presentation",
     "products": "Products",
-    "contact": "Contact"
+    "contact": "Contact",
+    "otherProducts": "Other products"
   },
   "slider": {
     "first": {
@@ -28,6 +29,8 @@
     "fiberReportSecond": "blowing report",
     "youtu": "https://www.youtube.com/embed/mjumFhEvr8g"
   },
+  "button": "Download our flyer",
+  "downloads": "MultiTyphoon_ulotka_2020_EN.pdf",
   "products": {
     "feeder": "MultiTank Feeder",
     "microTyphoon": "MicroTyphoon Blowing Head",
@@ -37,7 +40,8 @@
   },
   "contact": {
     "workers": {
-      "position": "Product Manager, Fiber Optics Technologies"
+      "positionFirst": "Product Manager,",
+      "positionSecond": "Fiber Optics Technologies"
     },
     "form": {
       "title": "Contact form",
@@ -45,14 +49,19 @@
       "placeholderPhone": "Phone",
       "placeholderText": "Message content*",
       "button": "Send",
-      "formEmailInformationFirst": "Email is required",
-      "formEmailInformationSecond": "Enter the correct email address",
-      "formPhoneInformationFirst": "Phone is required",
-      "formPhoneInformationSecond": "Enter the correct phone number",
+      "formEmailInformationFirst": "Email is required.",
+      "formEmailInformationSecond": "Enter the correct email address.",
+      "formPhoneInformationFirst": "Phone is required.",
+      "formPhoneInformationSecond": "Enter the correct phone number.",
       "formSendingInformationFirst": "Thanks for your submission!",
       "formSendingInformationSecond": "Please fill the form correctly.",
       "formSendingInformationThird": "Sending..."
     }
+  },
+  "characteristic": {
+    "fiber-optic": "fiber optic cables",
+    "packages": "microducts packages",
+    "microducts": "microducts"
   },
   "multiTank": {
     "slider": {
@@ -228,5 +237,6 @@
         "secondLineFirst": "Mass"
       }
     }
-  }
+  },
+  "contact-footer-text": "Contact us, submit your query."
 }

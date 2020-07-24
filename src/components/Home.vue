@@ -1,5 +1,5 @@
 <template>
-    <section id="main">
+    <section id="main" :class="$t('lang')">
         <div class="video-container">
             <player-video></player-video>
             <div class="back"></div>
@@ -24,7 +24,7 @@
                     <b-carousel
                             id="carousel-1"
                             v-model="slide"
-                            :interval="5000"
+                            :interval="10000"
                             style="color: #3D3C3C;"
                             indicators
                             class="h-100"
@@ -38,16 +38,16 @@
                 </div>
             </div>
             <b-container class="large-box">
-                <b-row class="row">
+                <b-row>
                     <b-col cols="12">
                         <div id="carouselControlsTwo" class="h-100">
                             <b-carousel
                                     id="carousel-1"
                                     v-model="slide"
-                                    :interval="5000"
+                                    :interval="10000"
                                     style="color: #3D3C3C;"
                                     indicators
-                                    class="h-100"
+                                    class="h-100 d-flex flex-wrap"
                             >
                                 <b-carousel-slide v-for="ban in multiSlider" :key="ban.title">
                                     <h4 class="mb-4">{{ $t(ban.title) }}</h4>
@@ -76,28 +76,30 @@
                     </b-col>
                     <b-col cols="12" sm="12" md="12" lg="6" class="mt-4 mt-sm-4 mt-md-4 mt-lg-0">
                         <div class="h-100 box-img-wrapper d-flex justify-content-around align-items-center ">
-                            <div class="img-wrapper d-flex flex-column align-items-center justify-content-column">
+                            <div class="img-wrapper d-flex flex-column align-items-center justify-content-column"
+                                 v-for="(element, index) in presentation"
+                                 :key="element.firstLine"
+                            >
                                 <div class="img_icon_box">
-                                    <b-img class='thunderbolt' :src="require(`@/assets/images/thunderbolt.svg`)"
-                                           alt="thunderbolt"></b-img>
+                                    <b-img class='thunderbolt'
+                                           :class="element.firstClass"
+                                           :src="require(`@/assets/images/${element.img}`)"
+                                           :alt="element.alt"
+                                           @mouseover="mouseoverShadow(index)"
+                                           @mouseleave="mouseleaveShadow(index)"
+                                    ></b-img>
+                                    <b-img class='redShadow'
+                                           :id="element.id"
+                                           :class="{offset: element.offset}"
+                                           :src="require(`@/assets/images/redShadow/${element.shadow}`)"
+                                           :alt="element.altShadow">
+                                    </b-img>
                                 </div>
-                                <span class="text-center pt-3">{{ $t( 'presentation.electricFeederFirst') }}</span>
-                                <span class="text-center">{{ $t( 'presentation.electricFeederSecond') }}</span>
-                            </div>
-                            <div class="img-wrapper d-flex flex-column align-items-center justify-content-column">
-                                <div class="img_icon_box">
-                                    <b-img class='rotateAnim' :src="require(`@/assets/images/Group.svg`)"
-                                           alt="rotate"></b-img>
+                                <div style="height: 100px; "
+                                     class=" d-flex flex-column align-items-center justify-content-column">
+                                    <span class="text-center pt-3">{{ $t(element.firstLine) }}</span>
+                                    <span class="text-center">{{ $t(element.secondLine) }}</span>
                                 </div>
-                                <span class="text-center pt-3">{{ $t( 'presentation.versatilityApplicationsFirst') }}</span>
-                                <span class="text-center">{{ $t( 'presentation.versatilityApplicationsSecond') }}</span>
-                            </div>
-                            <div class="img-wrapper d-flex flex-column align-items-center justify-content-column">
-                                <div class="img_icon_box">
-                                    <b-img class='pdf' :src="require(`@/assets/images/pdf.svg`)" alt="pdf"></b-img>
-                                </div>
-                                <span class="text-center pt-3">{{ $t( 'presentation.fiberReportFirst') }}</span>
-                                <span class="text-center">{{ $t( 'presentation.fiberReportSecond') }}</span>
                             </div>
                         </div>
                     </b-col>
@@ -118,18 +120,7 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="products-band" id="producty">
-            <b-container>
-                <b-row class="d-flex flex-wrap">
-                    <b-col cols='12'>
-                        <h3 class="title pb-4 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
-                            {{$t('heading.products') }}</h3>
-                    </b-col>
-                </b-row>
-                <other-products></other-products>
-            </b-container>
-
-        </div>
+        <other-products :otherProducts="otherProducts"></other-products>
         <div class="contact" id="contact">
             <b-container>
                 <b-row class="d-flex flex-wrap">
@@ -139,13 +130,14 @@
                     </b-col>
                     <b-col cols="12" sm="12" md="12" lg="6">
                         <div v-for='(worker, index) in workers' :key="index"
-                             class="worker d-flex flex-wrap mb-4 mb-sm-5 mb-md-5 mb-lg-0 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
+                             class="worker d-flex flex-wrap mb-4 mb-sm-5 mb-md-5 mb-lg-0 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-0 pl-lg-0">
                             <div class="imgWorker">
                                 <b-img :src="require(`@/assets/images/worker/${worker.image}`)" alt=""></b-img>
                             </div>
                             <div class="contactWorker">
                                 <h6 class="mb-1">{{worker.name}}</h6>
-                                <p class="description">{{ $t(worker.position) }}</p>
+                                <p class="description">{{ $t(worker.positionFirst) }} <br/> {{ $t(worker.positionSecond)
+                                    }} </p>
                                 <p class="description mb-1" style="text-decoration: none"><span>M:</span><a
                                         href="mailto:filip.madzio@termagroup.pl">{{worker.email}}</a></p>
                                 <p class="description mb-1" style="text-decoration: none"><span>T:</span><a
@@ -167,8 +159,12 @@
                                         @change="$v.mail.$touch()"
                                         :placeholder="$t('contact.form.placeholderEmail')"
                                 ></b-form-input>
-                                <div class="error" v-if="!$v.mail.required">Email jest obowiązkowy</div>
-                                <div class="error" v-if="!$v.mail.email">Podaj prawidłowy adres email</div>
+                                <div class="error" v-if="!$v.mail.required">
+                                    {{$t('contact.form.formEmailInformationFirst')}}
+                                </div>
+                                <div class="error" v-if="!$v.mail.email">
+                                    {{$t('contact.form.formEmailInformationSecond')}}
+                                </div>
                             </b-form-group>
                             <b-form-group :class="{ 'form-error': $v.phone.$error }">
                                 <b-form-input
@@ -179,8 +175,12 @@
                                         @change="$v.phone.$touch()"
                                         :placeholder="$t('contact.form.placeholderPhone')">
                                 </b-form-input>
-                                <div class="error" v-if="!$v.phone.required">Telefon jest obowiązkowy</div>
-                                <div class="error" v-if="!$v.phone.minLength">Podaj prawidłowy telefon</div>
+                                <div class="error" v-if="!$v.phone.required">
+                                    {{$t('contact.form.formPhoneInformationFirst')}}
+                                </div>
+                                <div class="error" v-if="!$v.phone.minLength">
+                                    {{$t('contact.form.formPhoneInformationSecond')}}
+                                </div>
                             </b-form-group>
                             <b-form-group>
                                 <b-form-textarea
@@ -198,9 +198,12 @@
                                     :disabled="submitStatus === 'PENDING'">
                                 {{$t('contact.form.button')}}
                             </b-button>
-                            <p class="error" v-if="submitStatus === 'OK'">Thanks for your submission!</p>
-                            <p class="error" v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
-                            <p class="error" v-if="submitStatus === 'PENDING'">Sending...</p>
+                            <p class="error" v-if="submitStatus === 'OK'">
+                                {{$t('contact.form.formSendingInformationFirst')}}</p>
+                            <p class="error" v-if="submitStatus === 'ERROR'">
+                                {{$t('contact.form.formSendingInformationSecond')}}</p>
+                            <p class="error" v-if="submitStatus === 'PENDING'">
+                                {{$t('contact.form.formSendingInformationThird')}}</p>
                         </b-form>
 
                     </b-col>
@@ -220,7 +223,7 @@
         name: 'Home',
         data() {
             return {
-                imageUrl: './assets/images/Group_22.png',
+                // imageUrl: './assets/images/Group_22.png',
                 slide: 0,
                 sliding: null,
                 showSlider: false,
@@ -231,7 +234,8 @@
                 mail: '',
                 phone: '',
                 text: '',
-                submitStatus: null
+                submitStatus: null,
+                otherProducts: 'heading.products'
             }
         },
         validations: {
@@ -266,6 +270,12 @@
                     }, 500)
                 }
             },
+            mouseoverShadow(index) {
+                this.$store.dispatch('newPosition', index)
+            },
+            mouseleaveShadow(index) {
+                this.$store.dispatch('oldPosition', index)
+            },
             hoverSlider() {
                 this.showSlider = true
                 this.hideSlider = false
@@ -279,8 +289,8 @@
             ...mapGetters([
                 'multiSlider',
                 'productsTitle',
-                'form',
-                'workers'
+                'workers',
+                'presentation'
             ])
         },
         components: {PlayerVideo}

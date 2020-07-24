@@ -2,25 +2,17 @@
     <section id="main" class="multi">
         <carusel :sliders="MultiSlider"></carusel>
         <caracteristic :offset="position"
-                       :widthElement="widthElement"
                        :data="multiCharacteristic">
         </caracteristic>
-        <section class="newsletter">
-            <b-container>
-                <b-row>
-                    <b-col cols="12" sm="12" md="12" lg="12">
-                        <a  class="btn mx-auto d-block"
-                                      :href="`/newsletters/${$t('downloads')}`" download
-                        > Pobierz ulotkę
-                        </a>
-                    </b-col>
-                </b-row>
-            </b-container>
-        </section>
+        <newsletter-button></newsletter-button>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
-                    <b-col cols="12" sm="12" md="7" lg="7">
+                    <b-col class="img_box mt-3 mt-sm-3 mt-md-3 mt-lg-0" cols="12" sm="12" md="12" lg="5" order="1" order-sm="1" order-md="1" order-lg="2">
+                        <b-img :src="require(`@/assets/images/products/multitank/elements/multiTank_s.png`)"
+                               alt="multiTank S" class="pl-2 pr-2 pl-sm-4 pr-sm-4 pl-md-4 pr-md-4 pr-lg-0 pl-lg-0"></b-img>
+                    </b-col>
+                    <b-col class='multi_L' cols="12" sm="12" md="12" lg="7" order="2" order-sm="2" order-md="2" order-lg="1">
                         <h3>MultiTank S</h3>
                         <p class="descriptionMulti"> Podajnik MultiTank jest urządzeniem w pełni elektrycznym. W
                             porównaniu do podajników z
@@ -50,11 +42,11 @@
                             *Więcej informacji dot. wdmuchiwania pakietów mikrorurek dostępne w karcie katalogowej.
                         </p>
                     </b-col>
-                    <b-col class="img_box" cols="12" sm="12" md="5" lg="5">
-                        <b-img :src="require(`@/assets/images/products/multitank/elements/multiTank_s.png`)"
-                               alt="multiTank S"></b-img>
+                    <b-col class="img_box mt-5 mt-sm-5 mt-md-5 mt-lg-0" cols="12" sm="12" md="12" lg="5" order="3" order-sm="3" order-md="3" order-lg="4">
+                        <b-img :src="require(`@/assets/images/products/multitank/elements/multiTank_m.png`)"
+                               alt="multiTank S" class="pl-2 pr-2 pl-sm-4 pr-sm-4 pl-md-4 pr-md-4 pr-lg-0 pl-lg-0"></b-img>
                     </b-col>
-                    <b-col class='multi_R' cols="12" sm="12" md="7" lg="7">
+                    <b-col class='multi_R' cols="12" sm="12" md="12" lg="7"  order="4" order-sm="4" order-md="4" order-lg="3" >
                         <h3>MultiTank R</h3>
                         <p class="descriptionMulti mb-0">
                             Wersja wyposażona w rejestrator danych pozwala na kontrolę jakości ułożenia światłowodu.
@@ -85,10 +77,8 @@
                             *opcjonalnie
                         </p>
                     </b-col>
-                    <b-col class="img_box" cols="12" sm="12" md="5" lg="5">
-                        <b-img :src="require(`@/assets/images/products/multitank/elements/multiTank_m.png`)"
-                               alt="multiTank S"></b-img>
-                    </b-col>
+                </b-row>
+                <b-row>
                     <carac-desc :data="multiProductsCharacteristic"></carac-desc>
                 </b-row>
             </b-container>
@@ -101,7 +91,7 @@
                     </b-col>
                     <b-col cols="12">
                         <div>
-                            <b-table-simple hover small  table-variant="light">
+                            <b-table-simple hover small  table-variant="light" responsive="sm">
                                 <colgroup><col><col></colgroup>
                                 <colgroup><col><col><col></colgroup>
                                 <colgroup><col><col></colgroup>
@@ -188,17 +178,7 @@
             </b-container>
 
         </section>
-        <section class="products-band" id="producty">
-                <b-container>
-                    <b-row class="d-flex flex-wrap">
-                        <b-col cols='12'>
-                            <h3 class="title pb-4 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0">
-                                {{$t('heading.products') }}</h3>
-                        </b-col>
-                    </b-row>
-                    <other-products></other-products>
-                </b-container>
-        </section>
+        <other-products :otherProducts="otherProducts"></other-products>
         <contact></contact>
     </section>
 </template>
@@ -211,7 +191,7 @@
         data(){
             return{
                 position: false,
-                widthElement: 188,
+                otherProducts: 'heading.otherProducts'
             }
         },
         computed: {

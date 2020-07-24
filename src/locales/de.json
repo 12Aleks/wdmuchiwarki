@@ -3,7 +3,8 @@
   "heading": {
     "presentation": "Präsentation",
     "products": "Produkte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "otherProducts": "Andere Produkte"
   },
   "slider": {
     "first": {
@@ -28,6 +29,8 @@
     "fiberReportSecond": "",
     "youtu": "https://www.youtube.com/embed/mjumFhEvr8g"
   },
+  "button": "Download our flyer",
+  "downloads": "MultiTyphoon_ulotka_2020_DE.pdf",
   "products": {
     "feeder": "MultiTank Zuführung",
     "microTyphoon": "MicroTyphoon Einblaskopf",
@@ -37,7 +40,8 @@
   },
   "contact": {
     "workers": {
-      "position": "Produktmanager, Faseroptische Techniken"
+      "positionFirst": "Produktmanager,",
+      "positionSecond": "Faseroptische Techniken"
     },
     "form": {
       "title": "Kontaktformular",
@@ -45,14 +49,19 @@
       "placeholderPhone": "Telefon",
       "placeholderText": "Nachricht*",
       "button": "Senden",
-      "formEmailInformationFirst": "Email is required",
-      "formEmailInformationSecond": "Enter the correct email address",
-      "formPhoneInformationFirst": "Phone is required",
-      "formPhoneInformationSecond": "Enter the correct phone number",
-      "formSendingInformationFirst": "Thanks for your submission!",
-      "formSendingInformationSecond": "Please fill the form correctly.",
-      "formSendingInformationThird": "Sending..."
+      "formEmailInformationFirst": "Email ist obligatorisch.",
+      "formEmailInformationSecond": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "formPhoneInformationFirst": "Telefonnummer ist obligatorisch.",
+      "formPhoneInformationSecond": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "formSendingInformationFirst": "Vielen Dank für die Anmeldung!",
+      "formSendingInformationSecond": "Bitte füllen Sie das Formular korrekt aus.",
+      "formSendingInformationThird": "Senden ..."
     }
+  },
+  "characteristic": {
+    "fiber-optic": "Fasern",
+    "packages": "Microrohr Pakete",
+    "microducts": "Microrohr"
   },
   "multiTank": {
     "slider": {
@@ -228,6 +237,7 @@
         "secondLineFirst": "Masa"
       }
     }
-  }
+  },
+  "contact-footer-text": "Senden Sie uns Ihre Anfrage per Kontaktformular."
 
 }

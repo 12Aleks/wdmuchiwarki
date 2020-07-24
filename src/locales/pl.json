@@ -3,7 +3,8 @@
   "heading": {
     "presentation": "Prezentacja",
     "products": "Produkty",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "otherProducts": "Pozostałe produkty"
   },
   "slider": {
     "first": {
@@ -23,11 +24,12 @@
     "electricFeederFirst": "elektryczny",
     "electricFeederSecond": "podajnik",
     "versatilityApplicationsFirst": "uniwersalność",
-    "versatilityApplicationsSecond": "uniwersalność",
+    "versatilityApplicationsSecond": "zastosowań",
     "fiberReportFirst": "raport",
     "fiberReportSecond": "wdmuchiwania",
     "youtu": "https://www.youtube.com/embed/PehWBVo2vn8"
   },
+  "button": "Pobierz ulotkę",
   "downloads": "MultiTyphoon_ulotka_2020_PL.pdf",
   "products": {
     "feeder": "Podajnik MultiTank",
@@ -38,7 +40,8 @@
   },
   "contact": {
     "workers": {
-      "position": "Menadżer Produktu, Techniki Światłowodowe"
+      "positionFirst": "Menadżer Produktu,",
+      "positionSecond": "Techniki Światłowodowe"
     },
     "form": {
       "title": "Formularz kontaktowy",
@@ -46,14 +49,19 @@
       "placeholderPhone": "Telefon",
       "placeholderText": "Treść wiadomości*",
       "button": "WYŚLIJ",
-      "formEmailInformationFirst": "Email jest obowiązkowy",
-      "formEmailInformationSecond": "Podaj prawidłowy adres email",
-      "formPhoneInformationFirst": "Telefon jest obowiązkowy",
-      "formPhoneInformationSecond": "Podaj prawidłowy numer telefonu",
+      "formEmailInformationFirst": "Email jest obowiązkowy.",
+      "formEmailInformationSecond": "Podaj prawidłowy adres email.",
+      "formPhoneInformationFirst": "Telefon jest obowiązkowy.",
+      "formPhoneInformationSecond": "Podaj prawidłowy numer telefonu.",
       "formSendingInformationFirst": "Dziękujemy za zgłoszenie!",
       "formSendingInformationSecond": "Proszę wypełnić formularz poprawnie.",
       "formSendingInformationThird": "Wysyłanie..."
     }
+  },
+  "characteristic": {
+    "fiber-optic": "światłowody",
+    "packages": "pakiety",
+    "microducts": "mikrorurki"
   },
   "multiTank": {
     "slider": {
@@ -229,5 +237,6 @@
         "secondLineFirst": "Masa"
       }
     }
-  }
+  },
+  "contact-footer-text": "Skontaktuj się z nami, złóż zapytanie."
 }

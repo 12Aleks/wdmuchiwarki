@@ -11,9 +11,9 @@ export default {
             }
         ],
         multiCharacteristic: [
-            { img: 'swiatlowody.svg', title: 'światłowody', description: '3-22 mm'},
-            { img: 'pakiety_snr.svg', title: 'pakiety', description: '8×10 mm'},
-            { img: 'mikrorurki.svg', title: 'mikrorurki', description: '6-16 mm'},
+            { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-22 mm'},
+            { img: 'pakiety_snr.svg', title: 'characteristic.packages', description: '8×10 mm'},
+            { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '6-16 mm'},
             { img: 'hdpe.svg', title: 'HDPE', description: '32, 40, 50, 63 mm'}
         ],
         multiProductsCharacteristic:[
@@ -32,8 +32,8 @@ export default {
             }
         ],
         microCharacteristic: [
-            { img: 'swiatlowody.svg', title: 'światłowody', description: '3-10 mm'},
-            { img: 'mikrorurki.svg', title: 'mikrorurki', description: '3-10 mm'},
+            { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-10 mm'},
+            { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '3-10 mm'},
         ],
         microProductsCharacteristic:[
             { img: 'pressure.png', title: 'max. 25'},
@@ -51,7 +51,7 @@ export default {
             }
         ],
         typhoonCharacteristic: [
-            { img: 'swiatlowody.svg', title: 'światłowody', description: '5-22 mm'},
+            { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
             { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
         ],
         typhoonProductsCharacteristic:[
@@ -70,7 +70,7 @@ export default {
             }
         ],
         typhoon50Characteristic: [
-            { img: 'swiatlowody.svg', title: 'światłowody', description: '5-22 mm'},
+            { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
             { img: 'hdpe.svg', title: 'HDPE', description: '50, 63 mm'},
         ],
         typhoon50ProductsCharacteristic:[
@@ -89,7 +89,7 @@ export default {
             }
         ],
         y2Characteristic: [
-            { img: 'swiatlowody.svg', title: 'światłowody', description: '5-22 mm'},
+            { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
             { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
         ],
         y2ProductsCharacteristic:[

@@ -10,6 +10,7 @@ import Scroll from  './directives/scroll'
 import i18n from './i18n'
 import Carusel from './components/subcomponents/Carusel'
 import Caracteristic from './components/subcomponents/Characteristic'
+import NewsletterButton from './components/subcomponents/NewsletterButton'
 import CaracteristicDesc from './components/subcomponents/CaracteristicDescription'
 import OtherProducts from './components/subcomponents/OtherProducts'
 import Contact from './components/subcomponents/Contact'
@@ -27,6 +28,7 @@ Vue.directive('scroll', Scroll)
 Vue.config.productionTip = false;
 Vue.component('carusel', Carusel)
 Vue.component('caracteristic', Caracteristic)
+Vue.component('newsletter-button', NewsletterButton)
 Vue.component('carac-desc', CaracteristicDesc)
 Vue.component('other-products', OtherProducts)
 Vue.component('contact', Contact)
