@@ -12,24 +12,18 @@
                     </b-col>
                     <b-col cols="12" sm="12" md="12" lg="6">
                         <p class="descriptionMulti mb-0">
-                            Zestaw Typhoon 32/40 przeznaczony jest do pracy z pojedynczymi światłowodami lub
-                            mikrorurkami o średnicach 5-22 mm wdmuchiwanymi w rury HDPE 32 oraz 40. Możliwe jest również
-                            wdmuchiwanie pakietów mikrorurek*. Zestaw jest rozdzielony na głowicę oraz przyłącze
-                            powietrza co skutkuje:
+                            {{$t('typhoon32.presentations.descriptionFirst')}}
                         </p>
                         <ul class="descriptionMulti">
-                            <li>- niewielkimi rozmiarami detali i możliwością ergonomicznego montażu,</li>
-                            <li>- możliwością podłączenia przyłącza powietrza bezpośrednio do rury w wykopie czy kolejnej
-                                studni (wypadek gdy pracujemy w mieście i nie mamy dużo miejsca na rozstawienie się z całym
-                                sprzętem w jednym miejscu),</li>
-                            <li>- doprowadzeniem powietrza z dwóch stron pod kątem 45° co
-                                zmniejsza spadek ciśnienia o ok. 0,5 bara w stosunku do pojedynczego przyłącza pod kątem
-                                90°.</li>
+                            <li>- {{$t('typhoon32.presentations.paragraphFirst')}},</li>
+                            <li>- {{$t('typhoon32.presentations.paragraphSecond')}},</li>
+                            <li>- {{$t('typhoon32.presentations.paragraphThird')}}</li>
                         </ul>
                         <p class="descriptionMulti">
-                            Głowica Typhoon 32/40 wraz z Przyłączem Powietrza mogą pracować jako samodzielne
-                            urządzenie, bez użycia podajnika MultiTank. Instalacja światłowodu odbywa się wtedy ręcznie.
-                            Funkcjonalność ta jest również niezbędna przy procesie przepętlania.
+                            {{$t('typhoon32.presentations.descriptionSecond')}}
+                        </p>
+                        <p class="footnote">
+                            {{$t('typhoon32.presentations.note')}}
                         </p>
                     </b-col>
                     <carac-desc :data="typhoonProductsCharacteristic"></carac-desc>

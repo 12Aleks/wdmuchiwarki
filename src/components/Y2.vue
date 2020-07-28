@@ -13,13 +13,10 @@
                     </b-col>
                     <b-col cols="12" sm="12" md="6" lg="6">
                         <p class="descriptionMulti mb-0">
-                            Złącze Y2 służy do wprowadzania światłowodu lub mikrorurki w kanalizację HDPE 32 i 40 w
-                            której znajduje się już światłowód lub mikrorurka. Współpracuje z Głowicą Typhoon 32/40.
+                            {{$t('y2.presentations.descriptionFirst')}}
                         </p>
                         <p class="descriptionMulti mb-0">
-                            Standardowo możliwość dodmuchiwania jeśli w rurze znajduje się 1 lub 2 kable do 16 m. Na
-                            zamówienie możliwe wykonanie akcesoriów pozwalających na instalację światłowodu w rurę HDPE
-                            z większością ilością istniejących kabli.
+                            {{$t('y2.presentations.descriptionSecond')}}
                         </p>
                     </b-col>
                     <carac-desc :data="y2ProductsCharacteristic"></carac-desc>

@@ -12,21 +12,9 @@
                                alt="multiTank S"></b-img>
                     </b-col>
                     <b-col cols="12" sm="12" md="12" lg="6">
-                        <p class="descriptionMulti">
-                            Głowica MicroTyphoon przeznaczona jest do pracy ze światłowodami 3-10 mm wdmuchiwanymi w
-                            mikrorurki 6-16 mm.
-                        </p>
-                        <p class="descriptionMulti">
-                            Niewielkie rozmiary, prosty montaż i duża ilość akcesoriów umożliwiają
-                            pracę w każdych warunkach. Urządzenie wyposażone jest w 3 wielkości tulejek prowadzących,
-                            które przylegają bardzo blisko pasów napędowych dzięki czemu znacząco zmniejszono możliwość
-                            złamania światłowodu.
-                        </p>
-                        <p class="descriptionMulti">
-                            Głowica MicroTyphoon może pracować jako samodzielne urządzenie, bez
-                            użycia podajnika MultiTank. Instalacja światłowodu odbywa się wtedy ręcznie. Funkcjonalność
-                            ta jest również niezbędna przy procesie przepętlania.
-                        </p>
+                        <p class="descriptionMulti">{{$t('micro.presentations.descriptionFirst')}}</p>
+                        <p class="descriptionMulti">{{$t('micro.presentations.descriptionSecond')}}</p>
+                        <p class="descriptionMulti">{{$t('micro.presentations.descriptionThird')}}</p>
                     </b-col>
                     <carac-desc :data="microProductsCharacteristic"></carac-desc>
                 </b-row>

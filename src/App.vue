@@ -3,10 +3,11 @@
         <section id="navigation" :class="{'scroll-nav': navigation}" v-scroll="handleScroll">
             <b-container>
                 <b-row>
-                    <b-col cols="12" class="mt-0 mt-sm-0 mt-md-2 mt-lg-2 mb-0 mb-sm-0 mb-md-2 mb-lg-2">
+                    <b-col cols="12" class="mt-0 mt-sm-0 mt-md-1 mt-lg-1 mb-0 mb-sm-0 mb-md-1 mb-lg-1">
                         <b-navbar toggleable="lg">
 
-                            <router-link :to="{ name: 'Home', params: { lang: $i18n.locale }}" title="Strona główna" rel="home" class="navbar-brand">
+                            <router-link :to="{ name: 'Home', params: { lang: $i18n.locale }}" title="Strona główna"
+                                         rel="home" class="navbar-brand">
                                 <div class="d-flex align-items-center">
                                     <div class="logo-wrapper img-fluid d-inline-block align-top">
                                         <img :src="require(`@/assets/images/siteHeader/logo.png`)" alt="logo"
@@ -35,14 +36,15 @@
                                     </ul>
                                 </div>
                                 <b-navbar-toggle class='mr-2' target="nav-collapse" dark></b-navbar-toggle>
+
                                 <b-collapse id="nav-collapse" is-nav>
                                     <!-- Right aligned nav items -->
-                                    <b-navbar-nav class="ml-auto" >
-                                            <b-nav-item v-for="(elem, index) in mainMenu" :key='index'>
-                                                <a
-                                                        @click="scrollToElement({behavior: 'smooth'}, `${elem.url}`)"
-                                                        :class="{active:active === elem.url}">{{ $t(elem.title)}}</a>
-                                            </b-nav-item>
+                                    <b-navbar-nav class="ml-auto">
+                                        <b-nav-item v-for="(elem, index) in mainMenu" :key='index'
+                                                    @click="scrollToElement({behavior: 'smooth'}, `${elem.url}`)"
+                                                    :class="{active:active === elem.url}">
+                                            {{ $t(elem.title)}}
+                                        </b-nav-item>
                                     </b-navbar-nav>
                                 </b-collapse>
                             </div>
@@ -79,7 +81,9 @@
             return {
                 show: true,
                 navigation: false,
-                active: null
+                active: null,
+                windowTop: 0,
+                topElement: 0
             }
         },
         methods: {

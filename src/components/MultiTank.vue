@@ -14,33 +14,12 @@
                     </b-col>
                     <b-col class='multi_L' cols="12" sm="12" md="12" lg="7" order="2" order-sm="2" order-md="2" order-lg="1">
                         <h3>MultiTank S</h3>
-                        <p class="descriptionMulti"> Podajnik MultiTank jest urządzeniem w pełni elektrycznym. W
-                            porównaniu do podajników z
-                            napędem pneumatycznym pozwala to na zmniejszenie zapotrzebowania na powietrze o ok. 0,5 m3,
-                            dzięki czemu możliwe jest wykorzystanie mniejszego i tańszego kompresora.</p>
-                        <p class="descriptionMulti">
-                            Dodatkowym atutem
-                            jest brak konieczności podłączania kompresora przy instalacji kabli na krótkich odcinkach,
-                            gdzie nie jest wymagane wykorzystanie sprężonego powietrza co pozwala w znacznym stopniu
-                            zniwelować hałas w gęstych zabudowaniach miejskich.
-                        </p>
-                        <p class="descriptionMulti">
-                            Uniwersalność zastosowań Podajnika
-                            MultiTank z wymiennymi głowicami pozwala na instalację światłowodów o średnicach 3-22 mm jak
-                            i pakietów mikrorurek* nawet do 8 x 10 mm. Maszyna przystosowana jest do pracy w
-                            najcięższych warunkach pogodowych – możliwa jest praca w deszczu czy przy minusowej
-                            temperaturze.
-                        </p>
-                        <p class="descriptionMulti">
-                            Niezależne sterowanie prędkością i siłą podawania światłowodu odbywa się za
-                            pomocą potencjometrów. Operatorowi za pomocą wyświetlaczy przedstawiane są główne parametry:
-                            długość wdmuchniętego światłowodu i aktualna wartość oporów. Nie ma konieczności wymiany
-                            pasów przy wdmuchiwaniu światłowodów o różnych średnicach. Docisk jest regulowany za pomocą
-                            sprężyn, co uniemożliwia zgniecenie światłowodu lub jego poślizg na pasach.
-                        </p>
-                        <p class="footnote">
-                            *Więcej informacji dot. wdmuchiwania pakietów mikrorurek dostępne w karcie katalogowej.
-                        </p>
+                        <p class="descriptionMulti">{{$t('multiTank.presentations.MultitankS.descriptionFirst')}}</p>
+                        <p class="descriptionMulti">{{$t('multiTank.presentations.MultitankS.descriptionSecond')}}</p>
+                        <p class="descriptionMulti">{{$t('multiTank.presentations.MultitankS.descriptionThird')}}</p>
+                        <p class="descriptionMulti">{{$t('multiTank.presentations.MultitankS.descriptionFourth')}}</p>
+                        <p class="descriptionMulti">{{$t('multiTank.presentations.MultitankS.descriptionFifth')}}</p>
+                        <p class="footnote">{{$t('multiTank.presentations.MultitankS.note')}}</p>
                     </b-col>
                     <b-col class="img_box mt-5 mt-sm-5 mt-md-5 mt-lg-0" cols="12" sm="12" md="12" lg="5" order="3" order-sm="3" order-md="3" order-lg="4">
                         <b-img :src="require(`@/assets/images/products/multitank/elements/multiTank_m.png`)"
@@ -48,33 +27,24 @@
                     </b-col>
                     <b-col class='multi_R' cols="12" sm="12" md="12" lg="7"  order="4" order-sm="4" order-md="4" order-lg="3" >
                         <h3>MultiTank R</h3>
-                        <p class="descriptionMulti mb-0">
-                            Wersja wyposażona w rejestrator danych pozwala na kontrolę jakości ułożenia światłowodu.
-                            Raport zawiera wszystkie niezbędne informacje, wprowadzane automatycznie dotyczące podawania
-                            światłowodu takie jak:
-                        </p>
+                        <p class="descriptionMulti mb-0">{{$t('multiTank.presentations.MultitankM.descriptionFirst')}}</p>
                         <ul class="descriptionMulti">
-                            <li>- rzeczywiste opory,</li>
-                            <li>- prędkość podawania,</li>
-                            <li>- długość wdmuchniętego kabla,</li>
-                            <li>- data oraz godzina,</li>
-                            <li>- temperatura otoczenia,</li>
-                            <li>- lokalizacja GPS,</li>
-                            <li>- maksymalna siła podawania nastawiona przez operatora*</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphFirst')}},</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphSecond')}},</li>
+                            <li v-if="$t('multiTank.presentations.MultitankM.paragraphThird')">- {{$t('multiTank.presentations.MultitankM.paragraphThird')}},</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphFourth')}},</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphFifth')}},</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphSixth')}},</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphSeventh')}}</li>
                         </ul>
                         <p class="descriptionMulti">
-                            Raporty z wdmuchiwań generowane są w postaci plików
-                            PDF przez aplikację webową, do której dostęp udzielany jest przy zakupie maszyny. Użytkownik
-                            ma możliwość uzupełnienia tabeli z resztą informacji dotyczących danego projektu (parametry
-                            kabla, rurociągu, kompresora itd.).
+                            {{$t('multiTank.presentations.MultitankM.descriptionSecond')}}
                         </p>
                         <p class="descriptionMulti">
-                            Dane z wykonanych prac przechowywane są na serwerze bez
-                            dostępu osób trzecich. Za pośrednictwem aplikacji użytkownik ma możliwość do nich wrócić
-                            kiedy tylko zajdzie taka potrzeba.
+                            {{$t('multiTank.presentations.MultitankM.descriptionThird')}}
                         </p>
                         <p class="footnote">
-                            *opcjonalnie
+                            {{$t('multiTank.presentations.MultitankM.note')}}
                         </p>
                     </b-col>
                 </b-row>

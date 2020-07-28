@@ -13,25 +13,21 @@
                     </b-col>
                     <b-col cols="12" sm="12" md="6" lg="6">
                         <p class="descriptionMulti mb-0">
-                            Zestaw Typhoon 50/63 został zaprojektowany z myślą o wdmuchiwaniu mikrorurek pojedynczo oraz
-                            w pakietach* w rury HDPE 50 i 63. Możliwe jest również wdmuchiwanie światłowodów 5-22 mm
-                            oraz instalacja w rury HDPE 32 i 40 po zastosowaniu redukcji za przyłączem powietrza.**
-                            Zestaw jest rozdzielony na głowicę oraz przyłącze powietrza co skutkuje:
+                            {{$t('typhoon50.presentations.descriptionFirst')}}
+                            {{$t('typhoon50.presentations.descriptionSecond')}}
+                            {{$t('typhoon50.presentations.descriptionThird')}}
                         </p>
                         <ul class="descriptionMulti">
-                            <li>- niewielkimi
-                                rozmiarami detali i możliwością ergonomicznego montażu,</li>
-                            <li>- możliwością podłączenia przyłącza powietrza bezpośrednio do rury w wykopie,</li>
-                            <li>- doprowadzeniem powietrza z dwóch stron pod kątem
-                                45° co zmniejsza spadek ciśnienia o ok. 0,5 bara w stosunku do pojedynczego przyłącza pod
-                                kątem 90°.
+                            <li>-  {{$t('typhoon50.presentations.paragraphFirst')}},</li>
+                            <li>- {{$t('typhoon50.presentations.paragraphSecond')}},</li>
+                            <li>- {{$t('typhoon50.presentations.paragraphThird')}},
                             </li>
                         </ul>
                         <p class="footnote mb-0">
-                            *Więcej informacji dot. wdmuchiwania pakietów mikrorurek dostępne w karcie katalogowej.
+                            {{$t('typhoon50.presentations.noteFirst')}}
                         </p>
                         <p class="footnote">
-                        **Zestaw akcesoriów na zamówienie.
+                            {{$t('typhoon50.presentations.noteSecond')}}
                         </p>
                     </b-col>
                     <carac-desc :data="typhoon50ProductsCharacteristic"></carac-desc>

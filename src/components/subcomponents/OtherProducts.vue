@@ -20,6 +20,7 @@
                             <b-img :class='{imgHoverOne: product.active}'
                                    class="one"
                                    :src="require(`@/assets/images/products/${product.backgroundOne}`)"
+
                                    :alt="product.altOne"></b-img>
                             <b-img :class='{imgHoverTwo: product.active}'
                                    class="two"
@@ -27,7 +28,7 @@
                                    :alt="product.altTwo"></b-img>
                             <b-img :class='{imgHover: product.active}'
                                    class='img_product'
-                                   :src="require(`@/assets/images/products/${product.photo}`)"
+                                   :src="require(`@/assets/images/products/other_products/${product.photo}`)"
                                    fluid
                                    :alt="`${$t(product.title)}`"></b-img>
                             <p class="text-center pt-3 mb-0 descriptions">{{$t(product.title)}}</p>
@@ -65,10 +66,15 @@
     .products-band {
         padding: 133px 0;
         background: #FFFFFF 0 0 no-repeat padding-box;
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+            padding: 114px 0;
+        }
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+            padding: 114px 0;
+        }
         @media (max-width: 1199.98px) {
             padding: 70px 0;
         }
-
         .product-box {
             height: 350px;
             position: relative;

@@ -24,6 +24,15 @@
 <style lang="scss" scoped>
     .contact {
         padding: 140px 15px;
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+            padding: 114px 15px;
+        }
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+            padding: 114px 15px;
+        }
+        @media(max-width: 1199.98px) {
+            padding: 100px 15px;
+        }
         @media(max-width: 575.98px) {
             padding: 70px 0;
         }

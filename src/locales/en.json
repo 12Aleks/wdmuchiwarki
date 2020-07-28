@@ -68,22 +68,45 @@
       "firstSlide": "MultiTank Feeder",
       "secondSlide": "MultiTank Feeder"
     },
+    "presentations": {
+      "MultitankS": {
+        "descriptionFirst": "The MultiTank S feeder features a fully electric drive. As compared to pneumatic feeders, it reduces air demand by approximately 0.5 m^3 so the air compressor can be smaller and less expensive.",
+        "descriptionSecond": "An additional advantage of the device is no need to connect compressed air when installing cables on short distances, which considerably reduces noise while operating in densely built up areas.",
+        "descriptionThird": "The MultiTank S feeder is a universal device due to convertible blowing heads which enable installation of optical fiber cables from the 3–22 mm range as well as microducts packages even as large as 8 x 10 mm. The device can work in the harshest weather conditions – in the rain and sub-zero temperatures.",
+        "descriptionFourth": "The feeding force and speed are controlled independently and regulated by potentiometers. LCD displays show the main parameters such as the length of the cable blown in, current resistance value and pressure in the pipe duct.",
+        "descriptionFifth": "There is no need to change belts while blowing in optical fibers of different diameters. Belt pressure is regulated by springs which prevent cable crushing or skidding.",
+        "note": "*More information on blowing in microducts packages is available in the specification sheet."
+      },
+      "MultitankM": {
+        "descriptionFirst": "The MultiTank R version is additionally equipped with a data logger allowing control over the quality of optical fiber alignment. The report includes all necessary parameters, recorded automatically and presented in the graph:",
+        "paragraphFirst": "resistance",
+        "paragraphSecond": "feeding speed and pressure as the function of length",
+        "paragraphThird": "",
+        "paragraphFourth": "date and time",
+        "paragraphFifth": "ambient temperature",
+        "paragraphSixth": "GPS localization",
+        "paragraphSeventh": "maximum feeding force set by operator",
+        "descriptionSecond": "A web application generates blowing process reports in PDF format. Access to this application is granted after device purchase. The user can complete a table with additional information related to a specific project (parameters of pipelines, cables, compressor etc.) Online reports can be accessed from any device after entering the login and password.",
+        "descriptionThird": "Data from finished projects is stored on a server secured against unauthorized third party access. The application allows the user to review this data whenever necessary.",
+        "note": "*optionally"
+      }
+    },
     "table": {
       "title": "Parameters",
       "description": "Optional driver setting",
       "power": {
-        "title": "Power supply",
+        "title": "Power Supply",
         "firstLineFirst": "Voltage",
-        "secondLineFirst": "Maximum power consumption",
-        "thirdLineFirst": "Other requirements",
+        "secondLineFirst": "Maximum Power Consumption",
+        "thirdLineFirst": "Other Requirements",
         "thirdLineThird": "power generator with voltage stabilization"
       },
       "fiber": {
-        "title": "Fiber optic / microducts",
-        "firstLineFirst": "Feeding force",
-        "secondLineFirst": "Feeding speed",
+        "title": "Optical Fibers / Microducts",
+        "firstLineFirst": "Feeding Force",
+        "secondLineFirst": "Feeding Speed",
         "thirdLineFirst": "Diameter",
-        "fourthLineFirst": "Length measurement",
+        "fourthLineFirst": "Length Measurement",
         "fourthLineThird": "YES: cable/microduct <br /> NO: microducts packages"
       },
       "other": {
@@ -103,19 +126,24 @@
       "firstSlide": "MicroTyphoon Blowing Head",
       "secondSlide": "MicroTyphoon Blowing Head"
     },
+    "presentations": {
+      "descriptionFirst": "The MicroTyphoon blowing head is intended to work with 3–10 mm fiber optic cables blown into 6–16 mm microducts.",
+      "descriptionSecond": "Small size, simple assembly and a large amount of accessories allow work in all conditions. The device is equipped with three sizes of guide sleeves mounted very close to the drive belts. This reduces the risk of optical fiber breakage.",
+      "descriptionThird": "The MicroTyphoon blowing head can operate as a standalone unit without The MultiTank feeder. The installation of optical fibers is then performed manually. This functionality is also essential for the interlacing process."
+    },
     "table": {
       "title": "Parameters",
       "diameters": {
         "title": "Diameters",
-        "firstLineFirst": "Fiber optic",
+        "firstLineFirst": "Optical Fiber",
         "secondLineFirst": "Microduct"
       },
       "air": {
         "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
-        "thirdLineThird": "złącze minimes"
+        "firstLineFirst": "Maximum Pressure",
+        "secondLineFirst": "CAMLOCK Air Connector Size",
+        "thirdLineFirst": "Pressure Measurement",
+        "thirdLineThird": "Minimess coupling"
       },
       "blowing": {
         "title": "Blowing head",
@@ -123,9 +151,9 @@
         "secondLineFirst": "Mass"
       },
       "box": {
-        "title": "Suitcase",
+        "title": "Case",
         "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass: suitcase with accessories"
+        "secondLineFirst": "Mass: Case with Accessories"
       }
     }
   },
@@ -134,33 +162,41 @@
       "firstSlide": "Typhoon 32/40 Blowing Kit",
       "secondSlide": "Second Typhoon 32/40 Blowing Kit"
     },
+    "presentations": {
+      "descriptionFirst": "The Typhoon 32/40 kit is intended to work with single optical fibers or 5–22 mm microducts blown into HDPE 32 or HDPE 40 pipes. It is also possible to blow in microduct packages*. The kit is divided into ergonomic elements – the heads and the air connector, which results in: ",
+      "paragraphFirst": "small size of components and ergonomic assembly",
+      "paragraphSecond": "possibility of attaching the compressed air connector directly to the pipe in the trench or another manhole (e.g. when the installation is carried out in a densely built up area and space for equipment is limited)",
+      "paragraphThird":"air supply connectors on both sides (at 45 deg. angle), which allows the reduction of pressure by approx. 0.5 bar in comparison to a single connection at 90 deg. angle",
+      "descriptionSecond": "The Typhoon 32/40 head with an air connector can operate as a standalone unit without the MultiTank feeder. The installation of the optical fiber is then performed manually. This functionality is also essential for the interlacing process.",
+      "note": "*More information on blowing in microducts packages is available in the specification sheet."
+    },
     "table": {
       "title": "Parameters",
       "header": {
-        "firstLineFirst": "Fiber optic / microduct diameters",
-        "secondLineFirst": "Microducts package / HDPE pipe",
-        "thirdLineFirst": "HDPE pipe size",
+        "firstLineFirst": "Optical Fiber / Microduct Diameters",
+        "secondLineFirst": "Microducts Package / HDPE Pipe",
+        "thirdLineFirst": "HDPE Pipe Size",
         "fourthLineFirst": "Connection: Blowing Head – Air Connector"
       },
       "air": {
         "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
-        "thirdLineThird": ""
+        "firstLineFirst": "Maximum Pressure",
+        "secondLineFirst": "CAMLOCK Air Connector Size",
+        "thirdLineFirst": "Pressure Measurement",
+        "thirdLineThird": "Minimess coupling on the head"
       },
       "blowing": {
-        "title": "Blowing head",
+        "title": "Blowing Head",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       },
       "connect": {
-        "title": "Air connection",
+        "title": "Air Connector",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       },
       "box": {
-        "title": "Suitcase",
+        "title": "Case",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       }
@@ -171,33 +207,43 @@
       "firstSlide": "Typhoon 50/63 Blowing Kit",
       "secondSlide": "Second Typhoon 50/63 Blowing Kit"
     },
+    "presentations": {
+      "descriptionFirst": "The Typhoon 50/63 kit was designed for blowing in individual microducts and their packages into HDPE 50 and HDPE 63 pipes*.",
+      "descriptionSecond": "It is also possible to blow in 5–22 mm fiber optic cables and install them in HDPE 32 and 40 tubes by means of an additional reduction behind the air connection**.",
+      "descriptionThird": "The kit consists of two ergonomic elements – the head and the air connector, which results in:",
+      "paragraphFirst": "small size of components and ergonomic assembly",
+      "paragraphSecond": "possibility of attaching a compressed air connector directly to the pipe in the trench",
+      "paragraphThird":"air supply connectors on both sides (at 45 deg. angle), which allows the reduction of pressure by approx. 0.5 bar in comparison to a single connection at 90 deg. angle",
+      "noteFirst": "*More information on blowing in microducts packages is available in the specification sheet.",
+      "noteSecond": "**Accessory kit available on request."
+    },
     "table": {
       "title": "Parameters",
       "header": {
-        "firstLineFirst": "Fiber optic / microduct diameters",
-        "secondLineFirst": "Microducts package",
-        "thirdLineFirst": "HDPE pipe size",
-        "fourthLineFirst": "Connection: Blowing Head – Air Connecor"
+        "firstLineFirst": "Optical Fiber / Microduct Diameters",
+        "secondLineFirst": "Microducts Package",
+        "thirdLineFirst": "HDPE Pipe Size",
+        "fourthLineFirst": "Connection: Blowing Head – Air Connector"
       },
       "air": {
         "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
-        "thirdLineThird": "złącze minimes na głowicy"
+        "firstLineFirst": "Maximum Pressure",
+        "secondLineFirst": "CAMLOCK Air Connector Size",
+        "thirdLineFirst": "Pressure Measurement",
+        "thirdLineThird": "Minimess coupling on the head"
       },
       "blowing": {
-        "title": "Blowing head",
+        "title": "Blowing Head",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       },
       "connect": {
-        "title": "Air connector",
+        "title": "Air Connector",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       },
       "box": {
-        "title": "Suitcase",
+        "title": "Case",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       }
@@ -208,22 +254,26 @@
       "firstSlide": "Y2 Connector",
       "secondSlide": "Second Y2 Connector"
     },
+    "presentations": {
+      "descriptionFirst": "The Y2 connector is used for blowing in optical fibers or microducts into HDPE 32 and 40 tubes with 1 or 2 existing optical fibers or microducts. It can work together with the Typhoon 32/40 blowing head. ",
+      "descriptionSecond": "The standard version allows you to blow in an additional cable into a 16 m pipe with 1 or 2 existing cables. On request, it is possible to order accessories for installing the fiber optic cable into a HDPE pipe with a larger amount of existing cables."
+    },
     "table": {
       "title": "Parameters",
       "header": {
-        "firstLineFirst": "Installed cable / microduct diameter",
+        "firstLineFirst": "Installed Cable / Microduct Diameter",
         "secondLineFirst": "Connection: Blowing Head – Y2 Connector"
       },
       "cable": {
-        "title": "Existing cable",
-        "firstLineFirst": "Maximum amount",
-        "secondLineFirst": "Maximum diameter"
+        "title": "Existing Cable",
+        "firstLineFirst": "Maximum Amount",
+        "secondLineFirst": "Maximum Diameter"
       },
       "air": {
         "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air cconnection CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
+        "firstLineFirst": "Maximum Pressure",
+        "secondLineFirst": "CAMLOCK Air Connection Size",
+        "thirdLineFirst": "Pressure Measurement",
         "thirdLineThird": ""
       },
       "other": {
@@ -232,7 +282,7 @@
         "secondLineFirst": "Mass"
       },
       "box": {
-        "title": "Suitcase",
+        "title": "Case",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       }

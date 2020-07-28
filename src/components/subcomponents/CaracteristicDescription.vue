@@ -25,6 +25,12 @@
 <style lang="scss" scoped>
     .characteristic_desc {
         margin-top: 160px;
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+            margin-top: 140px;
+        }
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+            margin-top: 140px;
+        }
         @media(max-width: 1199.98px) {
             margin-top: 100px;
         }
@@ -50,6 +56,12 @@
                 img {
                     max-height: 130px;
                     width: auto;
+                    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+                        max-height: 110px;
+                    }
+                    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+                        max-height: 110px;
+                    }
                     @media(max-width: 1199.98px) {
                         max-height: 100px;
                     }

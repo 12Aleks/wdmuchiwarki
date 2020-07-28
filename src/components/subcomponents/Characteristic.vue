@@ -41,6 +41,14 @@
             width: 120px;
             height: auto;
             margin-bottom: 48px;
+            @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+                width: 110px;
+                margin-bottom: 40px;
+            }
+            @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+                width: 110px;
+                margin-bottom: 40px;
+            }
             @media(max-width: 1199.98px) {
                 width: 100px;
                 margin-bottom: 38px;
@@ -54,14 +62,17 @@
         }
         .characteristic_description{
             p {
-                font: 500 24px/32px Lato;
+                font: 500 1.5rem/2rem Lato;
                 color: $color-gray;
                 margin-bottom: 5px;
-                @media(max-width: 1199.98px) {
-                    font: 500 20px/28px Lato;
+                @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+                    font: 500 1.25rem/1.75rem Lato;
+                }
+                @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+                    font: 500 1.25rem/1.75rem Lato;
                 }
                 @media(max-width: 991.98px) {
-                    font: 500 18px/24px Lato;
+                    font: 500 1.125rem/1.5rem Lato;
                     text-align: center;
                 }
             }

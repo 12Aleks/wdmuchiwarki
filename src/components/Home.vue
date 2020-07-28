@@ -7,11 +7,12 @@
         <div class="white-band">
             <div class="tab"
                  :class="{showTab: showTab, hideTab: hideTab}"
-            >
-                <img :src="require(`@/assets/images/Group_22.png`)"
-                     alt="logotyp">
+                 :style="{ backgroundImage: `url(${backgroundUrl})` }"
+                 @click="hoverTab">
             </div>
-            <div class="white-box p-5"
+
+
+            <div class="white-box"
                  :class="{ show : showSlider, hide: hideSlider}">
                 <div class="cross">
                     <template>
@@ -60,7 +61,8 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="gray-band presentation">
+        <div class="gray-band presentation"
+             :ref="presentation"   >
             <b-container class="container">
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12" sm="12" md="12" lg="6">
@@ -111,7 +113,7 @@
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12">
                         <div class="embed-responsive embed-responsive-16by9 resp-container">
-                            <iframe class="embed-responsive-item resp-iframe pr-3 pl-3 pl-sm-0 pr-sm-0 pl-md-0 pl-lg-0 pr-md-0 pr-lg-0"
+                            <iframe defer class="embed-responsive-item resp-iframe pr-3 pl-3 pl-sm-0 pr-sm-0 pl-md-0 pl-lg-0 pr-md-0 pr-lg-0"
                                     :src="`${$t('presentation.youtu')}`" frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -186,7 +188,7 @@
                                 <b-form-textarea
                                         id="textarea"
                                         v-model="text"
-                                        name="user_massage"
+                                        name="user_message"
                                         rows="6"
                                         max-rows="6"
                                         :placeholder="$t('contact.form.placeholderText')"
@@ -218,12 +220,12 @@
     import emailjs from 'emailjs-com';
     import {required, minLength, email} from 'vuelidate/lib/validators'
     import {mapGetters} from 'vuex'
+    import backgroundUrl from '@/assets/images/Group_22.png'
 
     export default {
         name: 'Home',
         data() {
             return {
-                // imageUrl: './assets/images/Group_22.png',
                 slide: 0,
                 sliding: null,
                 showSlider: false,
@@ -235,7 +237,8 @@
                 phone: '',
                 text: '',
                 submitStatus: null,
-                otherProducts: 'heading.products'
+                otherProducts: 'heading.products',
+                backgroundUrl
             }
         },
         validations: {
@@ -250,7 +253,7 @@
         },
         methods: {
             sendEmail(e) {
-                this.$v.$touch()
+                this.$v.$touch();
                 if (this.$v.$invalid) {
                     this.submitStatus = 'ERROR'
                 } else {
@@ -260,12 +263,12 @@
                         }, (error) => {
                             console.log('FAILED...', error);
                         });
-                    this.submitStatus = 'PENDING'
+                    this.submitStatus = 'PENDING';
                     setTimeout(() => {
-                        this.submitStatus = 'OK'
-                        this.mail = ''
-                        this.phone = ''
-                        this.text = ''
+                        this.submitStatus = 'OK';
+                        this.mail = '';
+                        this.phone = '';
+                        this.text = '';
                         this.$v.$reset()
                     }, 500)
                 }
@@ -277,12 +280,20 @@
                 this.$store.dispatch('oldPosition', index)
             },
             hoverSlider() {
-                this.showSlider = true
-                this.hideSlider = false
-
-
-                // this.showTab = true
-                // this.hideTab = false
+                this.showSlider = !this.showSlider;
+                this.hideSlider = false;
+                setTimeout(() => {
+                    this.showTab =  !this.showTab;
+                    this.hideTab = false;
+                }, 2000)
+            },
+            hoverTab() {
+                this.showTab =  !this.showTab;
+                this.hideTab = !this.hideTab;
+                setTimeout(() => {
+                    this.showSlider = !this.showSlider;
+                    this.hideSlider = !this.hideSlider;
+                }, 900)
             }
         },
         computed: {
@@ -296,5 +307,6 @@
         components: {PlayerVideo}
     }
 </script>
+
 
 

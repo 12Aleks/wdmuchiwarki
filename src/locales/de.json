@@ -68,33 +68,55 @@
       "firstSlide": "MultiTank Zuführung",
       "secondSlide": "MultiTank Zuführung"
     },
+    "presentations": {
+      "MultitankS": {
+        "descriptionFirst": "Der MultiTank ist ein vollelektrisches Gerät. Im Vergleich zu den Zuführungen mit pneumatischem Antrieb kann der Luftbedarf um ca. 0,5 m³ reduziert werden, wodurch ein kleinerer und billigerer Kompressor eingesetzt werden kann. Ein zusätzlicher Vorteil ist, dass bei der Verlegung von Kabeln über kurze Entfernungen, bei denen keine Druckluft benötigt wird, der Kompressor nicht angeschlossen werden muss, wodurch der Lärm in dicht besiedelten Wohngebieten erheblich reduziert werden kann.",
+        "descriptionSecond": "Die universelle Einsetzbarkeit des MultiTank-Zuführers mit austauschbaren Köpfen ermöglicht die Installation von Glasfaserkabeln mit Durchmessern von 3 bis 22 mm sowie von Mikrorohrpaketen * bis zu 8 x 10 mm. Die Maschine ist für härteste Wetterbedingungen ausgelegt - sie kann daher auch bei Regen oder Temperaturen unter Null eingesetzt werden.",
+        "descriptionThird": "Die unabhängige Steuerung der Geschwindigkeit und Kraft für die Zufuhr der Glaserfaserkabel erfolgt mit Hilfe von Potentiometern. Die Hauptparameter werden dem Bediener über Displays angezeigt: die Länge der eingeblasenen Faser und der aktuelle Widerstandswert.",
+        "descriptionFourth": "Es ist nicht erforderlich die Bänder auszutauschen, um Glasfasern mit unterschiedlichen Durchmessern einzublasen. Der Druck wird durch Federn reguliert, die ein Quetschen oder Rutschen der Glasfaser auf den Bändern verhindern.",
+        "note": "* Weitere Informationen zum Einblasen von Mikrorohrpaketen finden Sie auf dem Datenblatt."
+      },
+      "MultitankM": {
+        "descriptionFirst": "Diese mit einem Datenspeicher ausgestattete Version erlaubt es, die Qualität der Glasfaserkabelführung zu kontrollieren. Der Bericht enthält alle notwendigen Informationen, die automatisch für die Einspeisung des Glasfaserkabels eingegeben werden, wie z.B.:",
+        "paragraphFirst": "tatsächlicher Widerstand",
+        "paragraphSecond": "Vorschubgeschwindigkeit",
+        "paragraphThird": "Länge des eingeblasenen Kabels",
+        "paragraphFourth": "Datum und Uhrzeit",
+        "paragraphFifth": "Umgebungstemperatur",
+        "paragraphSixth": "GPS-Standort",
+        "paragraphSeventh": "maximale durch den Bediener voreingestellte Vorschubkraft*",
+        "descriptionSecond": "Die Berichte werden in Form von PDF-Dateien von einer Webanwendung erstellt, auf die beim Kauf des Geräts zugegriffen werden kann. Der Benutzer kann die Tabelle mit den restlichen Informationen zum Projekt (Parameter des Kabels, der Rohrleitung, des Kompressors usw.) vervollständigen.",
+        "descriptionThird": "Die Daten der ausgeführten Arbeiten werden auf einem Server ohne Zugriff durch Dritte gespeichert. Über die Applikation kann der Benutzer bei Bedarf jederzeit auch die Daten zurückgreifen.",
+        "note": "*optional"
+      }
+    },
     "table": {
       "title": "Parameters",
-      "description": "Optional driver setting",
+      "description": "Optionale Steuerungseinstellung",
       "power": {
-        "title": "Power supply",
-        "firstLineFirst": "Voltage",
-        "secondLineFirst": "Maximum power consumption",
-        "thirdLineFirst": "Other requirements",
-        "thirdLineThird": "power generator with voltage stabilization"
+        "title": "Strom-versorgung",
+        "firstLineFirst": "Spannung",
+        "secondLineFirst": "Maximale Leistungsaufnahme",
+        "thirdLineFirst": "Sonstige Anforderungen",
+        "thirdLineThird": "Generator mit stabiler Spannungsversorgung"
       },
       "fiber": {
-        "title": "Fiber optic / microducts",
-        "firstLineFirst": "Feeding force",
-        "secondLineFirst": "Feeding speed",
-        "thirdLineFirst": "Diameter",
-        "fourthLineFirst": "Length measurement",
-        "fourthLineThird": "YES: cable/microduct <br /> NO: microducts packages"
+        "title": "Glasfaserkabel / Mikrorohre",
+        "firstLineFirst": "Vorschubkraft",
+        "secondLineFirst": "Vorschubgeschwindigkeit",
+        "thirdLineFirst": "Durchmesser",
+        "fourthLineFirst": "Messung der angegebenen Länge",
+        "fourthLineThird": "JA: Glasfaserkabel/Mikrorohre <br /> NO: NIE: Mikrorohrpakete"
       },
       "other": {
-        "title": "Other",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Sonstiges",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "box": {
-        "title": "Box",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Kiste",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       }
     }
   },
@@ -103,29 +125,34 @@
       "firstSlide": "MicroTyphoon Einblaskopf",
       "secondSlide": "MicroTyphoon Einblaskopf"
     },
+    "presentations": {
+      "descriptionFirst": "Der MicroTyphoon-Einblaskopf ist für die Verwendung mit Glasfaserkabeln von 3 bis 10 mm ausgelegt, die in 6 bis 16 mm große Mikrorohre eingeblasen werden.",
+      "descriptionSecond": "Eine geringe Größe, einfache Montage und eine große Anzahl an Zubehör ermöglichen das Arbeiten unter allen Bedingungen. Das Gerät ist mit 3 Größen von Führungshülsen ausgestattet, die sehr nahe an den Antriebsriemen angbracht sind, wodurch die Möglichkeit eines Bruchs des Glasfaserkabels erheblich verringert wird.",
+      "descriptionThird": ""
+    },
     "table": {
       "title": "Parameters",
       "diameters": {
-        "title": "Diameters",
-        "firstLineFirst": "Fiber optic",
-        "secondLineFirst": "Microduct"
+        "title": "Durch-messer",
+        "firstLineFirst": "Glasfaserkabel",
+        "secondLineFirst": "Mikrorohre"
       },
       "air": {
-        "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
-        "thirdLineThird": "złącze minimes"
+        "title": "Druckluft",
+        "firstLineFirst": "Maximaler Druck",
+        "secondLineFirst": "Größe des Luftanschlusses CAMLOCK",
+        "thirdLineFirst": "Druckmessung",
+        "thirdLineThird": "Stecker minimes"
       },
       "blowing": {
-        "title": "Blowing head",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Kopf",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "box": {
-        "title": "Suitcase",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass: suitcase with accessories"
+        "title": "Koffer",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht mit Zubehör"
       }
     }
   },
@@ -134,35 +161,43 @@
       "firstSlide": "Typhoon 32/40 Einblasset",
       "secondSlide": "Typhoon 32/40 Einblasset"
     },
+    "presentations": {
+      "descriptionFirst": "Das Set Typhoon 32/40 ist für die Verwendung mit einzelnen Glasfaserkabeln oder Mikrorohren mit einem Durchmesser von 5 bis 22 mm ausgelegt, die in HDPE-Rohre 32- und 40mm eingeblasen werden. Darüber hinaus ist es auch möglich Mikrorohrpakete einzublasen*. Das Set ist in den Kopf und Luftanschluss unterteilt. Hieraus ergibt sich Folgendes:",
+      "paragraphFirst": "geringe Detailabmessungen und die Möglichkeit einer ergonomischen Montage",
+      "paragraphSecond": "es ist möglich den Luftanschluss direkt mit dem Rohr im Graben oder einem anderen Brunnen zu verbinden (bei Arbeiten in der Stadt, wo nicht viel Platz vorhanden ist, um alle Geräte an einem Ort einzurichten)",
+      "paragraphThird":"Luftzufuhr von zwei Seiten in einem Winkel von 45 °, wodurch der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert wird",
+      "descriptionSecond": "Der Typhoon 32/40-Kopf mit Luftanschluss kann als eigenständiges Gerät ohne Verwendung des MultiTank-Zuführers verwendet werden. Die Installation des Glasfaserkabels erfolgt dann manuell. Diese Funktionalität ist auch für den Aufwicklungsprozess von wesentlicher Bedeutung",
+      "note": "* Weitere Informationen betreffend dem Einblasen von Mikroproduktpaketen finden Sie auf der Katalogkarte."
+    },
     "table": {
       "title": "Parameters",
       "header": {
-        "firstLineFirst": "Fiber optic / microduct diameters",
-        "secondLineFirst": "Microducts package / HDPE pipe",
-        "thirdLineFirst": "HDPE pipe size",
-        "fourthLineFirst": "Connection: Blowing Head – Air Connector"
+        "firstLineFirst": "Durchmesser Glasfaserkabel / Mikrorohre",
+        "secondLineFirst": "Mikrorohrpakte / HDPE-Rohr",
+        "thirdLineFirst": "Durchmesser HDPE-Rohre",
+        "fourthLineFirst": "Anschlusskopf - Luftanschluss"
       },
       "air": {
-        "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
+        "title": "Druckluft",
+        "firstLineFirst": "Maximaler Druck",
+        "secondLineFirst": "Größe des Luftanschlusses CAMLOCK",
+        "thirdLineFirst": "Druckmessung",
         "thirdLineThird": ""
       },
       "blowing": {
-        "title": "Blowing head",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Kopf",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "connect": {
-        "title": "Air connection",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Luftan-schluss",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "box": {
-        "title": "Suitcase",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Koffer",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       }
     }
   },
@@ -171,35 +206,45 @@
       "firstSlide": "Typhoon 50/63 Einblasset",
       "secondSlide": "Typhoon 50/63 Einblasset"
     },
+    "presentations": {
+      "descriptionFirst": "Das Typhoon 50/63-Set wurde entwickelt um Mikrorohre einzeln und in Paketen * in HDPE-Rohre 50- und 63mm einzublasen. Es ist ebenfalls möglich Glasfaserkabel 5-22 mm einzublasen und die Installation in HDPE-Rohre 32- und 40mm, nachdem die Reduzierung hinter dem Luftanschluss angebracht wurde **.",
+      "descriptionSecond": "",
+      "descriptionThird": "Das Set ist in den Kopf- und Luftanschluss unterteilt, woraus sich Folgendes ergibt:",
+      "paragraphFirst": "geringere Detailabmessungen sowie die Möglichkeit einer ergonomischen Montage",
+      "paragraphSecond": "es ist möglich den Luftanschluss direkt an das Rohr im Graben anzuschließen",
+      "paragraphThird":"Luftzufuhr von zwei Seiten in einem Winkel von 45 °, dadurch wird der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert.",
+      "noteFirst": "* Weitere Informationen zum Blasen von Mikroproduktverpackungen finden Sie auf der Katalogkarte.",
+      "noteSecond": "** Das Zubehörset ist auf Anfrage erhältlich."
+    },
     "table": {
       "title": "Parameters",
       "header": {
-        "firstLineFirst": "Fiber optic / microduct diameters",
-        "secondLineFirst": "Microducts package",
-        "thirdLineFirst": "HDPE pipe size",
-        "fourthLineFirst": "Connection: Blowing Head – Air Connecor"
+        "firstLineFirst": "Durchmesser Glasfaberkabel / Mikrorohre",
+        "secondLineFirst": "Mikrorohrpaket",
+        "thirdLineFirst": "Durchmesser HDPE-Rohre",
+        "fourthLineFirst": "Anschluss Kopf - Luftanschluss"
       },
       "air": {
-        "title": "Air",
-        "firstLineFirst": "Maximum pressure",
-        "secondLineFirst": "Air Connector CAMLOCK size",
-        "thirdLineFirst": "Pressure measurement",
-        "thirdLineThird": "złącze minimes na głowicy"
+        "title": "Luft",
+        "firstLineFirst": "Maximaler Druck",
+        "secondLineFirst": "Größe Luftanschluss CAMLOCK",
+        "thirdLineFirst": "Druckmessung",
+        "thirdLineThird": ""
       },
       "blowing": {
-        "title": "Blowing head",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Einblas-kopf",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "connect": {
-        "title": "Air connector",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Luftschluss",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "box": {
-        "title": "Suitcase",
-        "firstLineFirst": "Dimensions (W x D x H)",
-        "secondLineFirst": "Mass"
+        "title": "Koffer",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       }
     }
   },
@@ -208,36 +253,40 @@
       "firstSlide": "Y2 Stecker",
       "secondSlide": "Y2 Stecker"
     },
+    "presentations": {
+      "descriptionFirst": "Der Y2-Anschluss wird verwendet, um ein Glasfaserkabel oder ein Mikrorohr in einen HDPE-Kanal 32- und 40mm einzuführen, in dem sich bereits ein Glasfaserkabel oder ein Mikrorohr befindet. Arbeit mit dem Kopf Thyphoon 32/40 zusammen.",
+      "descriptionSecond": "Standardmäßig besteht die Möglichkeit des Blasens, wenn sich im Rohr 1 oder 2 Kabel bis 16m befinden. Auf Anfrage ist es möglich ein Zubehör herzustellen, das den Einbau eines Glasfaserkabels in ein HDPE-Rohr mit den meisten gängigen Kabeln ermöglicht."
+    },
     "table": {
       "title": "Parametry",
       "header": {
-        "firstLineFirst": "Średnice instalowanego światłowodu / mikrorurki",
-        "secondLineFirst": "Łącznik Głowica – Złącze Y"
+        "firstLineFirst": "Durchmesser des installierten Glasfaserkabels / Mikrorohrs",
+        "secondLineFirst": "Anschluss Kopf – Verbindung Y"
       },
       "cable": {
-        "title": "Istniejący kabel",
-        "firstLineFirst": "Ilość maksymalna",
-        "secondLineFirst": "Średnica  maksymalna"
+        "title": "Vorhan-denes Kabel",
+        "firstLineFirst": "Maximale Menge",
+        "secondLineFirst": "Maximaler Durchmesser"
       },
       "air": {
-        "title": "Powietrze",
-        "firstLineFirst": "Maksymalne ciśnienie",
-        "secondLineFirst": "Rozmiar przyłącza powietrza CAMLOCK",
-        "thirdLineFirst": "Pomiar ciśnienia",
-        "thirdLineThird": "złącze minimes na głowicy"
+        "title": "Luft",
+        "firstLineFirst": "Maximaler Druck",
+        "secondLineFirst": "Größe Luftanschluss CAMLOCK",
+        "thirdLineFirst": "Druckmessung",
+        "thirdLineThird": ""
       },
       "other": {
-        "title": "Inne",
-        "firstLineFirst": "Wymiary (S x G x W)",
-        "secondLineFirst": "Masa"
+        "title": "Sonstiges",
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       },
       "box": {
         "title": "Walizka",
-        "firstLineFirst": "Wymiary (S x G x W)",
-        "secondLineFirst": "Masa"
+        "firstLineFirst": "Abmessungen (B x T x H)",
+        "secondLineFirst": "Gewicht"
       }
     }
   },
-  "contact-footer-text": "Senden Sie uns Ihre Anfrage per Kontaktformular."
+  "contact-footer-text": "Kontaktieren Sie uns, senden Sie uns Ihre Anfrage"
 
 }
