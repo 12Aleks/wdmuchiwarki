@@ -15,7 +15,7 @@ export default {
         productsTitle: 'Produkty',
         presentation: [
             {
-                img: 'thunderbolt.svg',
+                img: 'thunderbolt.png',
                 alt: 'thunderbolt',
                 shadow: 'path.png',
                 altShadow: 'path',
@@ -26,7 +26,7 @@ export default {
                 offset: false
             },
             {
-                img: 'Group.svg',
+                img: 'Group.png',
                 alt: 'Group',
                 shadow: 'universality.png',
                 altShadow: 'universality',
@@ -53,9 +53,9 @@ export default {
                 name: 'MultiTank',
                 title: 'products.feeder',
                 photo: '3M7A2089n.png',
-                backgroundOne: 'product_a.svg',
+                backgroundOne: 'product_a.png',
                 altOne: 'circle one',
-                backgroundTwo: 'product_b.svg',
+                backgroundTwo: 'product_b.png',
                 altTwo: 'circle two',
                 styles: '',
                 active: false,
@@ -64,9 +64,9 @@ export default {
                 name: 'MicroTyphoon',
                 title: 'products.microTyphoon',
                 photo: 'IMG_0033.png',
-                backgroundOne: 'product_a.svg',
+                backgroundOne: 'product_a.png',
                 altOne: 'circle one',
-                backgroundTwo: 'product_b.svg',
+                backgroundTwo: 'product_b.png',
                 altTwo: 'circle two',
                 styles: '',
                 active: false
@@ -75,9 +75,9 @@ export default {
                 name: 'Typhoon32',
                 title: 'products.typhoon32',
                 photo: 'typhoon_32_40.png',
-                backgroundOne: 'product_a.svg',
+                backgroundOne: 'product_a.png',
                 altOne: 'circle one',
-                backgroundTwo: 'product_b.svg',
+                backgroundTwo: 'product_b.png',
                 altTwo: 'circle two',
                 styles: '',
                 active: false
@@ -86,9 +86,9 @@ export default {
                 name: 'Typhoon50',
                 title: 'products.typhoon50',
                 photo: 'typhon_50_63.png',
-                backgroundOne: 'product_a.svg',
+                backgroundOne: 'product_a.png',
                 altOne: 'circle one',
-                backgroundTwo: 'product_b.svg',
+                backgroundTwo: 'product_b.png',
                 altTwo: 'circle two',
                 styles: 'offset-md-0 offset-lg-2',
                 active: false
@@ -97,9 +97,9 @@ export default {
                 name: 'Y2',
                 title: 'products.connector',
                 photo: '3M7A2122n.png',
-                backgroundOne: 'product_a.svg',
+                backgroundOne: 'product_a.png',
                 altOne: 'circle one',
-                backgroundTwo: 'product_b.svg',
+                backgroundTwo: 'product_b.png',
                 altTwo: 'circle two',
                 styles: 'offset-sm-0 offset-md-3 offset-lg-0',
                 active: false
@@ -110,7 +110,7 @@ export default {
                 name: 'Filip Madzio',
                 positionFirst: 'contact.workers.positionFirst',
                 positionSecond: 'contact.workers.positionSecond',
-                image: 'madfi.png',
+                image: 'madfi.jpg',
                 phone: '+ 48 669 097 469',
                 email: 'filip.madzio@termagroup.pl'
             }

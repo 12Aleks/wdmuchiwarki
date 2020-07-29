@@ -1,9 +1,9 @@
 <template>
     <section id="main" class="micro">
-        <carusel :sliders="microSlider"></carusel>
+        <carusel :sliders="microSlider" />
         <caracteristic :offset="position"
-                       :data="microCharacteristic" ></caracteristic>
-        <newsletter-button></newsletter-button>
+                       :data="microCharacteristic" />
+        <newsletter-button />
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
@@ -16,7 +16,7 @@
                         <p class="descriptionMulti">{{$t('micro.presentations.descriptionSecond')}}</p>
                         <p class="descriptionMulti">{{$t('micro.presentations.descriptionThird')}}</p>
                     </b-col>
-                    <carac-desc :data="microProductsCharacteristic"></carac-desc>
+                    <carac-desc :data="microProductsCharacteristic" />
                 </b-row>
             </b-container>
         </section>
@@ -99,8 +99,12 @@
             </b-container>
 
         </section>
-        <other-products :otherProducts="otherProducts"></other-products>
-        <contact></contact>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
+        <keep-alive>
+            <contact/>
+        </keep-alive>
     </section>
 </template>
 

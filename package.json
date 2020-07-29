@@ -17,6 +17,7 @@
     "vue-anchor-router-link": "^0.8.4",
     "vue-i18n": "^8.18.2",
     "vue-router": "^3.2.0",
+    "vue-videobg": "^2.0.0",
     "vuelidate": "^0.7.5",
     "vuex": "^3.5.1"
   },

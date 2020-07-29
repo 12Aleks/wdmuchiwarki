@@ -1,9 +1,9 @@
 <template>
     <section id="main" class="typhoon_50">
-        <carusel :sliders="typhoon50Slider"></carusel>
+        <carusel :sliders="typhoon50Slider" />
         <caracteristic :offset="position"
-                       :data="typhoon50Characteristic"></caracteristic>
-        <newsletter-button></newsletter-button>
+                       :data="typhoon50Characteristic" />
+        <newsletter-button />
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
@@ -30,7 +30,7 @@
                             {{$t('typhoon50.presentations.noteSecond')}}
                         </p>
                     </b-col>
-                    <carac-desc :data="typhoon50ProductsCharacteristic"></carac-desc>
+                    <carac-desc :data="typhoon50ProductsCharacteristic" />
                 </b-row>
             </b-container>
         </section>
@@ -157,8 +157,12 @@
             </b-container>
 
         </section>
-        <other-products :otherProducts="otherProducts"></other-products>
-        <contact></contact>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
+        <keep-alive>
+            <contact/>
+        </keep-alive>
     </section>
 </template>
 

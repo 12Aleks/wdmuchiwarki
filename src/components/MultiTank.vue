@@ -1,10 +1,9 @@
 <template>
     <section id="main" class="multi">
-        <carusel :sliders="MultiSlider"></carusel>
+        <carusel :sliders="MultiSlider" />
         <caracteristic :offset="position"
-                       :data="multiCharacteristic">
-        </caracteristic>
-        <newsletter-button></newsletter-button>
+                       :data="multiCharacteristic" />
+        <newsletter-button />
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
@@ -49,7 +48,7 @@
                     </b-col>
                 </b-row>
                 <b-row>
-                    <carac-desc :data="multiProductsCharacteristic"></carac-desc>
+                    <carac-desc :data="multiProductsCharacteristic" />
                 </b-row>
             </b-container>
         </section>
@@ -148,8 +147,12 @@
             </b-container>
 
         </section>
-        <other-products :otherProducts="otherProducts"></other-products>
-        <contact></contact>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
+        <keep-alive>
+            <contact/>
+        </keep-alive>
     </section>
 </template>
 

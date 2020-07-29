@@ -2,11 +2,11 @@ export default {
     state: {
         multiSlider: [
             {
-                img: 'multitank/slider/multiTank.png',
+                img: 'multitank/slider/multiTank.jpg',
                 title: 'multiTank.slider.firstSlide'
             },
             {
-                img: 'multitank/slider/multiTank.png',
+                img: 'multitank/slider/multiTank.jpg',
                 title: 'multiTank.slider.secondSlide'
             }
         ],

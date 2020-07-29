@@ -1,9 +1,6 @@
 <template>
     <section id="main" :class="$t('lang')">
-        <div class="video-container">
-            <player-video></player-video>
-            <div class="back"></div>
-        </div>
+        <Video/>
         <div class="white-band">
             <div class="tab"
                  :class="{showTab: showTab, hideTab: hideTab}"
@@ -62,11 +59,11 @@
             </b-container>
         </div>
         <div class="gray-band presentation"
-             :ref="presentation"   >
+             :ref="presentation">
             <b-container class="container">
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12" sm="12" md="12" lg="6">
-                        <div class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0 ">
+                        <div class="pr-0 pl-0 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0 ">
                             <h3 class="title">{{ $t( 'heading.presentation') }}</h3>
                             <p class="descriptions">
                                 {{ $t( 'presentation.descriptionFirst') }}
@@ -113,16 +110,20 @@
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12">
                         <div class="embed-responsive embed-responsive-16by9 resp-container">
-                            <iframe defer class="embed-responsive-item resp-iframe pr-3 pl-3 pl-sm-0 pr-sm-0 pl-md-0 pl-lg-0 pr-md-0 pr-lg-0"
+                            <iframe class="embed-responsive-item resp-iframe pr-3 pl-3 pl-sm-0 pr-sm-0 pl-md-0 pl-lg-0 pr-md-0 pr-lg-0"
                                     :src="`${$t('presentation.youtu')}`" frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen>
+
+                            </iframe>
                         </div>
                     </b-col>
                 </b-row>
             </b-container>
         </div>
-        <other-products :otherProducts="otherProducts"></other-products>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
         <div class="contact" id="contact">
             <b-container>
                 <b-row class="d-flex flex-wrap">
@@ -216,11 +217,11 @@
 </template>
 
 <script>
-    import PlayerVideo from "./subcomponents/PlayerVideo";
-    import emailjs from 'emailjs-com';
-    import {required, minLength, email} from 'vuelidate/lib/validators'
+    const Video  = () => import('./subcomponents/Video');
     import {mapGetters} from 'vuex'
     import backgroundUrl from '@/assets/images/Group_22.png'
+    import emailjs from 'emailjs-com';
+    import {required, minLength, email} from 'vuelidate/lib/validators'
 
     export default {
         name: 'Home',
@@ -251,6 +252,7 @@
                 minLength: minLength(9)
             }
         },
+        components: {Video},
         methods: {
             sendEmail(e) {
                 this.$v.$touch();
@@ -283,12 +285,12 @@
                 this.showSlider = !this.showSlider;
                 this.hideSlider = false;
                 setTimeout(() => {
-                    this.showTab =  !this.showTab;
+                    this.showTab = !this.showTab;
                     this.hideTab = false;
                 }, 2000)
             },
             hoverTab() {
-                this.showTab =  !this.showTab;
+                this.showTab = !this.showTab;
                 this.hideTab = !this.hideTab;
                 setTimeout(() => {
                     this.showSlider = !this.showSlider;
@@ -304,7 +306,6 @@
                 'presentation'
             ])
         },
-        components: {PlayerVideo}
     }
 </script>
 

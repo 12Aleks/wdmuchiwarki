@@ -19,12 +19,12 @@
                         <div class="product-box d-flex flex-column align-items-center justify-content-end pr-0 pl-0 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-0 pl-lg-0">
                             <b-img :class='{imgHoverOne: product.active}'
                                    class="one"
-                                   :src="require(`@/assets/images/products/${product.backgroundOne}`)"
+                                   :src="require(`@/assets/images/products/other_products/${product.backgroundOne}`)"
 
                                    :alt="product.altOne"></b-img>
                             <b-img :class='{imgHoverTwo: product.active}'
                                    class="two"
-                                   :src="require(`@/assets/images/products/${product.backgroundTwo}`)"
+                                   :src="require(`@/assets/images/products/other_products/${product.backgroundTwo}`)"
                                    :alt="product.altTwo"></b-img>
                             <b-img :class='{imgHover: product.active}'
                                    class='img_product'

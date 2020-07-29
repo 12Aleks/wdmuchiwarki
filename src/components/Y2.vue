@@ -1,9 +1,9 @@
 <template>
     <section id="main" class="y2">
-        <carusel :sliders="y2Slider"></carusel>
+        <carusel :sliders="y2Slider"/>
         <caracteristic :offset="position"
-                       :data="y2Characteristic"></caracteristic>
-        <newsletter-button></newsletter-button>
+                       :data="y2Characteristic"/>
+        <newsletter-button/>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
@@ -19,7 +19,7 @@
                             {{$t('y2.presentations.descriptionSecond')}}
                         </p>
                     </b-col>
-                    <carac-desc :data="y2ProductsCharacteristic"></carac-desc>
+                    <carac-desc :data="y2ProductsCharacteristic"/>
                 </b-row>
             </b-container>
         </section>
@@ -129,8 +129,12 @@
             </b-container>
 
         </section>
-        <other-products :otherProducts="otherProducts"></other-products>
-        <contact></contact>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
+        <keep-alive>
+            <contact/>
+        </keep-alive>
     </section>
 </template>
 

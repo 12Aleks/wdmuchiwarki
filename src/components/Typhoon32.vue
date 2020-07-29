@@ -1,8 +1,8 @@
 <template>
     <section id="main" class="typhoon_32">
-        <carusel :sliders="typhoonSlider"></carusel>
-        <caracteristic :offset="position" :data="typhoonCharacteristic"></caracteristic>
-        <newsletter-button></newsletter-button>
+        <carusel :sliders="typhoonSlider"/>
+        <caracteristic :offset="position" :data="typhoonCharacteristic"/>
+        <newsletter-button/>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>
@@ -26,7 +26,7 @@
                             {{$t('typhoon32.presentations.note')}}
                         </p>
                     </b-col>
-                    <carac-desc :data="typhoonProductsCharacteristic"></carac-desc>
+                    <carac-desc :data="typhoonProductsCharacteristic"/>
                 </b-row>
             </b-container>
         </section>
@@ -38,7 +38,7 @@
                     </b-col>
                     <b-col cols="12">
 
-                        <b-table-simple hover small table-variant="light" responsive="sm" >
+                        <b-table-simple hover small table-variant="light" responsive="sm">
                             <colgroup>
                                 <col>
                                 <col>
@@ -69,9 +69,9 @@
                                     <b-td>{{$t('typhoon32.table.header.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>
-                                        2 x 12 / HDPE 32 <br />
-                                        3 x 10 / HDPE 32  <br />
-                                        5 x 10 / HDPE 40  <br />
+                                        2 x 12 / HDPE 32 <br/>
+                                        3 x 10 / HDPE 32 <br/>
+                                        5 x 10 / HDPE 40 <br/>
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
@@ -148,8 +148,12 @@
             </b-container>
 
         </section>
-        <other-products :otherProducts="otherProducts"></other-products>
-        <contact></contact>
+        <keep-alive>
+            <other-products :otherProducts="otherProducts"/>
+        </keep-alive>
+        <keep-alive>
+            <contact/>
+        </keep-alive>
     </section>
 </template>
 
