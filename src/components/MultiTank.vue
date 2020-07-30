@@ -3,7 +3,9 @@
         <carusel :sliders="MultiSlider" />
         <caracteristic :offset="position"
                        :data="multiCharacteristic" />
-        <newsletter-button />
+        <keep-alive>
+            <newsletter-button />
+        </keep-alive>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>

@@ -2,28 +2,39 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import {
+    LayoutPlugin,
+    TablePlugin,
+    CarouselPlugin,
+    ImagePlugin,
+    ButtonPlugin,
+    NavbarPlugin,
+    NavPlugin
+} from 'bootstrap-vue'
+import Carusel from './components/subcomponents/Carusel'
+import i18n from './i18n'
+import VueI18n from 'vue-i18n'
+import Vuelidate from 'vuelidate'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './styles/styles.scss'
-import Scroll from  './directives/scroll'
-import i18n from './i18n'
-import Carusel from './components/subcomponents/Carusel'
-import Caracteristic from './components/subcomponents/Characteristic'
-import NewsletterButton from './components/subcomponents/NewsletterButton'
-import CaracteristicDesc from './components/subcomponents/CaracteristicDescription'
-import OtherProducts from './components/subcomponents/OtherProducts'
-import Contact from './components/subcomponents/Contact'
-import Vuelidate from 'vuelidate'
 
-import VueI18n from 'vue-i18n'
+const Scroll = () => import('./directives/scroll')
+const Caracteristic = () => import('./components/subcomponents/Characteristic')
+const NewsletterButton = () => import('./components/subcomponents/NewsletterButton')
+const CaracteristicDesc = () => import('./components/subcomponents/CaracteristicDescription')
+const OtherProducts = () => import('./components/subcomponents/OtherProducts')
+const Contact = () => import('./components/subcomponents/Contact')
 
 Vue.use(VueI18n)
 Vue.use(Vuelidate)
-// Install BootstrapVue
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+Vue.use(LayoutPlugin)
+Vue.use(TablePlugin)
+Vue.use(CarouselPlugin)
+Vue.use(ImagePlugin)
+Vue.use(ButtonPlugin)
+Vue.use(NavbarPlugin)
+Vue.use(NavPlugin)
 Vue.directive('scroll', Scroll)
 Vue.config.productionTip = false;
 Vue.component('carusel', Carusel)
@@ -34,11 +45,10 @@ Vue.component('other-products', OtherProducts)
 Vue.component('contact', Contact)
 
 
-
-
 new Vue({
-  router,
-  store,
-  i18n,
-  render: h => h(App)
+    router,
+    store,
+    i18n,
+    render: h => h(App)
 }).$mount('#app')
+

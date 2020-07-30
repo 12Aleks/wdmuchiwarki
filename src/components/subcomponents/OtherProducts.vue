@@ -65,7 +65,7 @@
 <style lang="scss" scoped>
     .products-band {
         padding: 133px 0;
-        background: #FFFFFF 0 0 no-repeat padding-box;
+        background: #FFFFFF;
         @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
             padding: 114px 0;
         }
@@ -81,11 +81,9 @@
             @media (max-width: 412.98px) {
                 height: 280px;
             }
-
             .img_product_podajnik {
                 margin-right: 20px;
             }
-
             .one {
                 position: absolute;
                 z-index: 0;

@@ -2,7 +2,9 @@
     <section id="main" class="typhoon_32">
         <carusel :sliders="typhoonSlider"/>
         <caracteristic :offset="position" :data="typhoonCharacteristic"/>
-        <newsletter-button/>
+        <keep-alive>
+            <newsletter-button />
+        </keep-alive>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>

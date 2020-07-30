@@ -3,7 +3,9 @@
         <carusel :sliders="microSlider" />
         <caracteristic :offset="position"
                        :data="microCharacteristic" />
-        <newsletter-button />
+        <keep-alive>
+            <newsletter-button />
+        </keep-alive>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>

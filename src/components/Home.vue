@@ -11,12 +11,8 @@
 
             <div class="white-box"
                  :class="{ show : showSlider, hide: hideSlider}">
-                <div class="cross">
-                    <template>
-                        <div>
-                            <b-icon icon="x" font-scale="2" @click="hoverSlider"></b-icon>
-                        </div>
-                    </template>
+                <div class="cross" @click="hoverSlider">
+                    <span>&#128936;</span>
                 </div>
                 <div id="carouselExampleControlsOne" class="h-100">
                     <b-carousel
@@ -217,11 +213,12 @@
 </template>
 
 <script>
-    const Video  = () => import('./subcomponents/Video');
     import {mapGetters} from 'vuex'
-    import backgroundUrl from '@/assets/images/Group_22.png'
-    import emailjs from 'emailjs-com';
+    import Video from './subcomponents/Video'
+    import backgroundUrl from '@/assets/images/arrow.png'
+    import { BForm, BFormGroup, BFormTextarea, BFormInput} from 'bootstrap-vue'
     import {required, minLength, email} from 'vuelidate/lib/validators'
+    import emailjs from 'emailjs-com';
 
     export default {
         name: 'Home',
@@ -252,7 +249,13 @@
                 minLength: minLength(9)
             }
         },
-        components: {Video},
+        components: {
+            Video,
+            'b-form': BForm,
+            'b-form-group': BFormGroup,
+            'b-form-textarea': BFormTextarea,
+            'b-form-input': BFormInput
+        },
         methods: {
             sendEmail(e) {
                 this.$v.$touch();

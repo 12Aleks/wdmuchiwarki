@@ -3,7 +3,9 @@
         <carusel :sliders="y2Slider"/>
         <caracteristic :offset="position"
                        :data="y2Characteristic"/>
-        <newsletter-button/>
+        <keep-alive>
+            <newsletter-button />
+        </keep-alive>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>

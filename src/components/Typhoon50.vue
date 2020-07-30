@@ -3,7 +3,9 @@
         <carusel :sliders="typhoon50Slider" />
         <caracteristic :offset="position"
                        :data="typhoon50Characteristic" />
-        <newsletter-button />
+        <keep-alive>
+            <newsletter-button />
+        </keep-alive>
         <section class="descriptions presentation">
             <b-container>
                 <b-row>

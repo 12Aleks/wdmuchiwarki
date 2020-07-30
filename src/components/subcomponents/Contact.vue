@@ -36,9 +36,7 @@
         @media(max-width: 575.98px) {
             padding: 70px 0;
         }
-
-        a {
-            margin-top: 80px;
+        a { margin-top: 80px;
             padding: 12px;
             background: #E72327;
             border-radius: 1px;
@@ -47,13 +45,11 @@
             font: 100 22px/29px Lato;
             color: #fff;
             text-transform: uppercase;
-
             &:hover {
                 transition: all .8s;
                 background: #707070;
                 color: #fff;
             }
-
             @media(max-width: 1199.98px) {
                 font: 100 20px/28px Lato;
             }

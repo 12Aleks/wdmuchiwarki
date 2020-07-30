@@ -1,24 +1,17 @@
 <template>
     <div class="video-container">
-        <video class="video-fluid z-depth-1" loop autoplay muted playsinline>
-            <source :src="videoHeader" type="video/webm"/>
+        <video class="video-fluid z-depth-1" loop autoplay muted playsinline >
+            <source src="@/assets/video/compress_video.mp4" type="video/mp4">
+            <source src="@/assets/video/compress_video.webm" type="video/webm">
+            <p>Sorry, there's a problem playing this video. Please try using a different browser.</p>
         </video>
         <div class="back"></div>
     </div>
 </template>
 
 <script>
-    import videoHome from '@/assets/video/video.mp4'
     export default {
         name: "Video",
-        data(){
-            return{
-                videoHeader: videoHome
-            }
-        }
     }
 </script>
 
-<style scoped>
-
-</style>

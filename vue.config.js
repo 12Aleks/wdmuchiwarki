@@ -1,3 +1,7 @@
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+    .BundleAnalyzerPlugin;
+
 module.exports = {
     // publicPath: './',
     // productionSourceMap: false,
@@ -23,5 +27,9 @@ module.exports = {
             .test(/\.pdf$/)
             .use("file-loader")
             .loader("file-loader");
+    },
+
+    configureWebpack: {
+        plugins: [new BundleAnalyzerPlugin()]
     }
 }
