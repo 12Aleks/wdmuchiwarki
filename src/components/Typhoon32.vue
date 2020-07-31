@@ -3,7 +3,7 @@
         <carusel :sliders="typhoonSlider"/>
         <caracteristic :offset="position" :data="typhoonCharacteristic"/>
         <keep-alive>
-            <newsletter-button />
+            <newsletter-button/>
         </keep-alive>
         <section class="descriptions presentation">
             <b-container>
@@ -161,7 +161,6 @@
 
 <script>
     import {mapGetters} from 'vuex'
-
     export default {
         name: "Typhoon32",
         data() {

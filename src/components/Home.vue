@@ -128,19 +128,18 @@
                             {{$t('heading.contact')}}</h3>
                     </b-col>
                     <b-col cols="12" sm="12" md="12" lg="6">
-                        <div v-for='(worker, index) in workers' :key="index"
-                             class="worker d-flex flex-wrap mb-4 mb-sm-5 mb-md-5 mb-lg-0 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-0 pl-lg-0">
+                        <div class="worker d-flex flex-wrap mb-4 mb-sm-5 mb-md-5 mb-lg-0 pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-0 pl-lg-0">
                             <div class="imgWorker">
-                                <b-img :src="require(`@/assets/images/worker/${worker.image}`)" alt=""></b-img>
+                                <b-img :src="require(`@/assets/images/worker/madfi.jpg`)" alt="worker"></b-img>
                             </div>
                             <div class="contactWorker">
-                                <h6 class="mb-1">{{worker.name}}</h6>
-                                <p class="description">{{ $t(worker.positionFirst) }} <br/> {{ $t(worker.positionSecond)
-                                    }} </p>
+                                <h6 class="mb-1">Filip Madzio</h6>
+                                <p class="description">{{ $t('contact.workers.positionFirst') }} <br/>
+                                    {{ $t('contact.workers.positionSecond') }} </p>
                                 <p class="description mb-1" style="text-decoration: none"><span>M:</span><a
-                                        href="mailto:filip.madzio@termagroup.pl">{{worker.email}}</a></p>
+                                        href="mailto:filip.madzio@termagroup.pl">filip.madzio@termagroup.pl</a></p>
                                 <p class="description mb-1" style="text-decoration: none"><span>T:</span><a
-                                        href="tel:+48-669-097-469">{{worker.phone}}</a></p>
+                                        href="tel:+48-669-097-469">+ 48 669 097 469</a></p>
                             </div>
                         </div>
                     </b-col>
@@ -197,7 +196,7 @@
                                     :disabled="submitStatus === 'PENDING'">
                                 {{$t('contact.form.button')}}
                             </b-button>
-                            <p class="error" v-if="submitStatus === 'OK'">
+                            <p class="success" v-if="submitStatus === 'OK'">
                                 {{$t('contact.form.formSendingInformationFirst')}}</p>
                             <p class="error" v-if="submitStatus === 'ERROR'">
                                 {{$t('contact.form.formSendingInformationSecond')}}</p>
@@ -213,10 +212,9 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     import Video from './subcomponents/Video'
     import backgroundUrl from '@/assets/images/arrow.png'
-    import { BForm, BFormGroup, BFormTextarea, BFormInput} from 'bootstrap-vue'
+    import {BForm, BFormGroup, BFormTextarea, BFormInput} from 'bootstrap-vue'
     import {required, minLength, email} from 'vuelidate/lib/validators'
     import emailjs from 'emailjs-com';
 
@@ -236,7 +234,54 @@
                 text: '',
                 submitStatus: null,
                 otherProducts: 'heading.products',
-                backgroundUrl
+                backgroundUrl,
+                multiSlider: [
+                    {
+                        title: 'slider.first.titleSlider',
+                        slFirst: 'slider.first.descriptionFirst',
+                        slSecond: 'slider.first.descriptionSecond',
+                    },
+                    {
+                        title: 'slider.second.titleSlider',
+                        slFirst: 'slider.second.descriptionFirst',
+                        slSecond: 'slider.second.descriptionSecond',
+                    }
+                ],
+                presentation: [
+                    {
+                        img: 'thunderbolt.png',
+                        alt: 'thunderbolt',
+                        shadow: 'path.png',
+                        altShadow: 'path',
+                        firstLine: 'presentation.electricFeederFirst',
+                        secondLine: 'presentation.electricFeederSecond',
+                        firstClass: 'thunderbolt',
+                        id: 'first',
+                        offset: false
+                    },
+                    {
+                        img: 'Group.png',
+                        alt: 'Group',
+                        shadow: 'universality.png',
+                        altShadow: 'universality',
+                        firstLine: 'presentation.versatilityApplicationsFirst',
+                        secondLine: 'presentation.versatilityApplicationsSecond',
+                        firstClass: 'rotateAnim',
+                        id: 'second',
+                        offset: false
+                    },
+                    {
+                        img: 'pdf.png',
+                        alt: 'pdf',
+                        shadow: 'registration.png',
+                        altShadow: 'registration',
+                        firstLine: 'presentation.fiberReportFirst',
+                        secondLine: 'presentation.fiberReportSecond',
+                        firstClass: 'pdf',
+                        id: 'third',
+                        offset: false
+                    }
+                ]
             }
         },
         validations: {
@@ -300,15 +345,7 @@
                     this.hideSlider = !this.hideSlider;
                 }, 900)
             }
-        },
-        computed: {
-            ...mapGetters([
-                'multiSlider',
-                'productsTitle',
-                'workers',
-                'presentation'
-            ])
-        },
+        }
     }
 </script>
 

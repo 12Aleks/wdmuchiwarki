@@ -4,18 +4,14 @@
 html, body {
   font-family: 'Lato', sans-serif;
 }
-
-#app {
-  font-family: 'Lato', sans-serif;
-}
-
 body {
   overflow-x: hidden;
 }
-
+h3.title, h3, h4, h6, p, p.descriptions, a{
+  color: $font-color;
+}
 h3.title {
   font: 400 3.75rem/5.14rem Lato;
-  color: $font-color;
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     font: 400 3.25rem/4rem Lato
   }
@@ -29,7 +25,6 @@ h3.title {
 
 h4 {
   font: 400 2.5rem/3rem Lato, Sans-Serif;
-  color: $font-color;
   margin-bottom: 1.5rem;
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     margin-bottom: 1.2rem;
@@ -48,7 +43,6 @@ h4 {
 h6 {
   text-align: left;
   font: 400 1.875rem/1.875rem Lato;
-  color: $font-color;
   @media(max-width: 991.98px) {
     font: 400 1.5rem/1.5rem Lato;
   }
@@ -59,7 +53,6 @@ h6 {
 
 p.descriptions {
   font: 500 1.375rem/2rem Lato;
-  color: $font-color;
   @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     font: 500 1.2rem/1.5rem Lato;
   }
@@ -70,10 +63,7 @@ p.descriptions {
     font: 500 1rem/1.5rem Lato;
   }
 }
-
 a {
-  color: $font-color;
-
   &:hover {
     color: $font-color;
     text-decoration: none;
@@ -82,9 +72,8 @@ a {
 
 /*IOS*/
 a[href^="tel"] {
-  color: inherit; /* Inherit text color of parent element. */
-  text-decoration: none; /* Remove underline. */
-  /* Additional css `propery: value;` pairs here */
+  color: inherit;
+  text-decoration: none;
 }
 
 a[x-apple-data-detectors] {
@@ -95,7 +84,6 @@ a[x-apple-data-detectors] {
   font-weight: inherit !important;
   line-height: inherit !important;
 }
-
 
 #navigation {
   background-color: rgba(255, 255, 255, 0.7);
@@ -124,7 +112,6 @@ a[x-apple-data-detectors] {
   @media (max-width: 575.98px) {
     max-width: 124px;
     padding-left: 18px;
-
   }
   @media(max-width: 412.98px) {
     display: none;
@@ -387,15 +374,12 @@ nav.f-nav {
 
   .carousel-caption {
     position: relative;
-    color: $font-color;
     right: 0;
     left: 0;
     bottom: 0;
     text-align: left;
-
     h4, p {
       position: relative;
-      color: $font-color;
       z-index: 100;
     }
   }
@@ -481,6 +465,7 @@ source {
       height: 33px;
       font-size: 33px;
       color: #E72327;
+
       position: absolute;
       top: 0;
       right: 5px;
@@ -871,7 +856,6 @@ source {
     .img-wrapper {
       span {
         font: 500 1.375rem/2rem Lato;
-        color: $font-color;
         @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
           font: 500 1.2rem/1.5rem Lato;
         }
@@ -1035,7 +1019,7 @@ source {
 }
 
 .contact {
-  //margin-top: -60px;
+  //margin-top: -60px;c
   padding: 60px 0;
   background: $background-gray-color;
 
@@ -1090,7 +1074,6 @@ source {
 
   h3 {
     font: 700 3.75rem/4.5rem Lato;
-    color: $font-color;
     @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
       font: 700 3.25rem/3.875rem Lato
     }
@@ -1361,7 +1344,9 @@ source {
 p.error {
   color: $color-red;
 }
-
+p.success {
+  color: green;
+}
 footer {
   .navbar {
     a {

@@ -20,7 +20,6 @@
                             <b-img :class='{imgHoverOne: product.active}'
                                    class="one"
                                    :src="require(`@/assets/images/products/other_products/${product.backgroundOne}`)"
-
                                    :alt="product.altOne"></b-img>
                             <b-img :class='{imgHoverTwo: product.active}'
                                    class="two"

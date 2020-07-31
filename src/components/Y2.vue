@@ -142,7 +142,6 @@
 
 <script>
     import {mapGetters} from 'vuex'
-
     export default {
         name: "Y2",
         data() {

@@ -73,8 +73,6 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
-
     export default {
         name: 'App',
         data() {
@@ -83,7 +81,30 @@
                 navigation: false,
                 active: null,
                 windowTop: 0,
-                topElement: 0
+                topElement: 0,
+                locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(','),
+                mainMenu: [
+                    {
+                        title: 'heading.presentation',
+                        url: 'presentation',
+                    },
+                    {
+                        title: 'heading.products',
+                        url: 'products-band',
+                    },
+                    {
+                        title: 'heading.contact',
+                        url: 'contact',
+                    }
+                ],
+                footerMenu: [
+                    {title: 'TERMA SPÓŁKA', url: 'http://www.termagroup.pl/'},
+                    {title: 'MASZYNY BUDOWLANE', url: 'http://www.termamax.pl/ru/glowna'},
+                    {title: 'USŁUGI PRZEMYSŁOWE', url: 'http://www.termaservices.pl/'},
+                    {title: 'GALWANIZERNIA', url: 'http://www.termagalvanic.pl/'},
+                    {title: 'PRODUKTY MEDYCZNE', url: 'https://www.termamed.pl/'},
+                    {title: 'WYPRZEDAŻ GRZEJNIKÓW', url: 'http://www.termaoutlet.pl/'},
+                ]
             }
         },
         methods: {
@@ -114,13 +135,6 @@
                     this.$router.push(to.location)
                 }
             },
-        },
-        computed: {
-            ...mapGetters({
-                locales: 'locales',
-                mainMenu: 'mainMenu',
-                footerMenu: 'footerMenu'
-            })
         }
     }
 </script>

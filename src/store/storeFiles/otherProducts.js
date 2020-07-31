@@ -1,53 +1,5 @@
 export default {
     state: {
-        multiSlider: [
-            {
-                title: 'slider.first.titleSlider',
-                slFirst: 'slider.first.descriptionFirst',
-                slSecond: 'slider.first.descriptionSecond',
-            },
-            {
-                title: 'slider.second.titleSlider',
-                slFirst: 'slider.second.descriptionFirst',
-                slSecond: 'slider.second.descriptionSecond',
-            }
-        ],
-        productsTitle: 'Produkty',
-        presentation: [
-            {
-                img: 'thunderbolt.png',
-                alt: 'thunderbolt',
-                shadow: 'path.png',
-                altShadow: 'path',
-                firstLine: 'presentation.electricFeederFirst',
-                secondLine: 'presentation.electricFeederSecond',
-                firstClass: 'thunderbolt',
-                id: 'first',
-                offset: false
-            },
-            {
-                img: 'Group.png',
-                alt: 'Group',
-                shadow: 'universality.png',
-                altShadow: 'universality',
-                firstLine: 'presentation.versatilityApplicationsFirst',
-                secondLine: 'presentation.versatilityApplicationsSecond',
-                firstClass: 'rotateAnim',
-                id: 'second',
-                offset: false
-            },
-            {
-                img: 'pdf.png',
-                alt: 'pdf',
-                shadow: 'registration.png',
-                altShadow: 'registration',
-                firstLine: 'presentation.fiberReportFirst',
-                secondLine: 'presentation.fiberReportSecond',
-                firstClass: 'pdf',
-                id: 'third',
-                offset: false
-            }
-        ],
         products: [
             {
                 name: 'MultiTank',
@@ -104,34 +56,11 @@ export default {
                 styles: 'offset-sm-0 offset-md-3 offset-lg-0',
                 active: false
             },
-        ],
-        workers: [
-            {
-                name: 'Filip Madzio',
-                positionFirst: 'contact.workers.positionFirst',
-                positionSecond: 'contact.workers.positionSecond',
-                image: 'madfi.jpg',
-                phone: '+ 48 669 097 469',
-                email: 'filip.madzio@termagroup.pl'
-            }
-        ],
-
+        ]
     },
     getters: {
-        multiSlider(state) {
-            return state.multiSlider
-        },
-        productsTitle(state) {
-            return state.productsTitle
-        },
         products(state) {
             return state.products
-        },
-        workers(state) {
-            return state.workers
-        },
-        presentation(state) {
-            return state.presentation
         }
     },
     mutations: {
@@ -141,10 +70,10 @@ export default {
         up(state, payload) {
             state.products[payload].active = false
         },
-        newPosition(state, payload){
+        newPosition(state, payload) {
             state.presentation[payload].offset = true
         },
-        oldPosition(state, payload){
+        oldPosition(state, payload) {
             state.presentation[payload].offset = false
         }
     },
@@ -155,12 +84,11 @@ export default {
         up({commit}, payload) {
             commit('up', payload)
         },
-        newPosition({commit}, payload){
+        newPosition({commit}, payload) {
             commit('newPosition', payload)
         },
-        oldPosition({commit}, payload){
+        oldPosition({commit}, payload) {
             commit('oldPosition', payload)
         }
     }
-
 }
