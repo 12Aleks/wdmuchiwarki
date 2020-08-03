@@ -30,6 +30,7 @@
                                 <div class="language d-flex justify-content-end pr-2">
                                     <ul>
                                         <li class="d-inline ml-3" v-for="locale in locales" :key="locale"
+                                            :class="{activeLanguage: $i18n.locale === locale }"
                                             @click="switchLocale(locale)">
                                             {{locale}}
                                         </li>
@@ -80,6 +81,7 @@
                 show: true,
                 navigation: false,
                 active: null,
+                activeLanguage: false,
                 windowTop: 0,
                 topElement: 0,
                 locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(','),
@@ -128,7 +130,6 @@
                 }
             },
             switchLocale(locale) {
-                // this.active = null;
                 if (this.$i18n.locale !== locale) {
                     this.$i18n.locale = locale;
                     const to = this.$router.resolve({params: {locale}})
@@ -138,11 +139,14 @@
         }
     }
 </script>
-<style scoped>
+<style scoped lang="scss">
     li {
         text-decoration: none;
         text-transform: uppercase;
         cursor: pointer;
+    }
+    li.activeLanguage{
+        color: $color-red;
     }
 </style>
 

@@ -1,20 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import i18n from '../i18n'
-// import Home from '@/components/Home'
-// import MultiTank from '@/components/MultiTank'
-// import MicroTyphoon from '@/components/MicroTyphoon'
-// import Typhoon32 from '@/components/Typhoon32'
-// import Typhoon50 from '@/components/Typhoon50'
-// import Y2 from '@/components/Y2'
-//
-const Home = () => import('@/components/Home')
-const MultiTank = () => import('@/components/MultiTank')
-const MicroTyphoon = () => import( '@/components/MicroTyphoon')
-const Typhoon32 = () => import('@/components/Typhoon32')
-const Typhoon50 = () => import('@/components/Typhoon50')
-const Y2 = () => import('@/components/Y2')
-
+import Home from '../components/Home'
 
 Vue.use(VueRouter)
 
@@ -41,27 +28,27 @@ const routes = [{
         {
             path: 'multi',
             name: 'MultiTank',
-            component: MultiTank
+            component: () => import('../components/MultiTank')
         },
         {
             path: 'micro_typhoon',
             name: 'MicroTyphoon',
-            component: MicroTyphoon
+            component: () => import( '../components/MicroTyphoon')
         },
         {
             path: 'typhoon_32',
             name: 'Typhoon32',
-            component: Typhoon32
+            component: () => import('../components/Typhoon32')
         },
         {
             path: 'typhoon_50',
             name: 'Typhoon50',
-            component: Typhoon50
+            component: () => import('../components/Typhoon50')
         },
         {
             path: 'y_2',
             name: 'Y2',
-            component: Y2
+            component: () => import('../components/Y2')
         }
     ],
 },

@@ -1,6 +1,6 @@
 <template>
     <section id="main" class="multi">
-        <carusel :sliders="MultiSlider"/>
+        <carusel :sliders="multiSlider"/>
         <caracteristic :offset="position"
                        :data="multiCharacteristic"/>
         <keep-alive>
@@ -178,22 +178,35 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
 
     export default {
         name: "MultiTank",
         data() {
             return {
                 position: false,
-                otherProducts: 'heading.otherProducts'
+                otherProducts: 'heading.otherProducts',
+                multiSlider: [
+                    {
+                        img: 'multitank/slider/multiTank.jpg',
+                        title: 'multiTank.slider.firstSlide'
+                    },
+                    {
+                        img: 'multitank/slider/multiTank.jpg',
+                        title: 'multiTank.slider.secondSlide'
+                    }
+                ],
+                multiCharacteristic: [
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-22 mm'},
+                    { img: 'pakiety_snr.svg', title: 'characteristic.packages', description: '8×10 mm'},
+                    { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '6-16 mm'},
+                    { img: 'hdpe.svg', title: 'HDPE', description: '32, 40, 50, 63 mm'}
+                ],
+                multiProductsCharacteristic:[
+                    { img: 'thunderbolt.png', title: '230V/1600W'},
+                    { img: 'weight.png', title: '35,0'},
+                    { img: 'size.png', title: '59×35×31'}
+                ],
             }
-        },
-        computed: {
-            ...mapGetters([
-                'MultiSlider',
-                'multiCharacteristic',
-                'multiProductsCharacteristic'
-            ])
         }
     }
 </script>

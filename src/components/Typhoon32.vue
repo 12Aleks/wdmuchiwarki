@@ -160,25 +160,32 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     export default {
         name: "Typhoon32",
         data() {
             return {
                 position: true,
-                otherProducts: 'heading.otherProducts'
+                otherProducts: 'heading.otherProducts',
+                typhoonSlider: [
+                    {
+                        img: 'typhoon_32/slider/typhoon_32.jpg',
+                        title: 'typhoon32.slider.firstSlide'
+                    },
+                    {
+                        img: 'typhoon_32/slider/typhoon_32.jpg',
+                        title: 'typhoon32.slider.secondSlide'
+                    }
+                ],
+                typhoonCharacteristic: [
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
+                    { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
+                ],
+                typhoonProductsCharacteristic:[
+                    { img: 'pressure.png', title: 'max. 15'},
+                    { img: 'weight.png', title: '0,9+2,6'},
+                    { img: 'size.png', title: '11×9×7 14×9×16'}
+                ],
             }
-        },
-        computed: {
-            ...mapGetters([
-                'typhoonCharacteristic',
-                'typhoonSlider',
-                'typhoonProductsCharacteristic'
-            ])
         }
     }
 </script>
-
-<style scoped>
-
-</style>

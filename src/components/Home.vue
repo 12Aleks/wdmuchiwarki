@@ -110,7 +110,6 @@
                                     :src="`${$t('presentation.youtu')}`" frameborder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
-
                             </iframe>
                         </div>
                     </b-col>
@@ -324,10 +323,10 @@
                 }
             },
             mouseoverShadow(index) {
-                this.$store.dispatch('newPosition', index)
+                this.presentation[index].offset = true
             },
             mouseleaveShadow(index) {
-                this.$store.dispatch('oldPosition', index)
+                this.presentation[index].offset = false
             },
             hoverSlider() {
                 this.showSlider = !this.showSlider;

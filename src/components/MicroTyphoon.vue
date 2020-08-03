@@ -111,22 +111,32 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
-
     export default {
         name: "MicroTyphoon",
         data(){
           return{
               position: true,
-              otherProducts: 'heading.otherProducts'
+              otherProducts: 'heading.otherProducts',
+              microSlider: [
+                  {
+                      img: 'micro/slider/micro.png',
+                      title: 'micro.slider.firstSlide'
+                  },
+                  {
+                      img: 'micro/slider/micro.png',
+                      title: 'micro.slider.secondSlide'
+                  }
+              ],
+              microCharacteristic: [
+                  { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-10 mm'},
+                  { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '3-10 mm'},
+              ],
+              microProductsCharacteristic:[
+                  { img: 'pressure.png', title: 'max. 25'},
+                  { img: 'weight.png', title: '1,0'},
+                  { img: 'size.png', title: '12×9×11'}
+              ],
           }
-        },
-        computed: {
-            ...mapGetters([
-                'microSlider',
-                'microCharacteristic',
-                'microProductsCharacteristic'
-            ])
         }
     }
 </script>

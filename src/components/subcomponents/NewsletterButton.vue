@@ -35,7 +35,7 @@
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, 50%);
-            font: 100 22px/29px Lato;
+            font: 100 18px/29px Lato;
             color: #fff;
             text-transform: uppercase;
             @media(max-width: 1199.98px){

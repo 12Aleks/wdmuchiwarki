@@ -141,25 +141,32 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     export default {
         name: "Y2",
         data() {
             return {
                 position: true,
-                otherProducts: 'heading.otherProducts'
+                otherProducts: 'heading.otherProducts',
+                y2Slider: [
+                    {
+                        img: 'y2/slider/y2.jpg',
+                        title: 'y2.slider.firstSlide'
+                    },
+                    {
+                        img: 'y2/slider/y2.jpg',
+                        title: 'y2.slider.secondSlide'
+                    }
+                ],
+                y2Characteristic: [
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
+                    { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
+                ],
+                y2ProductsCharacteristic:[
+                    { img: 'pressure.png', title: 'max. 15'},
+                    { img: 'weight.png', title: '5,0'},
+                    { img: 'size.png', title: '23×13×12'}
+                ]
             }
-        },
-        computed: {
-            ...mapGetters([
-                'y2Slider',
-                'y2Characteristic',
-                'y2ProductsCharacteristic'
-            ])
         }
     }
 </script>
-
-<style scoped>
-
-</style>
