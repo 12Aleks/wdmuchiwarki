@@ -54,8 +54,8 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="gray-band presentation"
-             :ref="presentation">
+        <div class="gray-band"
+             id="presentation">
             <b-container class="container">
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12" sm="12" md="12" lg="6">

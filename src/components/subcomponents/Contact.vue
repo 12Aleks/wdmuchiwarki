@@ -1,5 +1,5 @@
 <template>
-    <section class="contact">
+    <section class="contact" id="contact">
         <b-container>
             <b-row>
                 <b-col cols="12" sm="12" md="12" lg="12">

@@ -1,5 +1,5 @@
 <template>
-    <div class="products-band" id="producty">
+    <div class="products-band" id="products-band">
         <b-container>
             <b-row class="d-flex flex-wrap">
                 <b-col cols='12'>

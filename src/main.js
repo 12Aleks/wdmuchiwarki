@@ -18,6 +18,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './styles/styles.scss'
 import Carusel from './components/subcomponents/Carusel'
+import VueScrollactive from 'vue-scrollactive';
 import Scroll from './directives/scroll'
 const Caracteristic = () => import('./components/subcomponents/Characteristic')
 const NewsletterButton = () => import('./components/subcomponents/NewsletterButton')
@@ -36,6 +37,7 @@ Vue.use(NavPlugin)
 Vue.use(Vuelidate)
 Vue.directive('scroll', Scroll)
 Vue.config.productionTip = false;
+Vue.use(VueScrollactive);
 Vue.component('carusel', Carusel)
 Vue.component('caracteristic', Caracteristic)
 Vue.component('newsletter-button', NewsletterButton)

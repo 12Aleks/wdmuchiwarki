@@ -38,12 +38,10 @@
             font: 100 18px/29px Lato;
             color: #fff;
             text-transform: uppercase;
-            @media(max-width: 1199.98px){
-                font: 100 20px/28px Lato;
-            }
             @media(max-width: 991.98px){
-                max-width: 260px;
-                font: 500 18px/26px Lato;
+                max-width: 280px;
+                height: 50px;
+                font: 500 16px/26px Lato;
             }
             &:hover {
                 transition: all .8s;

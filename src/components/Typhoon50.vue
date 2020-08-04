@@ -6,7 +6,7 @@
         <keep-alive>
             <newsletter-button />
         </keep-alive>
-        <section class="descriptions presentation">
+        <section class="descriptions presentation"  id="presentation">
             <b-container>
                 <b-row>
                     <b-col class="img_box" cols="12" sm="12" md="6" lg="6">

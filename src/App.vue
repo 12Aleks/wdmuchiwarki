@@ -39,14 +39,17 @@
                                 <b-navbar-toggle class='mr-2' target="nav-collapse" dark></b-navbar-toggle>
 
                                 <b-collapse id="nav-collapse" is-nav>
-                                    <!-- Right aligned nav items -->
-                                    <b-navbar-nav class="ml-auto">
-                                        <b-nav-item v-for="(elem, index) in mainMenu" :key='index'
-                                                    @click="scrollToElement({behavior: 'smooth'}, `${elem.url}`)"
-                                                    :class="{active:active === elem.url}">
+                                    <scrollactive class="ml-auto pr-2"
+                                                  active-class="active"
+                                                  :offset="100"
+                                                  :duration="800"
+                                                  bezier-easing-value=".5,0,.35,1">
+                                        <a v-for="(elem, index) in mainMenu" :key='index'
+                                             :href="`#` + `${elem.url}`"
+                                              class="scrollactive-item">
                                             {{ $t(elem.title)}}
-                                        </b-nav-item>
-                                    </b-navbar-nav>
+                                        </a>
+                                    </scrollactive>
                                 </b-collapse>
                             </div>
                         </b-navbar>
@@ -80,11 +83,11 @@
             return {
                 show: true,
                 navigation: false,
-                active: null,
                 activeLanguage: false,
                 windowTop: 0,
                 topElement: 0,
                 locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(','),
+                scrollPosition: null,
                 mainMenu: [
                     {
                         title: 'heading.presentation',
@@ -110,23 +113,11 @@
             }
         },
         methods: {
-            toggleNavbar() {
-                this.show = !this.show;
-            },
             handleScroll: function () {
                 if (window.scrollY > 100) {
-                    this.fnav = true;
                     this.navigation = true;
                 } else {
-                    this.fnav = false;
                     this.navigation = false;
-                }
-            },
-            scrollToElement(options, element) {
-                this.active = element;
-                const el = this.$el.getElementsByClassName(element)[0];
-                if (el) {
-                    el.scrollIntoView(options);
                 }
             },
             switchLocale(locale) {
