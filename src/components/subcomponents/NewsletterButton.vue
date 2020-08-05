@@ -40,7 +40,7 @@
             text-transform: uppercase;
             @media(max-width: 991.98px){
                 max-width: 280px;
-                height: 50px;
+                height: 54px;
                 font: 500 16px/26px Lato;
             }
             &:hover {

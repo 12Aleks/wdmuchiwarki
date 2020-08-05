@@ -101,7 +101,7 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="slider-band">
+        <div class="yt-band">
             <b-container>
                 <b-row class="d-flex flex-wrap">
                     <b-col cols="12">
@@ -136,9 +136,9 @@
                                 <p class="description">{{ $t('contact.workers.positionFirst') }} <br/>
                                     {{ $t('contact.workers.positionSecond') }} </p>
                                 <p class="description mb-1" style="text-decoration: none"><span>M:</span><a
-                                        href="mailto:filip.madzio@termagroup.pl">filip.madzio@termagroup.pl</a></p>
+                                        href="mailto:filip.madzio@termagroup.pl"> filip.madzio@termagroup.pl</a></p>
                                 <p class="description mb-1" style="text-decoration: none"><span>T:</span><a
-                                        href="tel:+48-669-097-469">+ 48 669 097 469</a></p>
+                                        href="tel:+48-669-097-469"> + 48 669 097 469</a></p>
                             </div>
                         </div>
                     </b-col>
@@ -227,7 +227,7 @@
                 hideSlider: false,
                 showTab: false,
                 hideTab: false,
-                active: false,
+                // active: false,
                 mail: '',
                 phone: '',
                 text: '',

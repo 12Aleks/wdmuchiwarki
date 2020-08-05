@@ -26,7 +26,7 @@ h3.title {
     font: 400 3.25rem/4rem Lato
   }
   @media(max-width: 1199.98px) {
-    font: 400 2.5rem/3rem Lato;
+    font: 400 2.5rem/2.5rem Lato;
   }
 }
 
@@ -60,11 +60,14 @@ h6 {
 
 p.descriptions {
   font: 500 1.375rem/2rem Lato;
-  @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     font: 500 1.2rem/1.5rem Lato;
   }
-  @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     font: 500 1.2rem/1.5rem Lato;
+  }
+  @media(max-width: 1199.98px) {
+    font: 500 1.1rem/1.5rem Lato;
   }
   @media(max-width: 991.98px) {
     font: 500 1rem/1.5rem Lato;
@@ -289,7 +292,15 @@ nav.f-nav {
         width: 30%;
       }
     }
-
+    .rightMenu{
+      .language{
+        ul{
+          li{
+            font: 400 1rem/1rem Lato;
+          }
+        }
+      }
+    }
 
     @media(max-width: 991.98px) {
       align-items: inherit;
@@ -311,15 +322,15 @@ nav.f-nav {
 
   .navbar-toggler {
     padding: 0;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgb(245, 243, 244);
-    border-radius: .25rem;
+    //font-size: 1.25rem;
+    //line-height: 1;
+    //background-color: rgba(255, 255, 255, 1);
+    //border: 1px solid rgb(245, 243, 244);
+    //border-radius: .25rem;
 
     .navbar-toggler-icon {
-      width: 60px;
-      height: 45px;
+      width: 55px;
+      height: 38px;
     }
 
     &:focus, &:active {
@@ -880,11 +891,18 @@ source {
     padding: 150px 0;
   }
   @media (max-width: 1199.98px) {
-    padding: 60px 0 175px;
+  padding: 60px 0 175px;
+  }
+  @media (max-width: 991.98px) {
+    padding: 60px 0 137px;
   }
 
   .box-img-wrapper {
     .img-wrapper {
+      position: relative;
+      @media(max-width: 991.98px){
+        padding-top: 20px;
+      }
       span {
         font: 500 1.375rem/2rem Lato;
         @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1007,7 +1025,7 @@ source {
 }
 
 
-.slider-band {
+.yt-band {
   background: $background-gray-color;
   position: relative;
   height: 600px;
@@ -1120,7 +1138,9 @@ source {
 
   .carousel {
     margin-bottom: 67px;
-
+    @media (max-width: 575.98px) {
+      margin-bottom: 30px;
+    }
     .carousel-indicators {
       justify-content: flex-start;
       margin-left: 0;

@@ -27,7 +27,7 @@
                             </router-link>
 
                             <div class="rightMenu">
-                                <div class="language d-flex justify-content-end pr-2">
+                                <div class="language d-flex justify-content-end pr-0 pr-sm-0 pr-md-0 pr-lg-2">
                                     <ul>
                                         <li class="d-inline ml-3" v-for="locale in locales" :key="locale"
                                             :class="{activeLanguage: $i18n.locale === locale }"
@@ -36,7 +36,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <b-navbar-toggle class='mr-2' target="nav-collapse" dark></b-navbar-toggle>
+
+                                <b-navbar-toggle target="nav-collapse" dark></b-navbar-toggle>
 
                                 <b-collapse id="nav-collapse" is-nav>
                                     <scrollactive class="ml-auto pr-2"

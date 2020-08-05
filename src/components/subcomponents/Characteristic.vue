@@ -2,8 +2,8 @@
     <section class="characteristic">
         <b-container>
             <b-row class="d-flex flex-wrap">
-                <b-col v-if='offset' cols="0" sm="0" md="0" lg="3"></b-col>
-                <b-col cols="12" sm="6" md="6" lg="3"
+                <b-col v-if='offset' cols="0" sm="0" md="3" lg="3"></b-col>
+                <b-col cols="6" sm="6" md="3" lg="3"
                        v-for="characteristic in data"
                        :key="characteristic.title">
                     <div class="mx-auto">
@@ -58,6 +58,10 @@
                 margin-right: auto;
                 margin-left: auto;
                 display: block;
+            }
+            @media(max-width: 575.98px) {
+                width: 70px;
+                margin-bottom: 38px;
             }
         }
         .characteristic_description{
