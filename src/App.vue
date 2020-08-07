@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <section id="navigation" :class="{'scroll-nav': navigation}" v-scroll="handleScroll">
+        <section id="navigation" :class="{'scroll-nav': navigation, smallScreen : smallScreen}" v-scroll="handleScroll">
             <b-container>
                 <b-row>
                     <b-col cols="12" class="mt-0 mt-sm-0 mt-md-1 mt-lg-1 mb-0 mb-sm-0 mb-md-1 mb-lg-1">
@@ -42,12 +42,12 @@
                                 <b-collapse id="nav-collapse" is-nav>
                                     <scrollactive class="ml-auto pr-2"
                                                   active-class="active"
-                                                  :offset="100"
+                                                  :offset="80"
                                                   :duration="800"
                                                   bezier-easing-value=".5,0,.35,1">
                                         <a v-for="(elem, index) in mainMenu" :key='index'
-                                             :href="`#` + `${elem.url}`"
-                                              class="scrollactive-item">
+                                           :href="`#` + `${elem.url}`"
+                                           class="scrollactive-item">
                                             {{ $t(elem.title)}}
                                         </a>
                                     </scrollactive>
@@ -59,14 +59,30 @@
             </b-container>
         </section>
         <router-view/>
+        <div>
+            <scrollactive
+                    :offset="100"
+                    :duration="1000"
+                    bezier-easing-value=".5,0,.35,1">
+                <a class="goTop scrollactive-item"
+                   :href="`${active? '#app' : ''}`"
+                   :class="{top : active, bottom: !active }"
+                >
+                    <span class="icon"></span>
+                </a>
+            </scrollactive>
+        </div>
         <footer>
             <b-container>
                 <b-row>
                     <b-col cols="12">
                         <div class="navbar justify-content-center">
-                            <router-link v-for='(elem, index) in footerMenu' :key='index' :to="`${elem.url}`"
+                            <router-link v-for='(elem, index) in footerMenu'
+                                         :key='index'
+                                         :to="`${elem.url}`"
                                          class="nav-link"
-                                         target="_blank">{{elem.title}}
+                                         target="_blank">
+                                {{elem.title}}
                             </router-link>
                         </div>
                     </b-col>
@@ -89,6 +105,8 @@
                 topElement: 0,
                 locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(','),
                 scrollPosition: null,
+                smallScreen: false,
+                active: false,
                 mainMenu: [
                     {
                         title: 'heading.presentation',
@@ -114,11 +132,19 @@
             }
         },
         methods: {
-            handleScroll: function () {
-                if (window.scrollY > 100) {
+            handleScroll() {
+                if (window.scrollY > 50) {
+                    this.smallScreen = true;
                     this.navigation = true;
                 } else {
                     this.navigation = false;
+                    this.smallScreen = false
+                }
+
+                if (document.body.scrollHeight - 500 <= window.innerHeight + window.scrollY) {
+                    this.active = true
+                }else{
+                    this.active = false
                 }
             },
             switchLocale(locale) {
@@ -131,15 +157,43 @@
         }
     }
 </script>
+
+
 <style scoped lang="scss">
-    li {
-        text-decoration: none;
-        text-transform: uppercase;
-        cursor: pointer;
+    .goTop {
+        border-radius: 50px;
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        display: block;
+        bottom: 150px;
+        right: 15px;
+        border: none;
+        z-index: 10;
+        padding: 4px;
+        .icon {
+            position: absolute;
+            top: 41%;
+            left: 24%;
+            border-right: 2px solid  white;
+            border-bottom: 2px solid  white;
+            margin: 0 0 3px 4px;
+            width: 16px;
+            height: 16px;
+            transform:  rotate(225deg);
+            -webkit-transform: rotate(225deg);
+            -moz-transform: rotate(225deg);
+            -o-transform:  rotate(225deg);
+            -ms-transform: rotate(225deg);
+        }
     }
-    li.activeLanguage{
-        color: $color-red;
+    .bottom{
+        opacity: 0;
+        transition: opacity .8s;
+    }
+    .top{
+        background-color: $color-red;
+        transition: opacity .8s;
+        opacity: 1;
     }
 </style>
-
-

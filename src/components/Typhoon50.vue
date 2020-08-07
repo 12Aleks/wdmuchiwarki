@@ -71,7 +71,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>5-22</b-td>
+                                    <b-td>5—22</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.header.secondLineFirst')}}</b-td>
@@ -91,7 +91,7 @@
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.header.fourthLineFirst')}}</b-td>
-                                    <b-td>-</b-td>
+                                    <b-td>—</b-td>
                                     <b-td>HDPE 50</b-td>
                                 </b-tr>
                                 <b-tr>
@@ -109,7 +109,7 @@
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.air.thirdLineFirst')}}</b-td>
-                                    <b-td>-</b-td>
+                                    <b-td>—</b-td>
                                     <b-td>{{$t('typhoon50.table.air.thirdLineThird')}}</b-td>
                                 </b-tr>
                                 <b-tr>
@@ -124,7 +124,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.blowing.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>1,1</b-td>
+                                    <b-td>1{{$t('marks')}}1</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('typhoon50.table.connect.title')}}</b-th>
@@ -137,7 +137,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.connect.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>3,8</b-td>
+                                    <b-td>3{{$t('marks')}}8</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('typhoon50.table.box.title')}}</b-th>
@@ -150,7 +150,7 @@
                                 <b-tr class="last">
                                     <b-td>{{$t('typhoon50.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>10,0</b-td>
+                                    <b-td>10{{$t('marks')}}0</b-td>
                                 </b-tr>
                             </b-tbody>
                         </b-table-simple>
@@ -186,13 +186,13 @@
                     }
                 ],
                 typhoon50Characteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—22 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '50, 63 mm'},
                 ],
                 typhoon50ProductsCharacteristic:[
                     { img: 'pressure.png', title: 'max. 15'},
-                    { img: 'weight.png', title: '1,1+3,8'},
-                    { img: 'size.png', title: '14×10×9 18×12×19'}
+                    { img: 'weight.png', title: '1.1 + 3.8'},
+                    { img: 'size.png', title: '14 × 10 × 9 18 × 12 × 19'}
                 ],
             }
         }

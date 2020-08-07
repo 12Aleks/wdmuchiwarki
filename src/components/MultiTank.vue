@@ -45,7 +45,7 @@
                             <li>- {{$t('multiTank.presentations.MultitankM.paragraphFourth')}},</li>
                             <li>- {{$t('multiTank.presentations.MultitankM.paragraphFifth')}},</li>
                             <li>- {{$t('multiTank.presentations.MultitankM.paragraphSixth')}},</li>
-                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphSeventh')}}</li>
+                            <li>- {{$t('multiTank.presentations.MultitankM.paragraphSeventh')}}.</li>
                         </ul>
                         <p class="descriptionMulti">
                             {{$t('multiTank.presentations.MultitankM.descriptionSecond')}}
@@ -101,7 +101,7 @@
                                     </b-tr>
                                     <b-tr class="border">
                                         <b-td>{{$t('multiTank.table.power.thirdLineFirst')}}</b-td>
-                                        <b-td>-</b-td>
+                                        <b-td>—</b-td>
                                         <b-td>{{$t('multiTank.table.power.thirdLineThird')}}</b-td>
                                     </b-tr>
                                     <b-tr>
@@ -111,24 +111,24 @@
                                     <b-tr>
                                         <b-td>{{$t('multiTank.table.fiber.firstLineFirst')}}</b-td>
                                         <b-td>N</b-td>
-                                        <b-td>140-850 (400-1300**)</b-td>
+                                        <b-td>140—850 (400—1300**)</b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-td>{{$t('multiTank.table.fiber.secondLineFirst')}}</b-td>
                                         <b-td>m/min</b-td>
-                                        <b-td>16-60</b-td>
+                                        <b-td>16—60</b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-td>{{$t('multiTank.table.fiber.thirdLineFirst')}}</b-td>
                                         <b-td>mm</b-td>
                                         <b-td>
-                                            3-22 <br/>
+                                            3—22 <br/>
                                             SNR max. 8 x 10
                                         </b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-td>{{$t('multiTank.table.fiber.fourthLineFirst')}}</b-td>
-                                        <b-td>-</b-td>
+                                        <b-td>—</b-td>
                                         <b-td v-html="$t('multiTank.table.fiber.fourthLineThird')">
                                         </b-td>
                                     </b-tr>
@@ -161,7 +161,7 @@
                                 </b-tbody>
                             </b-table-simple>
                         </div>
-                        <p>**{{$t('multiTank.table.description')}}</p>
+                        <p>** {{$t('multiTank.table.description')}}</p>
                     </b-col>
 
                 </b-row>
@@ -196,15 +196,15 @@
                     }
                 ],
                 multiCharacteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-22 mm'},
-                    { img: 'pakiety_snr.svg', title: 'characteristic.packages', description: '8×10 mm'},
-                    { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '6-16 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3—22 mm'},
+                    { img: 'pakiety_snr.svg', title: 'characteristic.packages', description: '8 × 10 mm'},
+                    { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '6—16 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '32, 40, 50, 63 mm'}
                 ],
                 multiProductsCharacteristic:[
                     { img: 'thunderbolt.png', title: '230V/1600W'},
-                    { img: 'weight.png', title: '35,0'},
-                    { img: 'size.png', title: '59×35×31'}
+                    { img: 'weight.png', title: '35.0'},
+                    { img: 'size.png', title: '59 × 35 × 31'}
                 ],
             }
         }

@@ -40,24 +40,79 @@
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
 
     export default {
         name: "OtherProducts",
         props: ['otherProducts'],
-        methods: {
-            mouseover(index) {
-                this.$store.dispatch('down', index)
-            },
-            mouseleave(index) {
-                this.$store.dispatch('up', index)
+        data(){
+            return{
+                products: [
+                    {
+                        name: 'MultiTank',
+                        title: 'products.feeder',
+                        photo: '3M7A2089n.png',
+                        backgroundOne: 'product_a.png',
+                        altOne: 'circle one',
+                        backgroundTwo: 'product_b.png',
+                        altTwo: 'circle two',
+                        styles: '',
+                        active: false,
+                    },
+                    {
+                        name: 'MicroTyphoon',
+                        title: 'products.microTyphoon',
+                        photo: 'IMG_0033.png',
+                        backgroundOne: 'product_a.png',
+                        altOne: 'circle one',
+                        backgroundTwo: 'product_b.png',
+                        altTwo: 'circle two',
+                        styles: '',
+                        active: false
+                    },
+                    {
+                        name: 'Typhoon32',
+                        title: 'products.typhoon32',
+                        photo: 'typhoon_32_40.png',
+                        backgroundOne: 'product_a.png',
+                        altOne: 'circle one',
+                        backgroundTwo: 'product_b.png',
+                        altTwo: 'circle two',
+                        styles: '',
+                        active: false
+                    },
+                    {
+                        name: 'Typhoon50',
+                        title: 'products.typhoon50',
+                        photo: 'typhon_50_63.png',
+                        backgroundOne: 'product_a.png',
+                        altOne: 'circle one',
+                        backgroundTwo: 'product_b.png',
+                        altTwo: 'circle two',
+                        styles: 'offset-md-0 offset-lg-2',
+                        active: false
+                    },
+                    {
+                        name: 'Y2',
+                        title: 'products.connector',
+                        photo: '3M7A2122n.png',
+                        backgroundOne: 'product_a.png',
+                        altOne: 'circle one',
+                        backgroundTwo: 'product_b.png',
+                        altTwo: 'circle two',
+                        styles: 'offset-sm-0 offset-md-3 offset-lg-0',
+                        active: false
+                    },
+                ]
             }
         },
-        computed: {
-            ...mapGetters([
-                'products'
-            ])
-        },
+        methods: {
+            mouseover(index) {
+                this.products[index].active = true
+            },
+            mouseleave(index) {
+                this.products[index].active = false
+            }
+        }
     }
 </script>
 

@@ -63,6 +63,7 @@
     "packages": "Microrohr Pakete",
     "microducts": "Microrohr"
   },
+  "marks": ",",
   "multiTank": {
     "slider": {
       "firstSlide": "MultiTank Zuführung",
@@ -84,10 +85,10 @@
         "paragraphFourth": "Datum und Uhrzeit",
         "paragraphFifth": "Umgebungstemperatur",
         "paragraphSixth": "GPS-Standort",
-        "paragraphSeventh": "maximale durch den Bediener voreingestellte Vorschubkraft*",
+        "paragraphSeventh": "maximale durch den Bediener voreingestellte Vorschubkraft**",
         "descriptionSecond": "Die Berichte werden in Form von PDF-Dateien von einer Webanwendung erstellt, auf die beim Kauf des Geräts zugegriffen werden kann. Der Benutzer kann die Tabelle mit den restlichen Informationen zum Projekt (Parameter des Kabels, der Rohrleitung, des Kompressors usw.) vervollständigen.",
         "descriptionThird": "Die Daten der ausgeführten Arbeiten werden auf einem Server ohne Zugriff durch Dritte gespeichert. Über die Applikation kann der Benutzer bei Bedarf jederzeit auch die Daten zurückgreifen.",
-        "note": "*optional"
+        "note": "** optional"
       }
     },
     "table": {
@@ -165,7 +166,7 @@
       "descriptionFirst": "Das Set Typhoon 32/40 ist für die Verwendung mit einzelnen Glasfaserkabeln oder Mikrorohren mit einem Durchmesser von 5 bis 22 mm ausgelegt, die in HDPE-Rohre 32- und 40mm eingeblasen werden. Darüber hinaus ist es auch möglich Mikrorohrpakete einzublasen*. Das Set ist in den Kopf und Luftanschluss unterteilt. Hieraus ergibt sich Folgendes:",
       "paragraphFirst": "geringe Detailabmessungen und die Möglichkeit einer ergonomischen Montage",
       "paragraphSecond": "es ist möglich den Luftanschluss direkt mit dem Rohr im Graben oder einem anderen Brunnen zu verbinden (bei Arbeiten in der Stadt, wo nicht viel Platz vorhanden ist, um alle Geräte an einem Ort einzurichten)",
-      "paragraphThird":"Luftzufuhr von zwei Seiten in einem Winkel von 45 °, wodurch der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert wird",
+      "paragraphThird": "Luftzufuhr von zwei Seiten in einem Winkel von 45 °, wodurch der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert wird",
       "descriptionSecond": "Der Typhoon 32/40-Kopf mit Luftanschluss kann als eigenständiges Gerät ohne Verwendung des MultiTank-Zuführers verwendet werden. Die Installation des Glasfaserkabels erfolgt dann manuell. Diese Funktionalität ist auch für den Aufwicklungsprozess von wesentlicher Bedeutung",
       "note": "* Weitere Informationen betreffend dem Einblasen von Mikroproduktpaketen finden Sie auf der Katalogkarte."
     },
@@ -212,7 +213,7 @@
       "descriptionThird": "Das Set ist in den Kopf- und Luftanschluss unterteilt, woraus sich Folgendes ergibt:",
       "paragraphFirst": "geringere Detailabmessungen sowie die Möglichkeit einer ergonomischen Montage",
       "paragraphSecond": "es ist möglich den Luftanschluss direkt an das Rohr im Graben anzuschließen",
-      "paragraphThird":"Luftzufuhr von zwei Seiten in einem Winkel von 45 °, dadurch wird der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert.",
+      "paragraphThird": "Luftzufuhr von zwei Seiten in einem Winkel von 45 °, dadurch wird der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert.",
       "noteFirst": "* Weitere Informationen zum Blasen von Mikroproduktverpackungen finden Sie auf der Katalogkarte.",
       "noteSecond": "** Das Zubehörset ist auf Anfrage erhältlich."
     },
@@ -266,6 +267,7 @@
       "cable": {
         "title": "Vorhan-denes Kabel",
         "firstLineFirst": "Maximale Menge",
+        "firstLineSecond": "stck.",
         "secondLineFirst": "Maximaler Durchmesser"
       },
       "air": {
@@ -288,5 +290,4 @@
     }
   },
   "contact-footer-text": "Kontaktieren Sie uns, senden Sie uns Ihre Anfrage"
-
 }

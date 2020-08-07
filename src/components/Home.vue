@@ -18,7 +18,7 @@
                     <b-carousel
                             id="carousel-1"
                             v-model="slide"
-                            :interval="10000"
+                            :interval="0"
                             style="color: #3D3C3C;"
                             indicators
                             class="h-100"
@@ -38,7 +38,7 @@
                             <b-carousel
                                     id="carousel-1"
                                     v-model="slide"
-                                    :interval="10000"
+                                    :interval="0"
                                     style="color: #3D3C3C;"
                                     indicators
                                     class="h-100 d-flex flex-wrap"
@@ -227,7 +227,6 @@
                 hideSlider: false,
                 showTab: false,
                 hideTab: false,
-                // active: false,
                 mail: '',
                 phone: '',
                 text: '',

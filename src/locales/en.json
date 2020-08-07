@@ -19,7 +19,7 @@
     }
   },
   "presentation": {
-    "descriptionFirst": "The Terma MultiTyphoon blowing machine is designed to install fiber optics cables with diameters between 3 and 20 mm into 6–16 mm microducts and HDPE 32–63 pipes. A fully electric feeder, convertible blowing heads and versatility of applications are distinguishing this product on the market.",
+    "descriptionFirst": "The Terma MultiTyphoon blowing machine is designed to install fiber optic cables with diameters between 3 and 20 mm into 6–16 mm microducts and HDPE 32–63 pipes. A fully electric feeder, convertible blowing heads and versatility of applications are distinguishing this product on the market.",
     "descriptionSecond": "Fiber optic blowing is performed with independent control of feeding speed and force. All the parameters are saved in the data log which is then converted into a blowing report in an online application.",
     "electricFeederFirst": "electric",
     "electricFeederSecond": "feeder",
@@ -63,6 +63,7 @@
     "packages": "microducts packages",
     "microducts": "microducts"
   },
+  "marks": ".",
   "multiTank": {
     "slider": {
       "firstSlide": "MultiTank Feeder",
@@ -75,7 +76,7 @@
         "descriptionThird": "The MultiTank S feeder is a universal device due to convertible blowing heads which enable installation of optical fiber cables from the 3–22 mm range as well as microducts packages even as large as 8 x 10 mm. The device can work in the harshest weather conditions – in the rain and sub-zero temperatures.",
         "descriptionFourth": "The feeding force and speed are controlled independently and regulated by potentiometers. LCD displays show the main parameters such as the length of the cable blown in, current resistance value and pressure in the pipe duct.",
         "descriptionFifth": "There is no need to change belts while blowing in optical fibers of different diameters. Belt pressure is regulated by springs which prevent cable crushing or skidding.",
-        "note": "*More information on blowing in microducts packages is available in the specification sheet."
+        "note": "* More information on blowing in microducts packages is available in the specification sheet."
       },
       "MultitankM": {
         "descriptionFirst": "The MultiTank R version is additionally equipped with a data logger allowing control over the quality of optical fiber alignment. The report includes all necessary parameters, recorded automatically and presented in the graph:",
@@ -85,10 +86,10 @@
         "paragraphFourth": "date and time",
         "paragraphFifth": "ambient temperature",
         "paragraphSixth": "GPS localization",
-        "paragraphSeventh": "maximum feeding force set by operator",
+        "paragraphSeventh": "maximum feeding force set by operator**",
         "descriptionSecond": "A web application generates blowing process reports in PDF format. Access to this application is granted after device purchase. The user can complete a table with additional information related to a specific project (parameters of pipelines, cables, compressor etc.) Online reports can be accessed from any device after entering the login and password.",
         "descriptionThird": "Data from finished projects is stored on a server secured against unauthorized third party access. The application allows the user to review this data whenever necessary.",
-        "note": "*optionally"
+        "note": "** optionally"
       }
     },
     "table": {
@@ -129,7 +130,7 @@
     "presentations": {
       "descriptionFirst": "The MicroTyphoon blowing head is intended to work with 3–10 mm fiber optic cables blown into 6–16 mm microducts.",
       "descriptionSecond": "Small size, simple assembly and a large amount of accessories allow work in all conditions. The device is equipped with three sizes of guide sleeves mounted very close to the drive belts. This reduces the risk of optical fiber breakage.",
-      "descriptionThird": "The MicroTyphoon blowing head can operate as a standalone unit without The MultiTank feeder. The installation of optical fibers is then performed manually. This functionality is also essential for the interlacing process."
+      "descriptionThird": "The MicroTyphoon blowing head can operate as a standalone unit without The MultiTank feeder. The installation of optical fibers is then performed manually. This functionality is also essential for cable blowing with a fleeter at the midpoint."
     },
     "table": {
       "title": "Parameters",
@@ -146,7 +147,7 @@
         "thirdLineThird": "Minimess coupling"
       },
       "blowing": {
-        "title": "Blowing head",
+        "title": "Blowing Head",
         "firstLineFirst": "Dimensions (W x D x H)",
         "secondLineFirst": "Mass"
       },
@@ -168,7 +169,7 @@
       "paragraphSecond": "possibility of attaching the compressed air connector directly to the pipe in the trench or another manhole (e.g. when the installation is carried out in a densely built up area and space for equipment is limited)",
       "paragraphThird":"air supply connectors on both sides (at 45 deg. angle), which allows the reduction of pressure by approx. 0.5 bar in comparison to a single connection at 90 deg. angle",
       "descriptionSecond": "The Typhoon 32/40 head with an air connector can operate as a standalone unit without the MultiTank feeder. The installation of the optical fiber is then performed manually. This functionality is also essential for the interlacing process.",
-      "note": "*More information on blowing in microducts packages is available in the specification sheet."
+      "note": "* More information on blowing in microducts packages is available in the specification sheet."
     },
     "table": {
       "title": "Parameters",
@@ -214,8 +215,8 @@
       "paragraphFirst": "small size of components and ergonomic assembly",
       "paragraphSecond": "possibility of attaching a compressed air connector directly to the pipe in the trench",
       "paragraphThird":"air supply connectors on both sides (at 45 deg. angle), which allows the reduction of pressure by approx. 0.5 bar in comparison to a single connection at 90 deg. angle",
-      "noteFirst": "*More information on blowing in microducts packages is available in the specification sheet.",
-      "noteSecond": "**Accessory kit available on request."
+      "noteFirst": "* More information on blowing in microducts packages is available in the specification sheet.",
+      "noteSecond": "** Accessory kit available on request."
     },
     "table": {
       "title": "Parameters",
@@ -267,6 +268,7 @@
       "cable": {
         "title": "Existing Cable",
         "firstLineFirst": "Maximum Amount",
+        "firstLineSecond": "pcs",
         "secondLineFirst": "Maximum Diameter"
       },
       "air": {

@@ -65,7 +65,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>5-22</b-td>
+                                    <b-td>5—22</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.header.secondLineFirst')}}</b-td>
@@ -83,7 +83,7 @@
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.header.fourthLineFirst')}}</b-td>
-                                    <b-td>-</b-td>
+                                    <b-td>—</b-td>
                                     <b-td>HDPE 32</b-td>
                                 </b-tr>
                                 <b-tr>
@@ -101,7 +101,7 @@
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.air.thirdLineFirst')}}</b-td>
-                                    <b-td>-</b-td>
+                                    <b-td>—</b-td>
                                     <b-td>{{$t('typhoon32.table.air.thirdLineThird')}}</b-td>
                                 </b-tr>
                                 <b-tr>
@@ -115,7 +115,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.blowing.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>0,9</b-td>
+                                    <b-td>0{{$t('marks')}}9</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('typhoon32.table.connect.title')}}</b-th>
@@ -128,7 +128,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.connect.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>2,6</b-td>
+                                    <b-td>2{{$t('marks')}}6</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('typhoon32.table.box.title')}}</b-th>
@@ -141,7 +141,7 @@
                                 <b-tr class="last">
                                     <b-td>{{$t('typhoon32.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>7,8</b-td>
+                                    <b-td>7{{$t('marks')}}8</b-td>
                                 </b-tr>
                             </b-tbody>
                         </b-table-simple>
@@ -177,13 +177,13 @@
                     }
                 ],
                 typhoonCharacteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5-22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—22 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
                 ],
                 typhoonProductsCharacteristic:[
                     { img: 'pressure.png', title: 'max. 15'},
-                    { img: 'weight.png', title: '0,9+2,6'},
-                    { img: 'size.png', title: '11×9×7 14×9×16'}
+                    { img: 'weight.png', title: '0.9 + 2.6'},
+                    { img: 'size.png', title: '11 × 9 × 7 14 × 9 × 16'}
                 ],
             }
         }

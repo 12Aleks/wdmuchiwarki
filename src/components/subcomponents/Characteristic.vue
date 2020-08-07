@@ -61,7 +61,7 @@
             }
             @media(max-width: 575.98px) {
                 width: 70px;
-                margin-bottom: 38px;
+                margin-bottom: 15px;
             }
         }
         .characteristic_description{
@@ -91,6 +91,7 @@
                 max-width: 160px;
             }
             @media(max-width: 991.98px) {
+
                 margin-top: 20px;
             }
         }

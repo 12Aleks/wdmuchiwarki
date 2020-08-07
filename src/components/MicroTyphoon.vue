@@ -41,12 +41,12 @@
                                 <b-tr >
                                     <b-td>{{$t('micro.table.diameters.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>3-10</b-td>
+                                    <b-td>3—10</b-td>
                                 </b-tr>
                                 <b-tr >
                                     <b-td>{{$t('micro.table.diameters.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>6-16</b-td>
+                                    <b-td>6—16</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('micro.table.air.title')}}
@@ -64,7 +64,7 @@
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('micro.table.air.thirdLineFirst')}}</b-td>
-                                    <b-td>-</b-td>
+                                    <b-td>—</b-td>
                                     <b-td>{{$t('micro.table.air.thirdLineThird')}}
                                     </b-td>
                                 </b-tr>
@@ -79,7 +79,7 @@
                                 <b-tr>
                                     <b-td>{{$t('micro.table.blowing.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>1,0</b-td>
+                                    <b-td>1{{$t('marks')}}0</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-th colspan="3" class="text-left">{{$t('micro.table.box.title')}}</b-th>
@@ -92,7 +92,7 @@
                                 <b-tr class="last" >
                                     <b-td>{{$t('micro.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>5,5</b-td>
+                                    <b-td>5{{$t('marks')}}5</b-td>
                                 </b-tr>
                             </b-tbody>
                         </b-table-simple>
@@ -128,13 +128,13 @@
                   }
               ],
               microCharacteristic: [
-                  { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3-10 mm'},
-                  { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '3-10 mm'},
+                  { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3—10 mm'},
+                  { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '3—10 mm'},
               ],
               microProductsCharacteristic:[
                   { img: 'pressure.png', title: 'max. 25'},
-                  { img: 'weight.png', title: '1,0'},
-                  { img: 'size.png', title: '12×9×11'}
+                  { img: 'weight.png', title: '1.0'},
+                  { img: 'size.png', title: '12 × 9 × 11'}
               ],
           }
         }
