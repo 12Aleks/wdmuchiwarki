@@ -196,4 +196,20 @@
         transition: opacity .8s;
         opacity: 1;
     }
+    footer {
+        .navbar {
+            a {
+                display: block;
+                color: $font-color;
+                padding: 10px 8px;
+                text-decoration: none;
+                text-align: center;
+                font: 500 1rem/1.5rem Lato;
+            }
+
+            &:nth-child(1) {
+                padding: 10px 8px 10px 0;
+            }
+        }
+    }
 </style>

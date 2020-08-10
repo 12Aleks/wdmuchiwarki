@@ -40,7 +40,7 @@
         .characteristic-box {
             max-width: 537px;
             div {
-                width: 270px;
+                width: auto;
                 @media(max-width: 575.98px) {
                     width: 100px;
                 }
@@ -78,9 +78,8 @@
                     @media(max-width: 575.98px) {
                         height: 70px;
                         width: 97px;
-                        margin-right: auto;
-                        margin-left: auto;
                         display: block;
+                        margin: 0 auto;
                     }
                     @media(max-width: 412.98px) {
                         width: 85px;

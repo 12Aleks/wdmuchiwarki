@@ -176,30 +176,15 @@
     }
 
     .imgHover {
-        -moz-animation: imgHov 1s;
-        -o-animation: imgHov 1s;
-        -webkit-animation: imgHov 1s;
-        animation: imgHov 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
+        @include animation(1s, imgHov);
     }
 
     .imgHoverOne {
-        -moz-animation: imgOne 1s;
-        -o-animation: imgOne 1s;
-        -webkit-animation: imgOne 1s;
-        animation: imgOne 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
+        @include animation(1s, imgOne);
     }
 
     .imgHoverTwo {
-        -moz-animation: imgTwo 1s;
-        -o-animation: imgTwo 1s;
-        -webkit-animation: imgTwo 1s;
-        animation: imgTwo 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
+        @include animation(1s, imgTwo);
     }
 
     @keyframes imgHov {
