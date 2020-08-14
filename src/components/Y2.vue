@@ -122,7 +122,7 @@
                                 <b-tr class="last">
                                     <b-td>{{$t('y2.table.box.secondLineFirst')}}</b-td>
                                     <b-td>kg</b-td>
-                                    <b-td>9{{$t('marks')}}0??</b-td>
+                                    <b-td>8{{$t('marks')}}1</b-td>
                                 </b-tr>
                             </b-tbody>
                         </b-table-simple>

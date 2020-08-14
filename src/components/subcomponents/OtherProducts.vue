@@ -8,10 +8,10 @@
                 </b-col>
             </b-row>
             <b-row>
-                <b-col cols="12" md="6" lg="4"
-                       v-for="(product, index) in products"
+                <b-col cols="12" md="6"
+                       v-for="(product , index) in userPositions"
                        :key="index"
-                       :class="product.styles"
+                       :class="position === 'Home'? `${product.styles}`: 'col-lg-3 subpage'"
                        class="product-box"
                        @mouseover="mouseover(index)"
                        @mouseleave="mouseleave(index)">
@@ -44,8 +44,9 @@
     export default {
         name: "OtherProducts",
         props: ['otherProducts'],
-        data(){
-            return{
+        data() {
+            return {
+                position: this.$route.name,
                 products: [
                     {
                         name: 'MultiTank',
@@ -55,7 +56,7 @@
                         altOne: 'circle one',
                         backgroundTwo: 'product_b.png',
                         altTwo: 'circle two',
-                        styles: '',
+                        styles: 'col-lg-4',
                         active: false,
                     },
                     {
@@ -66,7 +67,7 @@
                         altOne: 'circle one',
                         backgroundTwo: 'product_b.png',
                         altTwo: 'circle two',
-                        styles: '',
+                        styles: 'col-lg-4',
                         active: false
                     },
                     {
@@ -77,7 +78,7 @@
                         altOne: 'circle one',
                         backgroundTwo: 'product_b.png',
                         altTwo: 'circle two',
-                        styles: '',
+                        styles: 'col-lg-4',
                         active: false
                     },
                     {
@@ -88,7 +89,7 @@
                         altOne: 'circle one',
                         backgroundTwo: 'product_b.png',
                         altTwo: 'circle two',
-                        styles: 'offset-md-0 offset-lg-2',
+                        styles: 'offset-md-0 offset-lg-2 col-lg-4',
                         active: false
                     },
                     {
@@ -99,18 +100,27 @@
                         altOne: 'circle one',
                         backgroundTwo: 'product_b.png',
                         altTwo: 'circle two',
-                        styles: 'offset-sm-0 offset-md-3 offset-lg-0',
+                        styles: 'offset-sm-0 offset-md-3 offset-lg-0 col-lg-4',
                         active: false
                     },
                 ]
             }
         },
+        computed: {
+            userPositions() {
+                return this.products.filter((prod) => {
+                    if (this.position !== 'Home') {
+                        return prod.name !== this.position;
+                    } else return true
+                });
+            }
+        },
         methods: {
             mouseover(index) {
-                this.products[index].active = true
+                this.userPositions[index].active = true;
             },
             mouseleave(index) {
-                this.products[index].active = false
+                this.userPositions[index].active = false;
             }
         }
     }
@@ -129,15 +139,18 @@
         @media (max-width: 1199.98px) {
             padding: 70px 0;
         }
+
         .product-box {
             height: 350px;
             position: relative;
             @media (max-width: 412.98px) {
                 height: 280px;
             }
+
             .img_product_podajnik {
                 margin-right: 20px;
             }
+
             .one {
                 position: absolute;
                 z-index: 0;
@@ -170,6 +183,43 @@
                     padding: 0;
                     max-width: 270px;
                     height: 180px;
+                }
+            }
+        }
+
+        .product-box.subpage {
+
+            @media(min-width: 992px) {
+                height: 330px;
+            }
+
+            .product-box {
+                @media(min-width: 1200px) {
+                    height: 330px;
+                }
+                @media(min-width: 992px) and (max-width: 1199.98px) {
+                    height: 300px;
+                }
+            }
+
+            img.one, img.two {
+                max-width: calc(100% - 15px);
+            }
+
+            img.img_product {
+                @media(min-width: 1200px) {
+                    max-width: 250px;
+                    height: 160px;
+                }
+                @media(min-width: 992px) and (max-width: 1199.98px) {
+                    max-width: 240px;
+                    height: 140px;
+                }
+            }
+
+            p.descriptions {
+                @media(min-width: 992px) {
+                    font: 500 1.2rem/2rem Lato;
                 }
             }
         }

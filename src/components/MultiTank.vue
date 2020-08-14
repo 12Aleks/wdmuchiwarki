@@ -143,7 +143,7 @@
                                     <b-tr>
                                         <b-td>{{$t('multiTank.table.other.secondLineFirst')}}</b-td>
                                         <b-td>kg</b-td>
-                                        <b-td>35??</b-td>
+                                        <b-td>35</b-td>
                                     </b-tr>
                                     <b-tr>
                                         <b-th colspan="3" class="text-left">{{$t('multiTank.table.box.title')}}</b-th>
@@ -156,14 +156,13 @@
                                     <b-tr class="last">
                                         <b-td>{{$t('multiTank.table.box.secondLineFirst')}}</b-td>
                                         <b-td>kg</b-td>
-                                        <b-td>45??</b-td>
+                                        <b-td>50</b-td>
                                     </b-tr>
                                 </b-tbody>
                             </b-table-simple>
                         </div>
                         <p>** {{$t('multiTank.table.description')}}</p>
                     </b-col>
-
                 </b-row>
             </b-container>
 
@@ -207,6 +206,9 @@
                     { img: 'size.png', title: '59 × 35 × 31'}
                 ],
             }
+        },
+        created() {
+            console.log(this.$route.path)
         }
     }
 </script>

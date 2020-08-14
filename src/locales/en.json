@@ -206,7 +206,7 @@
   "typhoon50": {
     "slider": {
       "firstSlide": "Typhoon 50/63 Blowing Kit",
-      "secondSlide": "Second Typhoon 50/63 Blowing Kit"
+      "secondSlide": "Typhoon 50/63 Blowing Kit"
     },
     "presentations": {
       "descriptionFirst": "The Typhoon 50/63 kit was designed for blowing in individual microducts and their packages into HDPE 50 and HDPE 63 pipes*.",
@@ -253,7 +253,7 @@
   "y2": {
     "slider": {
       "firstSlide": "Y2 Connector",
-      "secondSlide": "Second Y2 Connector"
+      "secondSlide": "Y2 Connector"
     },
     "presentations": {
       "descriptionFirst": "The Y2 connector is used for blowing in optical fibers or microducts into HDPE 32 and 40 tubes with 1 or 2 existing optical fibers or microducts. It can work together with the Typhoon 32/40 blowing head. ",
