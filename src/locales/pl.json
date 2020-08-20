@@ -1,6 +1,7 @@
 {
   "lang": "pl",
   "heading": {
+    "siteTitle": "brand.png",
     "presentation": "Prezentacja",
     "products": "Produkty",
     "contact": "Kontakt",
@@ -290,5 +291,13 @@
       }
     }
   },
-  "contact-footer-text": "Skontaktuj się z nami, złóż zapytanie."
+  "contact-footer-text": "Skontaktuj się z nami, złóż zapytanie.",
+  "footerMenu": {
+    "group": "http://www.termagroup.pl/",
+    "outlet": "http://www.termaoutlet.pl/",
+    "galvanic": "http://www.termaoutlet.pl/",
+    "service":"http://www.termaservices.pl/",
+    "max": "http://www.termamax.pl/pl/glowna",
+    "med": "https://www.termamed.pl/"
+  }
 }

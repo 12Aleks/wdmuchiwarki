@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" :class="$t('lang')">
         <section id="navigation" :class="{'scroll-nav': navigation, smallScreen : smallScreen}" v-scroll="handleScroll">
             <b-container>
                 <b-row>
@@ -20,7 +20,7 @@
                                     </div>
                                     <div class="d-flex flex-column justify-content-center site-name-slogan">
                                         <span id="site_name"><b-img
-                                                :src="require(`@/assets/images/siteHeader/brand.png`)"
+                                                :src="require(`@/assets/images/siteHeader/${$t('heading.siteTitle')}`)"
                                                 alt="site name"></b-img></span>
                                     </div>
                                 </div>
@@ -77,13 +77,13 @@
                 <b-row>
                     <b-col cols="12">
                         <div class="navbar justify-content-center">
-                            <router-link v-for='(elem, index) in footerMenu'
+                            <a v-for='(elem, index) in footerMenu'
                                          :key='index'
-                                         :to="`${elem.url}`"
+                                         :href="`${$t(elem.url)}`"
                                          class="nav-link"
                                          target="_blank">
                                 {{elem.title}}
-                            </router-link>
+                            </a>
                         </div>
                     </b-col>
                 </b-row>
@@ -122,12 +122,12 @@
                     }
                 ],
                 footerMenu: [
-                    {title: 'TERMA SPÓŁKA', url: 'http://www.termagroup.pl/'},
-                    {title: 'MASZYNY BUDOWLANE', url: 'http://www.termamax.pl/ru/glowna'},
-                    {title: 'USŁUGI PRZEMYSŁOWE', url: 'http://www.termaservices.pl/'},
-                    {title: 'GALWANIZERNIA', url: 'http://www.termagalvanic.pl/'},
-                    {title: 'PRODUKTY MEDYCZNE', url: 'https://www.termamed.pl/'},
-                    {title: 'WYPRZEDAŻ GRZEJNIKÓW', url: 'http://www.termaoutlet.pl/'},
+                    {title: 'TERMA SPÓŁKA', url: 'footerMenu.group'},
+                    {title: 'MASZYNY BUDOWLANE', url: 'footerMenu.max'},
+                    {title: 'USŁUGI PRZEMYSŁOWE', url: 'footerMenu.service'},
+                    {title: 'GALWANIZERNIA', url: 'footerMenu.galvanic'},
+                    {title: 'PRODUKTY MEDYCZNE', url: 'footerMenu.med'},
+                    {title: 'WYPRZEDAŻ GRZEJNIKÓW', url: 'footerMenu.outlet'},
                 ]
             }
         },
@@ -160,6 +160,283 @@
 
 
 <style scoped lang="scss">
+    #navigation.scroll-nav {
+        background-color: rgba(255, 255, 255, 1) !important;
+        height: 87px;
+        transition: height .2s, background-color 1s;
+        @media(max-width: 991.98px) {
+            height: auto;
+        }
+        .navbar {
+            .navbar-brand {
+                max-height: 47px;
+                .logo-wrapper{
+                    height: 40px;
+                    transition: all .2s;
+                    @media(max-width: 991.98px) {
+                        height: 35px;
+                    }
+                    .img {
+                        display: inherit !important;
+                    }
+
+                    .logo-symbol {
+                        max-height: 2.5rem;
+                        height: 100%;
+                        display: inline-block;
+                    }
+
+                    .name-symbol {
+                        display: inline-block;
+                        margin: auto 0 auto 15px;
+                    }
+
+                    .subname-symbol {
+                        display: none !important;
+                    }
+                }
+            }
+            .rightMenu {
+                @media(max-width: 991.98px) {
+                    height: auto;
+                    .language {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #navigation {
+        background-color: rgba(255, 255, 255, 0.7);
+        @include box-shadow(0 0 3px 0 rgba(235,235,235,1));
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        height: 124px;
+        transition: height .2s, background-color 1s;
+        @media(max-width: 991.98px) {
+            height: auto;
+        }
+        .navbar {
+            @media (max-width: 575.98px) {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .navbar-brand, .rightMenu {
+                width: 50%;
+            }
+            .navbar-brand {
+                font-size: inherit;
+                @media(max-width: 412.98px) {
+                    width: 41%;
+                }
+                .logo-wrapper {
+                    height: 90px;
+                    padding-right: 42px;
+                    border-right: 1px solid rgb(112, 112, 112);
+                    float: none;
+                    transition: all .2s;
+                    @media(max-width: 991.98px) {
+                        height: auto;
+                    }
+                    @media(max-width: 991.98px) {
+                        padding-right: 29px;
+                    }
+                    @media(max-width: 767.98px) {
+                        padding-right: 20px;
+                    }
+                    @media(max-width: 575.98px) {
+                        padding-right: 15px;
+                    }
+                    @media(max-width: 525.98px) {
+                        padding-right: 0;
+                        border-right: 0;
+                    }
+                    img {
+                        display: block;
+                        position: relative;
+                        margin: 0 auto;
+                    }
+                    .logo-symbol {
+                        width: auto;
+                        max-height: 3rem;
+                    }
+
+                    img.logo-symbol {
+                        width: auto;
+                        max-height: 2.5rem;
+                        @media(max-width: 991.98px) {
+                            width: 2.1875rem;
+                        }
+                    }
+
+                    img.name-symbol, img.subname-symbol {
+                        margin-top: 0.8rem;
+                        margin-bottom: 0.2rem;
+                    }
+
+                    img.name-symbol {
+                        max-width: 105px;
+                        @media(max-width: 991.98px) {
+                            width: 75px;
+                        }
+                        @media (max-width: 575.98px) {
+                            margin-top: 0.6rem;
+                            margin-bottom: 0.4rem;
+                        }
+                    }
+
+                    img.subname-symbol {
+                        @media(max-width: 991.98px) {
+                            width: 50px;
+                            margin-top: 0.8rem;
+                            margin-bottom: 0.2rem;
+                        }
+                        @media (max-width: 575.98px) {
+                            margin-top: 0.5rem;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            #site_name {
+                padding-left: 32px;
+                max-width: 276px;
+                height: auto;
+                @media(max-width: 991.98px) {
+                    max-width: 200px;
+                    padding-left: 25px;
+                }
+                @media (max-width: 767.98px) {
+                    padding-left: 20px;
+                }
+                @media (max-width: 575.98px) {
+                    max-width: 124px;
+                    padding-left: 18px;
+                }
+                @media(max-width: 525.98px) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+
+            .rightMenu {
+                @media(max-width: 412.98px) {
+                    width: 59%;
+                }
+                .language {
+                    display: inherit;
+
+                    ul {
+                        li {
+                            font: 400 1rem/1rem Lato;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                        }
+
+                        li.activeLanguage {
+                            color: $color-red;
+                        }
+                    }
+                }
+
+                .navbar-collapse {
+                    nav.scrollactive-nav {
+                        a.active {
+                            color: $color-red !important;
+                        }
+
+                        a {
+                            color: rgb(112, 112, 112);
+                            font: 100 1.125rem Lato, Sans-Serif;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            @media(max-width: 991.98px) {
+                                font: 100 1rem Lato, Sans-Serif;
+                            }
+                            @media(min-width: 992px) {
+                                &:not(:nth-last-child(1)) {
+                                    padding-right: 10px;
+                                }
+                            }
+                            @media(max-width: 991.98px) {
+                                @include flexbox;
+                                @include flex-direction(column);
+                                @include align-items(flex-end);
+                                @include justify-content(center);
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 991.98px) {
+                align-items: inherit;
+                .navbar-brand {
+                    margin-right: 0;
+                    max-height: 86px;
+                    @include flexbox;
+                    @include flex-direction(column);
+                    @include justify-content(center);
+                }
+                .rightMenu {
+                    @include flexbox;
+                    @include flex-direction(column);
+                    @include align-items(flex-end);
+                    @include justify-content(flex-start);
+                    .navbar-nav {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+            padding: 0;
+            border-color: rgba(0, 0, 0, 0.2);
+            &:focus, &:active {
+                border-color: rgba(0, 0, 0, 0.2);
+                outline: 1px solid rgb(245, 243, 244);
+                border-radius: .25rem;
+            }
+        }
+    }
+
+
+    .de #navigation,.en #navigation{
+        .navbar{
+            .navbar-brand{
+                .logo-wrapper{
+                    @media(max-width: 767.98px) {
+                        padding-right: 0;
+                        border-right: 0;
+                    }
+                }
+            }
+            #site_name {
+                max-width: 100%;
+                @media(max-width: 991.98px) {
+                    padding-left: 25px;
+                }
+                @media (max-width: 767.98px) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
     .goTop {
         border-radius: 50px;
         position: fixed;

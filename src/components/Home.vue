@@ -1,5 +1,5 @@
 <template>
-    <section id="main" :class="$t('lang')">
+    <section id="main">
         <Video/>
         <div class="white-band">
             <div class="tab"
