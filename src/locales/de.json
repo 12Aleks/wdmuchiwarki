@@ -67,8 +67,8 @@
   "marks": ",",
   "multiTank": {
     "slider": {
-      "firstSlide": "MultiTank Zuführung",
-      "secondSlide": "MultiTank Zuführung"
+      "firstSlide": "MultiTank S Zuführung",
+      "secondSlide": "MultiTank R Zuführung"
     },
     "presentations": {
       "MultitankS": {

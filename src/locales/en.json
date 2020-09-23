@@ -67,8 +67,8 @@
   "marks": ".",
   "multiTank": {
     "slider": {
-      "firstSlide": "MultiTank Feeder",
-      "secondSlide": "MultiTank Feeder"
+      "firstSlide": "MultiTank S Feeder",
+      "secondSlide": "MultiTank R Feeder"
     },
     "presentations": {
       "MultitankS": {

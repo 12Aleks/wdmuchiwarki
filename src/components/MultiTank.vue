@@ -186,7 +186,7 @@
                 otherProducts: 'heading.otherProducts',
                 multiSlider: [
                     {
-                        img: 'multitank/slider/multiTank.jpg',
+                        img: 'multitank/slider/multiTank_s.jpg',
                         title: 'multiTank.slider.firstSlide'
                     },
                     {

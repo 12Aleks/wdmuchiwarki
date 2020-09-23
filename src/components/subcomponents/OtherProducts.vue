@@ -25,12 +25,14 @@
                                    class="two"
                                    :src="require(`@/assets/images/products/other_products/${product.backgroundTwo}`)"
                                    :alt="product.altTwo"></b-img>
-                            <b-img :class='{imgHover: product.active}'
+                            <b-img :class='{imgHover: product.active, imgOver: !product.active }'
                                    class='img_product'
                                    :src="require(`@/assets/images/products/other_products/${product.photo}`)"
                                    fluid
                                    :alt="`${$t(product.title)}`"></b-img>
-                            <p class="text-center pt-3 mb-0 descriptions">{{$t(product.title)}}</p>
+                            <p class="text-center pt-3 mb-0 descriptions"
+                               :class="{activeDescription :product.active}"
+                            >{{$t(product.title)}}</p>
                         </div>
                     </router-link>
                 </b-col>
@@ -147,6 +149,11 @@
                 height: 280px;
             }
 
+            .descriptions.activeDescription {
+                    color: $color-red;
+                    transition: all .8s;
+            }
+
             .img_product_podajnik {
                 margin-right: 20px;
             }
@@ -178,6 +185,7 @@
             img.img_product {
                 position: relative;
                 z-index: 4;
+                transform: scale(1);
                 @media (max-width: 991.98px) {
                     margin: 0;
                     padding: 0;
@@ -207,6 +215,7 @@
             }
 
             img.img_product {
+                transform: scale(1);
                 @media(min-width: 1200px) {
                     max-width: 250px;
                     height: 160px;
@@ -228,6 +237,9 @@
     .imgHover {
         @include animation(1s, imgHov);
     }
+    .imgOver{
+        @include animation(600ms, imgOver);
+    }
 
     .imgHoverOne {
         @include animation(1s, imgOne);
@@ -241,8 +253,13 @@
         0% {
             transform: scale(1);
         }
-        50% {
-            transform: scale(.98);
+        100% {
+            transform: scale(1.015);
+        }
+    }
+    @keyframes imgOver {
+        0% {
+            transform: scale(1.015);
         }
         100% {
             transform: scale(1);

@@ -147,35 +147,35 @@
                             {{$t('contact.form.title')}}</h6>
                         <b-form class="pr-4 pl-4 pr-sm-4 pl-sm-4 pr-md-0 pl-md-0 pr-lg-5 pl-lg-0"
                                 @submit.prevent="sendEmail">
-                            <b-form-group :class="{ 'form-error': $v.mail.$error }">
+                            <b-form-group>
                                 <b-form-input
                                         id="input-1"
                                         v-model="mail"
                                         type="email"
                                         name="user_email"
-                                        @change="$v.mail.$touch()"
+                                        :class="{ 'form-error' : ( $v.mail.$dirty && !$v.mail.required ) || ( $v.mail.$dirty  && !$v.mail.email), 'form-success': $v.mail.$dirty && $v.mail.required && $v.mail.email  }"
                                         :placeholder="$t('contact.form.placeholderEmail')"
                                 ></b-form-input>
-                                <div class="error" v-if="!$v.mail.required">
+                                <div class="error" v-if="$v.mail.$dirty && !$v.mail.required">
                                     {{$t('contact.form.formEmailInformationFirst')}}
                                 </div>
-                                <div class="error" v-if="!$v.mail.email">
+                                <div class="error" v-else-if="$v.mail.$dirty && !$v.mail.email">
                                     {{$t('contact.form.formEmailInformationSecond')}}
                                 </div>
                             </b-form-group>
-                            <b-form-group :class="{ 'form-error': $v.phone.$error }">
+                            <b-form-group>
                                 <b-form-input
                                         id="input-2"
                                         v-model.number="phone"
                                         name="user_phone"
                                         type="tel"
-                                        @change="$v.phone.$touch()"
+                                        :class="{ 'form-error': ($v.phone.$dirty && !$v.phone.required) || ($v.phone.$dirty && !$v.phone.minLength) , 'form-success': $v.phone.$dirty && $v.phone.required &&  $v.phone.minLength }"
                                         :placeholder="$t('contact.form.placeholderPhone')">
                                 </b-form-input>
-                                <div class="error" v-if="!$v.phone.required">
+                                <div class="error" v-if="$v.phone.$dirty && !$v.phone.required">
                                     {{$t('contact.form.formPhoneInformationFirst')}}
                                 </div>
-                                <div class="error" v-if="!$v.phone.minLength">
+                                <div class="error" v-else-if="$v.phone.$dirty && !$v.phone.minLength">
                                     {{$t('contact.form.formPhoneInformationSecond')}}
                                 </div>
                             </b-form-group>
@@ -221,6 +221,7 @@
         name: 'Home',
         data() {
             return {
+                loader: true,
                 slide: 0,
                 sliding: null,
                 showSlider: false,
@@ -301,11 +302,12 @@
         },
         methods: {
             sendEmail(e) {
-                this.$v.$touch();
                 if (this.$v.$invalid) {
-                    this.submitStatus = 'ERROR'
+                    this.submitStatus = 'ERROR';
+                    this.$v.$touch();
+                    return
                 } else {
-                    emailjs.sendForm('sendgrid', 'template_hBdlDlOK', e.target, 'user_BWzukvV4b0GSFkWTNi81Y')
+                    emailjs.sendForm('gmail', 'template_hBdlDlOK', e.target, 'user_BWzukvV4b0GSFkWTNi81Y')
                         .then((result) => {
                             console.log('SUCCESS!', result.status, result.text);
                         }, (error) => {
@@ -972,23 +974,15 @@
             }
         }
     }
-    .form-error input {
+    input.form-error {
         border-color: $color-red;
     }
-
-    .form-group .error {
-        display: none;
+    input.form-success {
+        border-color:  green;
     }
-
-    .form-group.form-error .error {
-        display: block;
+    p.error, div.error {
         color: $color-red;
     }
-
-    p.error {
-        color: $color-red;
-    }
-
     p.success {
         color: green;
     }

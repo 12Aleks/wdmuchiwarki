@@ -9,8 +9,12 @@
 </template>
 
 <script>
+    /*eslint-disable*/
+
     export default {
         name: "Video",
+        data: () => ({
+        }),
     }
 </script>
 
@@ -20,6 +24,7 @@
         height: auto;
         z-index: -1;
     }
+
     .video-container {
         width: 100%;
         height: 100%;
@@ -33,6 +38,7 @@
         @media (max-width: 767.98px) {
             padding-top: 104px;
         }
+
         &:before {
             content: '';
             display: block;
