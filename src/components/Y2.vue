@@ -158,7 +158,7 @@
                     }
                 ],
                 y2Characteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—20 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
                 ],
                 y2ProductsCharacteristic:[
