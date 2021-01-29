@@ -233,22 +233,18 @@
             }
         }
     }
-
     .imgHover {
         @include animation(1s, imgHov);
     }
     .imgOver{
         @include animation(600ms, imgOver);
     }
-
     .imgHoverOne {
         @include animation(1s, imgOne);
     }
-
     .imgHoverTwo {
         @include animation(1s, imgTwo);
     }
-
     @keyframes imgHov {
         0% {
             transform: scale(1);
@@ -265,7 +261,6 @@
             transform: scale(1);
         }
     }
-
     @keyframes imgOne {
         0% {
             top: 50%;
@@ -280,7 +275,6 @@
             left: 50%;
         }
     }
-
     @keyframes imgTwo {
         0% {
             top: 50%;

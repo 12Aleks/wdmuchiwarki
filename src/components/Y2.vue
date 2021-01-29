@@ -59,7 +59,7 @@
                                 <b-tr>
                                     <b-td>{{$t('y2.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>5—22</b-td>
+                                    <b-td>5—20</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('y2.table.header.secondLineFirst')}}</b-td>

@@ -122,7 +122,7 @@
                                         <b-td>{{$t('multiTank.table.fiber.thirdLineFirst')}}</b-td>
                                         <b-td>mm</b-td>
                                         <b-td>
-                                            3—22 <br/>
+                                            3—20 <br/>
                                             SNR max. 8 x 10
                                         </b-td>
                                     </b-tr>
@@ -195,7 +195,7 @@
                     }
                 ],
                 multiCharacteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3—22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '3—20 mm'},
                     { img: 'pakiety_snr.svg', title: 'characteristic.packages', description: '8 × 10 mm'},
                     { img: 'mikrorurki.svg', title: 'characteristic.microducts', description: '6—16 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '32, 40, 50, 63 mm'}

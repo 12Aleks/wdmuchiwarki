@@ -65,15 +65,14 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>5—22</b-td>
+                                    <b-td>5—20</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon32.table.header.secondLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
                                     <b-td>
-                                        2 x 12 / HDPE 32 <br/>
-                                        3 x 10 / HDPE 32 <br/>
-                                        5 x 10 / HDPE 40 <br/>
+                                        2 x 12 <br/>
+                                        3 x 10 <br/>
                                     </b-td>
                                 </b-tr>
                                 <b-tr>
@@ -177,7 +176,7 @@
                     }
                 ],
                 typhoonCharacteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—20 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '32, 40 mm'},
                 ],
                 typhoonProductsCharacteristic:[

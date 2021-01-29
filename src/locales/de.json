@@ -73,7 +73,7 @@
     "presentations": {
       "MultitankS": {
         "descriptionFirst": "Der MultiTank ist ein vollelektrisches Gerät. Im Vergleich zu den Zuführungen mit pneumatischem Antrieb kann der Luftbedarf um ca. 0,5 m³ reduziert werden, wodurch ein kleinerer und billigerer Kompressor eingesetzt werden kann. Ein zusätzlicher Vorteil ist, dass bei der Verlegung von Kabeln über kurze Entfernungen, bei denen keine Druckluft benötigt wird, der Kompressor nicht angeschlossen werden muss, wodurch der Lärm in dicht besiedelten Wohngebieten erheblich reduziert werden kann.",
-        "descriptionSecond": "Die universelle Einsetzbarkeit des MultiTank-Zuführers mit austauschbaren Köpfen ermöglicht die Installation von Glasfaserkabeln mit Durchmessern von 3 bis 22 mm sowie von Mikrorohrpaketen * bis zu 8 x 10 mm. Die Maschine ist für härteste Wetterbedingungen ausgelegt - sie kann daher auch bei Regen oder Temperaturen unter Null eingesetzt werden.",
+        "descriptionSecond": "Die universelle Einsetzbarkeit des MultiTank-Zuführers mit austauschbaren Köpfen ermöglicht die Installation von Glasfaserkabeln mit Durchmessern von 3 bis 20 mm sowie von Mikrorohrpaketen * bis zu 8 x 10 mm. Die Maschine ist für härteste Wetterbedingungen ausgelegt - sie kann daher auch bei Regen oder Temperaturen unter Null eingesetzt werden.",
         "descriptionThird": "Die unabhängige Steuerung der Geschwindigkeit und Kraft für die Zufuhr der Glaserfaserkabel erfolgt mit Hilfe von Potentiometern. Die Hauptparameter werden dem Bediener über Displays angezeigt: die Länge der eingeblasenen Faser und der aktuelle Widerstandswert.",
         "descriptionFourth": "Es ist nicht erforderlich die Bänder auszutauschen, um Glasfasern mit unterschiedlichen Durchmessern einzublasen. Der Druck wird durch Federn reguliert, die ein Quetschen oder Rutschen der Glasfaser auf den Bändern verhindern.",
         "note": "* Weitere Informationen zum Einblasen von Mikrorohrpaketen finden Sie auf dem Datenblatt."
@@ -164,7 +164,7 @@
       "secondSlide": "Typhoon 32/40 Einblasset"
     },
     "presentations": {
-      "descriptionFirst": "Das Set Typhoon 32/40 ist für die Verwendung mit einzelnen Glasfaserkabeln oder Mikrorohren mit einem Durchmesser von 5 bis 22 mm ausgelegt, die in HDPE-Rohre 32- und 40mm eingeblasen werden. Darüber hinaus ist es auch möglich Mikrorohrpakete einzublasen*. Das Set ist in den Kopf und Luftanschluss unterteilt. Hieraus ergibt sich Folgendes:",
+      "descriptionFirst": "Das Set Typhoon 32/40 ist für die Verwendung mit einzelnen Glasfaserkabeln oder Mikrorohren mit einem Durchmesser von 5 bis 20 mm ausgelegt, die in HDPE-Rohre 32- und 40mm eingeblasen werden. Darüber hinaus ist es auch möglich Mikrorohrpakete einzublasen*. Das Set ist in den Kopf und Luftanschluss unterteilt. Hieraus ergibt sich Folgendes:",
       "paragraphFirst": "geringe Detailabmessungen und die Möglichkeit einer ergonomischen Montage",
       "paragraphSecond": "es ist möglich den Luftanschluss direkt mit dem Rohr im Graben oder einem anderen Brunnen zu verbinden (bei Arbeiten in der Stadt, wo nicht viel Platz vorhanden ist, um alle Geräte an einem Ort einzurichten)",
       "paragraphThird": "Luftzufuhr von zwei Seiten in einem Winkel von 45 °, wodurch der Druckabfall gegenüber einer einzelnen Verbindung in einem Winkel von 90 ° um ca. 0,5 bar verringert wird",
@@ -175,7 +175,7 @@
       "title": "Parameters",
       "header": {
         "firstLineFirst": "Durchmesser Glasfaserkabel / Mikrorohre",
-        "secondLineFirst": "Mikrorohrpakte / HDPE-Rohr",
+        "secondLineFirst": "Mikrorohrpakte",
         "thirdLineFirst": "Durchmesser HDPE-Rohre",
         "fourthLineFirst": "Anschlusskopf - Luftanschluss"
       },
@@ -209,7 +209,7 @@
       "secondSlide": "Typhoon 50/63 Einblasset"
     },
     "presentations": {
-      "descriptionFirst": "Das Typhoon 50/63-Set wurde entwickelt um Mikrorohre einzeln und in Paketen * in HDPE-Rohre 50- und 63mm einzublasen. Es ist ebenfalls möglich Glasfaserkabel 5-22 mm einzublasen und die Installation in HDPE-Rohre 32- und 40mm, nachdem die Reduzierung hinter dem Luftanschluss angebracht wurde **.",
+      "descriptionFirst": "Das Typhoon 50/63-Set wurde entwickelt um Mikrorohre einzeln und in Paketen * in HDPE-Rohre 50- und 63mm einzublasen. Es ist ebenfalls möglich Glasfaserkabel 5-20 mm einzublasen und die Installation in HDPE-Rohre 32- und 40mm, nachdem die Reduzierung hinter dem Luftanschluss angebracht wurde **.",
       "descriptionSecond": "",
       "descriptionThird": "Das Set ist in den Kopf- und Luftanschluss unterteilt, woraus sich Folgendes ergibt:",
       "paragraphFirst": "geringere Detailabmessungen sowie die Möglichkeit einer ergonomischen Montage",

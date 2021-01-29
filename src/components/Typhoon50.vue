@@ -71,7 +71,7 @@
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.header.firstLineFirst')}}</b-td>
                                     <b-td>mm</b-td>
-                                    <b-td>5—22</b-td>
+                                    <b-td>5—20</b-td>
                                 </b-tr>
                                 <b-tr>
                                     <b-td>{{$t('typhoon50.table.header.secondLineFirst')}}</b-td>
@@ -186,7 +186,7 @@
                     }
                 ],
                 typhoon50Characteristic: [
-                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—22 mm'},
+                    { img: 'swiatlowody.svg', title: 'characteristic.fiber-optic', description: '5—20 mm'},
                     { img: 'hdpe.svg', title: 'HDPE', description: '50, 63 mm'},
                 ],
                 typhoon50ProductsCharacteristic:[

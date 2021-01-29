@@ -74,7 +74,7 @@
       "MultitankS": {
         "descriptionFirst": "The MultiTank S feeder features a fully electric drive. As compared to pneumatic feeders, it reduces air demand by approximately 0.5 m^3 so the air compressor can be smaller and less expensive.",
         "descriptionSecond": "An additional advantage of the device is no need to connect compressed air when installing cables on short distances, which considerably reduces noise while operating in densely built up areas.",
-        "descriptionThird": "The MultiTank S feeder is a universal device due to convertible blowing heads which enable installation of optical fiber cables from the 3–22 mm range as well as microducts packages even as large as 8 x 10 mm. The device can work in the harshest weather conditions – in the rain and sub-zero temperatures.",
+        "descriptionThird": "The MultiTank S feeder is a universal device due to convertible blowing heads which enable installation of optical fiber cables from the 3–20 mm range as well as microducts packages even as large as 8 x 10 mm. The device can work in the harshest weather conditions – in the rain and sub-zero temperatures.",
         "descriptionFourth": "The feeding force and speed are controlled independently and regulated by potentiometers. LCD displays show the main parameters such as the length of the cable blown in, current resistance value and pressure in the pipe duct.",
         "descriptionFifth": "There is no need to change belts while blowing in optical fibers of different diameters. Belt pressure is regulated by springs which prevent cable crushing or skidding.",
         "note": "* More information on blowing in microducts packages is available in the specification sheet."
@@ -165,7 +165,7 @@
       "secondSlide": "Second Typhoon 32/40 Blowing Kit"
     },
     "presentations": {
-      "descriptionFirst": "The Typhoon 32/40 kit is intended to work with single optical fibers or 5–22 mm microducts blown into HDPE 32 or HDPE 40 pipes. It is also possible to blow in microduct packages*. The kit is divided into ergonomic elements – the heads and the air connector, which results in: ",
+      "descriptionFirst": "The Typhoon 32/40 kit is intended to work with single optical fibers or 5–20 mm microducts blown into HDPE 32 or HDPE 40 pipes. It is also possible to blow in microduct packages*. The kit is divided into ergonomic elements – the heads and the air connector, which results in: ",
       "paragraphFirst": "small size of components and ergonomic assembly",
       "paragraphSecond": "possibility of attaching the compressed air connector directly to the pipe in the trench or another manhole (e.g. when the installation is carried out in a densely built up area and space for equipment is limited)",
       "paragraphThird":"air supply connectors on both sides (at 45 deg. angle), which allows the reduction of pressure by approx. 0.5 bar in comparison to a single connection at 90 deg. angle",
@@ -176,7 +176,7 @@
       "title": "Parameters",
       "header": {
         "firstLineFirst": "Optical Fiber / Microduct Diameters",
-        "secondLineFirst": "Microducts Package / HDPE Pipe",
+        "secondLineFirst": "Microducts Package",
         "thirdLineFirst": "HDPE Pipe Size",
         "fourthLineFirst": "Connection: Blowing Head – Air Connector"
       },
@@ -211,7 +211,7 @@
     },
     "presentations": {
       "descriptionFirst": "The Typhoon 50/63 kit was designed for blowing in individual microducts and their packages into HDPE 50 and HDPE 63 pipes*.",
-      "descriptionSecond": "It is also possible to blow in 5–22 mm fiber optic cables and install them in HDPE 32 and 40 tubes by means of an additional reduction behind the air connection**.",
+      "descriptionSecond": "It is also possible to blow in 5–20 mm fiber optic cables and install them in HDPE 32 and 40 tubes by means of an additional reduction behind the air connection**.",
       "descriptionThird": "The kit consists of two ergonomic elements – the head and the air connector, which results in:",
       "paragraphFirst": "small size of components and ergonomic assembly",
       "paragraphSecond": "possibility of attaching a compressed air connector directly to the pipe in the trench",

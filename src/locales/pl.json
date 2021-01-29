@@ -74,7 +74,7 @@
       "MultitankS": {
         "descriptionFirst": "Podajnik MultiTank jest urządzeniem w pełni elektrycznym. W porównaniu do podajników z napędem pneumatycznym pozwala to na zmniejszenie zapotrzebowania na powietrze o ok. 0,5 m3, dzięki czemu możliwe jest wykorzystanie mniejszego i tańszego kompresora.",
         "descriptionSecond": "Dodatkowym atutem jest brak konieczności podłączania kompresora przy instalacji kabli na krótkich odcinkach, gdzie nie jest wymagane wykorzystanie sprężonego powietrza co pozwala w znacznym stopniu zniwelować hałas w gęstych zabudowaniach miejskich.",
-        "descriptionThird": "Uniwersalność zastosowań Podajnika MultiTank z wymiennymi głowicami pozwala na instalację światłowodów o średnicach 3-22 mm jak i pakietów mikrorurek* nawet do 8 x 10 mm. Maszyna przystosowana jest do pracy w najcięższych warunkach pogodowych – możliwa jest praca w deszczu czy przy minusowej temperaturze.",
+        "descriptionThird": "Uniwersalność zastosowań Podajnika MultiTank z wymiennymi głowicami pozwala na instalację światłowodów o średnicach 3-20 mm jak i pakietów mikrorurek* nawet do 8 x 10 mm. Maszyna przystosowana jest do pracy w najcięższych warunkach pogodowych – możliwa jest praca w deszczu czy przy minusowej temperaturze.",
         "descriptionFourth": "Niezależne sterowanie prędkością i siłą podawania światłowodu odbywa się za pomocą potencjometrów. Operatorowi za pomocą wyświetlaczy przedstawiane są główne parametry: długość wdmuchniętego światłowodu i aktualna wartość oporów.",
         "descriptionFifth": "Nie ma konieczności wymiany pasów przy wdmuchiwaniu światłowodów o różnych średnicach. Docisk jest regulowany za pomocą sprężyn, co uniemożliwia zgniecenie światłowodu lub jego poślizg na pasach.",
         "note": "* Więcej informacji dot. wdmuchiwania pakietów mikrorurek dostępne w karcie katalogowej."
@@ -165,7 +165,7 @@
       "secondSlide": "Głowice Typhoon 32/40"
     },
     "presentations": {
-      "descriptionFirst": "Zestaw Typhoon 32/40 przeznaczony jest do pracy z pojedynczymi światłowodami lub mikrorurkami o średnicach 5-22 mm wdmuchiwanymi w rury HDPE 32 oraz 40. Możliwe jest również wdmuchiwanie pakietów mikrorurek*. Zestaw jest rozdzielony na głowicę oraz przyłącze powietrza co skutkuje:",
+      "descriptionFirst": "Zestaw Typhoon 32/40 przeznaczony jest do pracy z pojedynczymi światłowodami lub mikrorurkami o średnicach 5-20 mm wdmuchiwanymi w rury HDPE 32 oraz 40. Możliwe jest również wdmuchiwanie pakietów mikrorurek*. Zestaw jest rozdzielony na głowicę oraz przyłącze powietrza co skutkuje:",
       "paragraphFirst": "niewielkimi rozmiarami detali i możliwością ergonomicznego montażu",
       "paragraphSecond": "możliwością podłączenia przyłącza powietrza bezpośrednio do rury w wykopie czy kolejnej studni (wypadek gdy pracujemy w mieście i nie mamy dużo miejsca na rozstawienie się z całym sprzętem w jednym miejscu",
       "paragraphThird":"doprowadzeniem powietrza z dwóch stron pod kątem 45° co zmniejsza spadek ciśnienia o ok. 0,5 bara w stosunku do pojedynczego przyłącza pod kątem 90°",
@@ -176,7 +176,7 @@
       "title": "Parametry",
       "header": {
         "firstLineFirst": "Średnice światłowodu / mikrorurki",
-        "secondLineFirst": "Pakiet mikrorurek / rura HDPE",
+        "secondLineFirst": "Pakiet mikrorurek",
         "thirdLineFirst": "Średnice rury HDPE",
         "fourthLineFirst": "Łącznik Głowica – Przyłącze Powietrza"
       },
@@ -211,7 +211,7 @@
     },
     "presentations": {
       "descriptionFirst": "Zestaw Typhoon 50/63 został zaprojektowany z myślą o wdmuchiwaniu mikrorurek pojedynczo oraz w pakietach* w rury HDPE 50 i 63.",
-      "descriptionSecond": "Możliwe jest również wdmuchiwanie światłowodów 5-22 mm oraz instalacja w rury HDPE 32 i 40 po zastosowaniu redukcji za przyłączem powietrza**.",
+      "descriptionSecond": "Możliwe jest również wdmuchiwanie światłowodów 5-20 mm oraz instalacja w rury HDPE 32 i 40 po zastosowaniu redukcji za przyłączem powietrza**.",
       "descriptionThird": "Zestaw jest rozdzielony na głowicę oraz przyłącze powietrza co skutkuje:",
       "paragraphFirst": "niewielkimi rozmiarami detali i możliwością ergonomicznego montażu",
       "paragraphSecond": "możliwością podłączenia przyłącza powietrza bezpośrednio do rury w wykopie",
